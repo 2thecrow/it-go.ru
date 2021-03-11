@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Service it-go.ru</title>
+	<meta name="description" content="https://www.it-go.ru/">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dest/favlogo.png">
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+	<header class="inner-page">
+		<aside>
+			<!-- Бокового меню -->
+			<div id="mySidenav" class="sidenav">
+				<ul class="aside_mnu">
+					<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Портфолио</a></li>
+					<li><a href="#">Наш блог</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="tel:+88002003385" class="phone"><img src="images/dest/phone-icon.png" alt="Phone icon"> 8 (800) 200-3385</a></li>
+					<li>
+						<address>
+							<img src="images/dest/map-point-icon.png" alt="Phone icon">
+							<div>
+								<span>г. Новокузнецк, </span><br> <span> пр. Октябрьский, 40(2-й этаж)</span>
+							</div>
+						</address>
+					</li>
+				</ul>
+				<ul id="soc_btn-iner">
+					<li class="vk">
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+								<path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486C22.864 8.997 25.22 6 23.136 6h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539A8.07 8.07 0 0011.148 5c-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305C4.976 6.426 4.902 6 4.042 6H.787C.295 6 0 6.16 0 6.516c0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" />
+							</svg>
+						</a>
+					</li>
+					<li class="twitter">
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+								<path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z" />
+							</svg>
+						</a>
+					</li>
+					<li class="facebook">
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+								<path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav_wrapper">
+				<!-- Кнопка меню -->
+				<div class="mnu_btn" onclick="openNav()">
+					<div class="mnu_btn-icon"> &#9776;</div>
+					<span>меню</span>
+				</div>
+				<!-- Меню соц. сетей -->
+				<ul class="soc_btn">
+					<li class="vk">
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+								<path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486C22.864 8.997 25.22 6 23.136 6h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539A8.07 8.07 0 0011.148 5c-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305C4.976 6.426 4.902 6 4.042 6H.787C.295 6 0 6.16 0 6.516c0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" />
+							</svg>
+						</a>
+					</li>
+					<li class="twitter">
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+								<path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z" />
+							</svg>
+						</a>
+					</li>
+					<li class="facebook">
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+								<path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<script>
+				function openNav() {
+					document.getElementById("mySidenav").style.width = "270px";
+				};
+
+				function closeNav() {
+					document.getElementById("mySidenav").style.width = "0";
+				};
+			</script>
+		</aside>
+		<div class="container">
+			<div class="row header-menu inner-page">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-5">
+					<a href="#" class="header-menu__logo inner-page">
+						<img src="images/dest/it-go-logo-inner.png" alt="Logo">
+						<span>студия веб-разработки <br> и маркетинга </span>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-auto col-lg-auto">
+					<div class="header-menu__contacts">
+						<div class="header-contacts-phone inner-page">
+							Бесплатно по России <br>
+							<a href="tel:88002003385">8 (800) 200-3385</a>
+						</div>
+						<a href="#" class="header-contacts-button inner-page"><img src="images/dest/mail-footer-icon.png" alt="contact mail"> Напишите нам</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</header>
+	<nav class="inner-page-nav">
+		<!-- particles.js container -->
+		<div id="header-particles">
+		</div>
+		<div class="container">
+			<ul class="row inner-nav wrapper">
+				<li class="col-md-6 col-lg-4 dropdown">
+					<a class="inner-page-nav" href="#">
+						<!-- <img src="images/dest/usability-icon.png" alt="Web dev"> -->
+						<span class="menu-icon webdev-icon"></span>
+						<p>Разработка сайтов</p>
+						<span class="dropdown-arrow"></span>
+					</a>
+					<div class="dropdown-content">
+						<ul class="dropdown-content__list">
+							<li class="dropdown-content__item">
+								<a href="#">
+									<span class="inner-menu-icon ecommerce-icon"></span>
+									Интернет-магазин
+								</a>
+							</li>
+							<li class="dropdown-content__item">
+								<a href="#">
+									<span class="inner-menu-icon corporate-icon"></span>
+									Корпоративный сайт
+								</a>
+							</li>
+							<li class="dropdown-content__item">
+								<a href="#">
+									<span class="inner-menu-icon landing-icon"></span>
+									Landing page
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="col-md-6 col-lg-4 dropdown">
+					<a class="inner-page-nav" href="">
+						<!-- <img src="images/dest/headset-icon.png" alt="Support"> -->
+						<span class="menu-icon support-icon"></span>
+						<p>Обслуживание и поддержка</p>
+						<span class="dropdown-arrow"></span>
+					</a>
+					<div class="dropdown-content">
+						<ul class="dropdown-content__list">
+							<li class="dropdown-content__item">
+								<a href="#">Техническая поддержка</a>
+							</li>
+							<li class="dropdown-content__item">
+								<a href="#">Информационная поддержка</a>
+							</li>
+							<li class="dropdown-content__item">
+								<a href="#">Техническое обслуживание</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="col-md-6 col-lg-4 dropdown">
+					<a class="inner-page-nav" href="">
+						<!-- <img src="images/dest/loupe-icon.png" alt="ADs and SEO"> -->
+						<span class="menu-icon seo-icon"></span>
+						<p>Реклама и продвижение</p>
+						<span class="dropdown-arrow"></span>
+					</a>
+					<div class="dropdown-content">
+						<ul class="dropdown-content__list">
+							<li class="dropdown-content__item">
+								<a href="#">SEO</a>
+							</li>
+							<li class="dropdown-content__item">
+								<a href="#">Контекстная реклама</a>
+							</li>
+							<li class="dropdown-content__item">
+								<a href="#">SMM</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<script>
+			//функция открытия для SEO
+			function mySeoDropdown() {
+				/* Open sub-menu */
+				document.getElementById("SeoDropdown").classList.toggle("wst-show");
+				/* focusing activ menu + button */
+				document.getElementById("wst-active-seo").classList.toggle("wst-active-menu");
+			};
+		</script>
+	</nav>
+
+	<section class="service-hero-seo">
+		<div class="container">
+			<h1>Реклама и продвижение <br>
+				сайта для вашего <br>
+				бизнеса
+			</h1>
+			<div class="service-hero-seo__action-text">
+				<p>Наш комплексный подход к интернет-маркетингу позволяет максимально задействовать различные каналы коммуникации и привлечь целевых пользователей. Результатом грамотного продвижения является увеличение охвата аудитории, рост конверсии и повышение продаж.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="service-seo-about">
+		<div class="container">
+			<h2>Что мы делаем</h2>
+			<ul class="row service-seo-about__list">
+				<li class="col-lg-6 col-xxl-4">
+					<a href="" class="advertising-item">
+						<h3>Контекстная <br> реклама</h3>
+						<p>Ваши рекламные объявления выводятся в первых строках результатов поиска по запросам, которые указаны в параметрах рекламной кампании.</p>
+						<span class="service-seo-btn" href="">Подробнее</span>
+					</a>
+				</li>
+				<li class="col-lg-6 col-xxl-4">
+					<a href="" class="seo-item">
+						<h3>SEO (Search <br> Engine Optimization)</h3>
+						<p>Ваши рекламные объявления выводятся в первых строках результатов поиска по запросам, которые указаны в параметрах рекламной кампании.</p>
+						<div class="service-seo-btn" href="">Подробнее</div>
+					</a>
+				</li>
+				<li class="col-lg-6 col-xxl-4">
+					<a href="" class="smm-item">
+						<h3>SMM (Social Media <br>Marketing)</h3>
+						<p>Ваши рекламные объявления выводятся в первых строках результатов поиска по запросам, которые указаны в параметрах рекламной кампании.</p>
+						<div class="service-seo-btn" href="">Подробнее</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="service-callback-seo">
+		<div class="service-callback-seo-form">
+			<div class="container">
+				<div class="row callback-form">
+					<h2 class="callback-form-h2 col-md-12">Не знаете с чего начать?</h2>
+					<p class="callback-form-p col-md-12">
+						Заполните форму, и мы ответим на ваши вопросы. Или звоните нам по бесплатному номеру 8 (800) 200-3385
+					</p>
+					<form class="row callback-form-form">
+						<div class="col-sm-12 col-md-12 col-lg-auto">
+							<input type="text" placeholder="Ваше имя">
+						</div>
+						<div class="col-sm-12 col-md-12 col-lg-auto">
+							<input type="text" placeholder="Ваш телефон">
+						</div>
+						<div class="col-sm-12 col-md-12 col-lg-auto">
+							<a class="btn" href="#">Узнать</a>
+						</div>
+						<div class="col-sm-12 col-md-12 col-lg-auto">
+							<div class="policy_wrap">
+								<input type="checkbox" checked>
+								<p>Согласен на обработку <a href="#">персональных данных</a></p>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<h2>Отправьте нам заявку</h2>
+			<p>на продвижение вашего сайта</p>
+			<ul class="row">
+				<li class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+					<a href="tel:88002003385">
+						<img src="images/dest/callback-phone-blue-icon.png" alt="Phone icon">
+					</a>
+					<a href="tel:88002003385">8(800) 200-3385</a>
+					<span>Бесплатный звонок</span>
+				</li>
+				<li class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+					<a href="callto://88002003385">
+						<img src="images/dest/callback-skype-blue-icon.png" alt="Skype icon">
+					</a>
+					<a href="callto://88002003385">Skype <span>it-city</span></a>
+				</li>
+				<li class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+					<a href="https://vk.com/itcity">
+						<img src="images/dest/callback-vk-blue-icon.png" alt="VK icon">
+					</a>
+					<a href="https://vk.com/itcity"><span>vk.com/itcity</span></a>
+				</li>
+				<li class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+					<a href="https://wa.me/88002003385">
+						<img src="images/dest/callback-whatsapp-blue-icon.png" alt="Whatsapp icon">
+					</a>
+					<a href="https://wa.me/88002003385">Whatsapp <span>itcity</span></a>
+				</li>
+				<li class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+					<a href="tg://resolve?domain=itcity">
+						<img src="images/dest/callback-telegram-blue-icon.png" alt="Telegram icon">
+					</a>
+					<a href="tg://resolve?domain=itcity">Telegram <span>itcity</span></a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<footer>
+		<section class="footer_nav">
+			<div class="container">
+				<div class="row footer_wraper">
+					<div class="col-sm-12 col-md-9 col-lg-9">
+						<nav>
+							<ul>
+								<li><a href="#" class="link-a">О компании</a></li>
+								<li><a href="#" class="link-a">Услуги</a></li>
+								<li><a href="#" class="link-a">Портфолио</a></li>
+								<li><a href="#" class="link-a">Наш блог</a></li>
+								<li><a href="#" class="link-a">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-sm-12 col-md-auto col-lg-auto">
+						<a href="#" class="footer_mail"><img src="images/dest/mail-footer-icon.png" alt="Footer mail icon">Напишите нам</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contacts">
+			<div class="container">
+				<div class="row footer_wraper">
+					<div class="col-12 col-sm-12 col-md-8 col-lg-6">
+						<div class="row contact__info">
+							<div class="col-sm-12 col-md-6 col-lg-6 contact__info__item phone">
+								<img src="images/dest/phone-icon.png" alt="Phone icon">
+								<a href="tel:88002003385">8 (800) 200-3385</a>
+								<span>Бесплатно по России</span>
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-6 contact__info__item">
+								<img src="images/dest/map-point-icon.png" alt="Map icon">
+								г. Новокузнецк
+								<br><span>пр. Октябрьский, 40, 2-й этаж</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-auto col-lg-auto">
+						<ul class="contact__social">
+							<li class="vk">
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+										<path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486C22.864 8.997 25.22 6 23.136 6h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539A8.07 8.07 0 0011.148 5c-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305C4.976 6.426 4.902 6 4.042 6H.787C.295 6 0 6.16 0 6.516c0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" />
+									</svg>
+								</a>
+							</li>
+							<li class="twitter">
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+										<path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z" />
+									</svg>
+								</a>
+							</li>
+							<li class="facebook">
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+										<path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="copyright">
+			<div class="container">
+				<div class="row footer_wraper">
+					<div class="col-lg-6">
+						<p>© 2019 Айти Сити / студия разработки и маркетинга</p>
+					</div>
+					<div class="col-lg-auto">
+						<a href="#" class="policy">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</footer>
+
+	<script src="js/app.min.js"></script>
+	<!-- Local Init -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			/* ---- particles.js config ---- */
+			particlesJS("header-particles", { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
+			particlesJS("price-plans-bg", { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
+			/* Swiper */
+			var swiper = new Swiper('.sliderservice', {
+				slidesPerView: '1.3',
+				centeredSlides: true,
+				loop: true,
+				pagination: {
+					el: '.custom-swiper-pagination',
+					type: 'fraction',
+					renderFraction: function (currentClass, totalClass) {
+						return '<span class="' + currentClass + '"></span>' +
+							' &boxh; ' +
+							'<span class="' + totalClass + '"></span>';
+					},
+				},
+				navigation: {
+					nextEl: '.custom-swiper-button-next',
+					prevEl: '.custom-swiper-button-prev',
+				},
+			})
+		});
+	</script>
+
+</body>
+
+</html>

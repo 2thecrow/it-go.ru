@@ -1,0 +1,245 @@
+// USER VARIABLES SECTION
+
+$accent: #005aa3; // Accent Color
+$fontsize: 10px; // Body Font Size
+$textwhite: #ffffff; // Text Color White
+$textinner: #242a2e; // Inner text color
+$textgrey: #353b3e; // Text Color Grey
+$hoverlightblue:  #add3eb; // Hover Color Blue
+$hoverlightgrey: #f4f6f9; // Hover Color Grey
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+$roboto: Roboto, $system; // Roboto Font Family
+
+// Bootstrap re-init
+$grid-gutter-width: 30px;
+$gutter: $grid-gutter-width;
+$container-max-widths: (sm: 540px, md: 750px,  lg: 990px, xl: 1170px);
+
+// IMPORT SECTION
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss';  // Optional Bootstrap Grid 4.5.2
+@import 'node_modules/swiper/swiper-bundle.min'; // Swiper Slider Styles
+/* @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; */  // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		// font-display: swap; // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format('woff2');
+	}
+}
+@include font('Roboto', normal, 100, '../fonts/roboto-thin.woff2');
+@include font('Roboto', normal, 300, '../fonts/roboto-light.woff2');
+@include font('Roboto', italic, 300, '../fonts/roboto-light-italic.woff2');
+@include font('Roboto', normal, 400, '../fonts/roboto-regular.woff2');
+@include font('Roboto-Condensed', normal, 700, '../fonts/roboto-condensed-bold.woff2');
+@include font('Roboto', normal, 700, '../fonts/roboto-bold.woff2');
+@include font('Roboto', normal, 900, '../fonts/roboto-black.woff2');
+@include font('Roboto', italic, 900, '../fonts/roboto-black-italic.woff2');
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+input, textarea {
+	outline: none;
+	&:focus:required:invalid { border-color: red }
+	&:required:valid { border-color: green }
+}
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+body {
+	font-family: $roboto;
+	font-size: $fontsize;
+	position: relative;
+	line-height: 1.65;
+	overflow-x: hidden;
+	color: $textwhite;
+	background-color: #ebeff5;
+}
+.wrapper {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+/* Стандартная кнопка */
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0px;
+    text-align: center;
+    position: relative;
+    outline: 0;
+    transition: background-color .1s ease;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 5px 0 0 #add3eb;
+    transition: all .25s ease;
+    &:hover {
+        background-color: $textgrey;
+        transition: all .25s ease;
+    }
+}
+/* Анимированные подчеркивание ссылки */
+.link-a {
+    &::after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        bottom: -3px; 
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 0%;
+        transition:.5s; 
+    }
+    &:hover:after {
+        width: 85%;
+        background: $accent;
+    }
+}
+/* Стилизация слайдера */
+
+/* Настройка контейнера */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+/* Настройка слайда */
+.swiper-slide {
+    padding: 140px 0px 100px 0;
+    overflow: hidden;
+}
+/* Свои стили для навигации слайдера */
+.custom_swiper_nav {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    text-transform: uppercase;
+    /* Стили для блока с выводом кол-ва слайдов */
+    .swiper-pagination-fraction {
+        display: flex;
+        color: #fff;
+        line-height: 18px;
+        width: 50px;
+        margin: 0 70px;
+        /* нынешняя позиция слайдера */
+        .swiper-pagination-current {
+            font-weight: 900;
+            font-size: 24px;
+            margin: 0 5px 0 0;
+        }
+        /* общее кол-во слайдов  */
+        .swiper-pagination-total {
+            font-weight: 300;
+            font-size: 14px;
+            margin: 0 0 0 5px;
+        }
+    }
+    /* кнопка назад(Предыдущий слайд)  */
+    .custom-swiper-button-prev {
+        font-weight: 300;
+        font-size: 12px;
+        text-align: right;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        /* стрелочка */
+        .arrow-box {
+            margin-left: 15px;
+            &:hover {
+                background-color: rgba($color: #fff, $alpha: 0.2);
+            }
+        }
+        
+    }
+    /* кнопка вперед(Следующий  слайд)  */
+    .custom-swiper-button-next {
+        font-weight: 300;
+        font-size: 12px;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* стрелочка */
+        .arrow-box {
+            margin-right: 15px;
+            &:hover {
+                background-color: rgba($color: #fff, $alpha: 0.2);
+            }
+        }
+    }
+    /* общие стили стрелочки */
+    .arrow-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 49px;
+        height: 49px;
+        border: 2px solid #fff;
+        font-size: 20px;
+        line-height: 12px;
+    }
+}
+
+/* Background-color Socials */
+.vk {
+    background-color: #44678d;
+}
+.twitter {
+    background-color: #25a1cd;
+}
+.facebook {
+    background-color: #496ba5;
+}
+
+.overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, 0.5);
+	z-index: 99;
+	opacity: 0;
+	visibility: hidden;
+}
+.overlay.open {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s;
+}
+.lock {
+	overflow: hidden;
+}
