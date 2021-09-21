@@ -1,0 +1,191 @@
+/* Плавающие меню */
+.aside {
+    /* display: none; */
+    background-color: #fff;
+    position: fixed;
+    width: 64px;
+    height: 100%;
+    z-index: 102;
+    box-shadow: 7.873px -9.057px 24px 0px rgba(0, 119, 194, 0.4);
+    .nav_wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        /* Кнопка меню */
+        .mnu_btn {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            background-color: $accent;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 900;
+            line-height: 22px;
+            z-index: 102;
+            width: 64px;
+            height: 64px;
+            &:hover {
+                opacity: 0.9;
+            }
+            /* Иконка */
+            .mnu_btn-icon {
+                font-size: 20px;
+                margin: 15px auto 0;
+            }
+            /* Тексты кнопки */
+            span {
+                margin: 0 auto;
+            }
+        }
+        /* Плавающие социальные сети */
+        .soc_btn {
+            cursor: pointer;
+            z-index: 101;
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            bottom: 0;
+            padding: 0;
+            margin: 0;
+            li {
+                height: 64px;
+                width: 64px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+        
+    }
+    /* Стили для бокового меню */
+    .sidenav {
+        display: none;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: all 0.25s ease;
+        z-index: 103;
+        /* Внутренний список социальных ссылок */
+        #soc_btn-iner {
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style-type: none;
+            padding: 0;
+            margin: 60px 0 0 0;
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 64px;
+                height: 64px;
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+        /* Список ссылок боковое меню */
+        .aside_mnu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            /* ссылки */
+            li {
+                font-weight: 900;
+                font-size: 20px;
+                line-height: 72px;
+                .phone {
+                    display: flex;
+                    align-items: center;
+                    color: $accent;
+                    img {
+                        margin: 0 8px 0 0;
+                    }
+                    &:hover {
+                        color: $textgrey;
+                    }
+                }
+                /* подчеркивающая черта внижу ссылки */
+                &:after { 
+                    content: '';
+                    position: absolute;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 0;          
+                    height: 1px;
+                    background-color: #e6eaec;
+                    width: 100%;
+                }
+                a {
+                    position: relative;
+                    color: $textgrey;
+                    display: block;
+                    padding: 0 27px 0 27px;
+                    text-decoration: none;
+                    transition: all .25s ease;
+                    &:hover {
+                        background-color: $hoverlightgrey;
+                        color: $accent;
+                        transition: all .25s ease;
+                    }
+                }
+                /* Адресс компании */
+                address {
+                    display: flex;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $textgrey;
+                    padding: 30px 27px 10px 27px;
+                    div {
+                        margin-left: 5px;
+                    }
+                    img {
+                        width: 11px;
+                        height: 16px;
+                        margin-top: 5px;
+                    }
+                    span {
+                        
+                        &:last-child {
+                            font-weight: 900;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        /* Кнопка закрытия меню */
+        .closebtn {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #0075bf !important;
+            background-color: #e6ebf3;
+            font-size: 36px;
+            width: 75px;
+            height: 69px;
+            margin: 0 0 0 auto;
+            &:hover {
+                color: rgba(0, 117, 191, .8);
+                background-color: $hoverlightgrey;
+            }
+        }
+        /* раскрытое меню */
+        &.open {
+            display: block;
+            transition: all 0.25s ease;
+        }
+    }
+    
+}

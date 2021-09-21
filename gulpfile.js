@@ -11,8 +11,8 @@ let paths = {
 	scripts: {
 		src: [
 			// 'node_modules/jquery/dist/jquery.min.js', // npm vendor example (npm i --save-dev jquery)
-			'node_modules/swiper/swiper-bundle.min.js', // swiper (npm i swiper --save-dev)
-			'node_modules/particles.js/particles.js', // particles.js (npm i particles.js --save-dev)
+			//'node_modules/swiper/swiper-bundle.min.js', // swiper (npm i swiper --save-dev)
+			//'node_modules/particles.js/particles.js', // particles.js (npm i particles.js --save-dev)
 			baseDir + '/js/app.js' // app.js. Always at the end
 		],
 		dest: baseDir + '/js',
@@ -24,8 +24,8 @@ let paths = {
 	},
 
 	images: {
-		src: baseDir + '/images/src/**/*',
-		dest: baseDir + '/images/dest',
+		src: baseDir + '/img/src/**/*',
+		dest: baseDir + '/img/dest',
 	},
 
 	deploy: {
@@ -68,7 +68,7 @@ function browsersync() {
 function scripts() {
 	return src(paths.scripts.src)
 		.pipe(concat(paths.jsOutputName))
-		.pipe(uglify())
+		/* .pipe(uglify()) */
 		.pipe(dest(paths.scripts.dest))
 		.pipe(browserSync.stream())
 }
@@ -78,7 +78,7 @@ function styles() {
 		.pipe(eval(preprocessor)())
 		.pipe(concat(paths.cssOutputName))
 		.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
-		.pipe(cleancss({ level: { 1: { specialComments: 0 } },/* format: 'beautify' */ }))
+		.pipe(cleancss({ level: { 1: { specialComments: 0 } },format: 'beautify' }))
 		.pipe(dest(paths.styles.dest))
 		.pipe(browserSync.stream())
 }
@@ -111,7 +111,7 @@ function deploy() {
 
 function startwatch() {
 	watch(baseDir + '/' + preprocessor + '/**/*', { usePolling: true }, styles);
-	watch(baseDir + '/images/src/**/*.{' + imageswatch + '}', { usePolling: true }, images);
+	watch(baseDir + '/img/src/**/*.{' + imageswatch + '}', { usePolling: true }, images);
 	watch(baseDir + '/**/*.{' + fileswatch + '}', { usePolling: true }).on('change', browserSync.reload);
 	watch([baseDir + '/js/**/*.js', '!' + paths.scripts.dest + '/*.min.js'], { usePolling: true }, scripts);
 }
