@@ -43,14 +43,13 @@
 /* Стилизация слайдера */
 
 /* Настройка контейнера */
-.swiper-container {
+.slidermainpage {
     width: 100%;
     height: 100%;
-}
-/* Настройка слайда */
-.swiper-slide {
-    padding: 140px 0px 100px 0;
-    overflow: hidden;
+    .swiper-slide {
+        padding: 140px 0px 100px 0;
+        overflow: hidden;
+    }
 }
 /* Свои стили для навигации слайдера */
 .custom_swiper_nav {

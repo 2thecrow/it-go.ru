@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="/img/favicon.png">
 	<!-- Main CSS -->
-	<link rel="stylesheet" href="/css/app.css">
+	<link rel="stylesheet" href="/css/app.min.css">
 	<!-- Swiper -->
 	<link rel="stylesheet" href="/css/swiper/swiper-bundle.min.css">
 	<script src="/css/swiper/swiper-bundle.min.js"></script>
@@ -22,172 +22,176 @@
 <body>
 	<div class="overlay"></div>
 
-	<header class="wrapper">
-		<!-- particles.js container -->
-		<div id="header-particles" class="particles-bg"></div>
-		<aside class="aside">
-			<!-- Бокового меню -->
-			<div class="aside__sidenav sidenav">
-				<div class="sidenav__closebtn">&times;</div>
-				<ul class="aside__menu aside-menu">
-					<li claas="aside-menu__item">
-						<a class="aside-menu__link" href="#">О компании</a>
-					</li>
-					<li claas="aside-menu__item">
-						<a class="aside-menu__link" href="#">Портфолио</a>
-					</li>
-					<li claas="aside-menu__item">
-						<a class="aside-menu__link" href="#">Наш блог</a>
-					</li>
-					<li claas="aside-menu__item">
-						<a class="aside-menu__link" href="#">Контакты</a>
-					</li>
-					<li claas="aside-menu__item">
-						<a class="aside-menu__link aside-menu__link_phone phone" href="tel:+88002003385">
-							<img src="images/dest/phone-icon.png" alt="Phone icon"> 
-							8 (800) 200-3385
-						</a>
-					</li>
-					<li claas="aside-menu__item">
-						<address class="aside-menu__address">
-							<img class="aside-menu__address-icon" src="images/dest/map-point-icon.png" alt="Phone icon">
-							<div class="aside-menu__address-text">
-								<span>г. Новокузнецк, </span><br> <span> пр. Октябрьский, 40(2-й этаж)</span>
-							</div>
-						</address>
-					</li>
-				</ul>
-				<ul class="socials-inner socials">
-					<li class="socials__item socials__item_vk">
-						<a class="socials__link" href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-								<path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486C22.864 8.997 25.22 6 23.136 6h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539A8.07 8.07 0 0011.148 5c-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305C4.976 6.426 4.902 6 4.042 6H.787C.295 6 0 6.16 0 6.516c0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" />
-							</svg>
-						</a>
-					</li>
-					<li class="socials__item socials__item_twitter">
-						<a class="socials__link" href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-								<path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z" />
-							</svg>
-						</a>
-					</li>
-					<li class="socials__item socials__item_facebook">
-						<a class="socials__link" href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-								<path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z" />
-							</svg>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="aside__nav aside-nav">
-				<!-- Кнопка меню -->
-				<div class="aside-nav__open open-btn">
-					<div class="open-btn__icon"> 
-						<img src="/images/dest/aside-menu-icon.png" alt="Открыть меню">
-					</div>
-					<span class="open-btn__text">меню</span>
-				</div>
-				<!-- Меню соц. сетей -->
-				<ul class="aside-nav__socials socials">
-					<li class="socials__item socials__item_vk">
-						<a class="socials__link" href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-								<path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486C22.864 8.997 25.22 6 23.136 6h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539A8.07 8.07 0 0011.148 5c-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305C4.976 6.426 4.902 6 4.042 6H.787C.295 6 0 6.16 0 6.516c0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" />
-							</svg>
-						</a>
-					</li>
-					<li class="socials__item socials__item_twitter">
-						<a class="socials__link" href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-								<path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z" />
-							</svg>
-						</a>
-					</li>
-					<li class="socials__item socials__item_facebook">
-						<a class="socials__link" href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-								<path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z" />
-							</svg>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</aside>
-		<div class="container">
-			<div class="row header-menu">
-				<div class="col-12 col-sm-6 col-md-6 col-lg-4">
-					<a href="#" class="header-menu__logo">
-						<img src="images/dest/it-go-logo.png" alt="Logo">
-						<span>студия веб-разработки <br> и маркетинга </span>
+	<aside class="aside">
+		<!-- Бокового меню -->
+		<div class="aside__sidenav sidenav">
+			<div class="sidenav__closebtn">&times;</div>
+			<ul class="aside__menu aside-menu">
+				<li class="aside-menu__item">
+					<a class="aside-menu__link" href="#">О компании</a>
+				</li>
+				<li class="aside-menu__item">
+					<a class="aside-menu__link" href="#">Портфолио</a>
+				</li>
+				<li class="aside-menu__item">
+					<a class="aside-menu__link" href="#">Наш блог</a>
+				</li>
+				<li class="aside-menu__item">
+					<a class="aside-menu__link" href="#">Контакты</a>
+				</li>
+				<li class="aside-menu__item">
+					<a class="aside-menu__link aside-menu__link_phone phone" href="tel:+88002003385">
+						<img src="/img/dest/phone-icon.png" alt="Phone icon"> 
+						8 (800) 200-3385
 					</a>
-				</div>
-				<div class="col-12 col-sm-6 col-md-auto col-lg-8">
-					<div class="header-menu__contacts">
-						<div class="header-contacts-phone">
-							Бесплатно по России <br>
-							<a href="tel:88002003385">8 (800) 200-3385</a>
+				</li>
+				<li class="aside-menu__item">
+					<address class="aside-menu__address">
+						<img class="aside-menu__address-icon" src="/img/dest/map-point-icon.png" alt="Phone icon">
+						<div class="aside-menu__address-text">
+							<span>г. Новокузнецк, </span><br> <span> пр. Октябрьский, 40(2-й этаж)</span>
 						</div>
-						<a href="#" class="header-contacts-button"><img src="images/dest/mail-icon.png" alt="contact mail"> Напишите нам</a>
-					</div>
-				</div>
-
-			</div>
+					</address>
+				</li>
+			</ul>
+			<ul class="socials-inner socials">
+				<li class="socials__item socials__item_vk">
+					<a class="socials__link" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+							<path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486C22.864 8.997 25.22 6 23.136 6h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539A8.07 8.07 0 0011.148 5c-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305C4.976 6.426 4.902 6 4.042 6H.787C.295 6 0 6.16 0 6.516c0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" />
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item socials__item_twitter">
+					<a class="socials__link" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+							<path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z" />
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item socials__item_facebook">
+					<a class="socials__link" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+							<path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z" />
+						</svg>
+					</a>
+				</li>
+			</ul>
 		</div>
-		<div class="header-content__wrap">
+		<div class="aside__nav aside-nav">
+			<!-- Кнопка меню -->
+			<div class="aside-nav__open open-btn">
+				<div class="open-btn__icon"> 
+					<img src="/img/dest/aside-menu-icon.png" alt="Открыть меню">
+				</div>
+				<span class="open-btn__text">меню</span>
+			</div>
+			<!-- Меню соц. сетей -->
+			<ul class="aside-nav__socials socials">
+				<li class="socials__item socials__item_vk">
+					<a class="socials__link" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+							<path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486C22.864 8.997 25.22 6 23.136 6h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539A8.07 8.07 0 0011.148 5c-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305C4.976 6.426 4.902 6 4.042 6H.787C.295 6 0 6.16 0 6.516c0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" />
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item socials__item_twitter">
+					<a class="socials__link" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+							<path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z" />
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item socials__item_facebook">
+					<a class="socials__link" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+							<path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z" />
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</aside>
+
+	<header class="header">
+		<div class="wrapper">
+			<!-- particles.js container -->
+			<div id="particle-container" class="particles-bg"></div>
+			
 			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="header-content">
-							<h1>Наши сайты — <br> ваш инструмент <br> повышения продаж</h1>
-							<p>
-								Текст, поясняющий подзаголовок, а так же побуждающий
-								нажать кнопку ниже. Текст кнопки ниже подобрать по смыслу
-							</p>
-							<a href="#" class="button">Заказать сайт</a>
+				<div class="row header-menu">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+						<a href="#" class="header-menu__logo">
+							<img src="/img/dest/it-go-logo.png" alt="Logo">
+							<span>студия веб-разработки <br> и маркетинга </span>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-md-auto col-lg-8">
+						<div class="header-menu__contacts">
+							<div class="header-contacts-phone">
+								Бесплатно по России <br>
+								<a href="tel:88002003385">8 (800) 200-3385</a>
+							</div>
+							<a href="#" class="header-contacts-button"><img src="/img/dest/mail-icon.png" alt="contact mail"> Напишите нам</a>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div class="header-content__info">
-							<div class="row">
-								<div class="col">
-									<div class="studio-age">
-										15
-									</div>
-								</div>
-								<div class="col ">
-									<div class="age-text">
-										<div class="age-text__years">лет</div>
-										<span class="age-text__description">успешно работаем в диджитал сфере</span>
-									</div>
-									
-								</div>
+
+				</div>
+			</div>
+			<div class="header-content__wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="header-content">
+								<h1>Наши сайты — <br> ваш инструмент <br> повышения продаж</h1>
+								<p>
+									Текст, поясняющий подзаголовок, а так же побуждающий
+									нажать кнопку ниже. Текст кнопки ниже подобрать по смыслу
+								</p>
+								<a href="#" class="button">Заказать сайт</a>
 							</div>
 						</div>
-						<div class="header-content__cards">
-							<div class="row">
-								<div class="col-lg-6 ">
-									<div class="header-content__card">
-										<div>
-											<div class="header-content__card-image">
-												<img src="images/dest/collaboration-icon.png" alt="Интересный пункт">
-											</div>
-											<div>Какой-то <br>интересный пункт</div>
+						<div class="col-md-6">
+							<div class="header-content__info">
+								<div class="row">
+									<div class="col">
+										<div class="studio-age">
+											15
 										</div>
 									</div>
-									
+									<div class="col ">
+										<div class="age-text">
+											<div class="age-text__years">лет</div>
+											<span class="age-text__description">успешно работаем в диджитал сфере</span>
+										</div>
+										
+									</div>
 								</div>
-								<div class="col-lg-6">
-									<div class="header-content__card">
-										<div>
-											<div class="header-content__card-image">
-												<img src="images/dest/header-code-icon.png" alt="Ещё один интересный пункт">
+							</div>
+							<div class="header-content__cards">
+								<div class="row">
+									<div class="col-lg-6 ">
+										<div class="header-content__card">
+											<div>
+												<div class="header-content__card-image">
+													<img src="/img/dest/collaboration-icon.png" alt="Интересный пункт">
+												</div>
+												<div>Какой-то <br>интересный пункт</div>
 											</div>
-											<div>Еще один <br>интересный пункт</div>
 										</div>
+										
 									</div>
-									
+									<div class="col-lg-6">
+										<div class="header-content__card">
+											<div>
+												<div class="header-content__card-image">
+													<img src="/img/dest/header-code-icon.png" alt="Ещё один интересный пункт">
+												</div>
+												<div>Еще один <br>интересный пункт</div>
+											</div>
+										</div>
+										
+									</div>
 								</div>
 							</div>
 						</div>
@@ -205,9 +209,9 @@
 					<div class="services__card">
 						<a href="#" class="services__card__header">
 							<!-- particles.js container -->
-							<div id="card-1-particles">
+							<div id="card-1-particles" class="particles-bg">
 							</div>
-							<img src="images/dest/usability-icon.png" alt="Разработка сайтов">
+							<img src="/img/dest/usability-icon.png" alt="Разработка сайтов">
 							<p>Разработка <br> сайтов</p>
 						</a>
 						<div class="services__card__list">
@@ -223,9 +227,9 @@
 					<div class="services__card">
 						<a href="#" class="services__card__header">
 							<!-- particles.js container -->
-							<div id="card-2-particles">
+							<div id="card-2-particles" class="particles-bg">
 							</div>
-							<img src="images/dest/headset-icon.png" alt="Обслуживание и поддержка">
+							<img src="/img/dest/headset-icon.png" alt="Обслуживание и поддержка">
 							<p>Обслуживание <br> и поддержка</p>
 						</a>
 						<div class="services__card__list">
@@ -241,9 +245,9 @@
 					<div class="services__card">
 						<a href="#" class="services__card__header">
 							<!-- particles.js container -->
-							<div id="card-3-particles">
+							<div id="card-3-particles" class="particles-bg">
 							</div>
-							<img src="images/dest/loupe-icon.png" alt="Реклама и продвижение">
+							<img src="/img/dest/loupe-icon.png" alt="Реклама и продвижение">
 							<p>Реклама <br> и продвижение</p>
 						</a>
 						<div class="services__card__list">
@@ -263,12 +267,12 @@
 		<h2>Портфолио</h2>
 		<div class="swiper-container slidermainpage">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide slide_bg" style="background:url(images/dest/mockup-slide1.png) no-repeat 50% 50%;">
+				<div class="swiper-slide slide_bg" style="background:url(/img/dest/mockup-slide1.png) no-repeat 50% 50%;">
 					<div class="portfolio__content container">
 						<div class="portfolio__mockups">
-							<img src="images/dest/mockup-3.png" alt="Mockup image">
-							<img src="images/dest/mockup-2.png" alt="Mockup image">
-							<img src="images/dest/mockup-1.png" alt="Mockup image">
+							<img src="/img/dest/mockup-3.png" alt="Mockup image">
+							<img src="/img/dest/mockup-2.png" alt="Mockup image">
+							<img src="/img/dest/mockup-1.png" alt="Mockup image">
 						</div>
 						<div class="portfolio__site">
 							<h3>Разработка свадебного <br> портала Wedhub.ru</h3>
@@ -288,12 +292,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="swiper-slide slide_bg" style="background:url(images/dest/mockup-slide2.png) no-repeat 50% 50%;">
+				<div class="swiper-slide slide_bg" style="background:url(/img/dest/mockup-slide2.png) no-repeat 50% 50%;">
 					<div class="portfolio__content container">
 						<div class="portfolio__mockups">
-							<img src="images/dest/mockup-3.png" alt="Mockup image">
-							<img src="images/dest/mockup-2.png" alt="Mockup image">
-							<img src="images/dest/mockup-1.png" alt="Mockup image">
+							<img src="/img/dest/mockup-3.png" alt="Mockup image">
+							<img src="/img/dest/mockup-2.png" alt="Mockup image">
+							<img src="/img/dest/mockup-1.png" alt="Mockup image">
 						</div>
 						<div class="portfolio__site">
 							<h3>Разработка свадебного <br> портала Wedhub.ru</h3>
@@ -313,12 +317,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="swiper-slide slide_bg" style="background:url(images/dest/mockup-slide3.png) no-repeat 50% 50%;">
+				<div class="swiper-slide slide_bg" style="background:url(/img/dest/mockup-slide3.png) no-repeat 50% 50%;">
 					<div class="portfolio__content container">
 						<div class="portfolio__mockups">
-							<img src="images/dest/mockup-3.png" alt="Mockup image">
-							<img src="images/dest/mockup-2.png" alt="Mockup image">
-							<img src="images/dest/mockup-1.png" alt="Mockup image">
+							<img src="/img/dest/mockup-3.png" alt="Mockup image">
+							<img src="/img/dest/mockup-2.png" alt="Mockup image">
+							<img src="/img/dest/mockup-1.png" alt="Mockup image">
 						</div>
 						<div class="portfolio__site">
 							<h3>Разработка свадебного <br> портала Wedhub.ru</h3>
@@ -405,7 +409,7 @@
 					<div class="benefits__list__card">
 						<div class="benefits__list__card-inner">
 							<div class="benefits__list__item-front">
-								<img src="images/dest/solution-icon.png" alt="Solution icon">
+								<img src="/img/dest/solution-icon.png" alt="Solution icon">
 								<p>Комплексный подход</p>
 							</div>
 							<div class="benefits__list__item-back">
@@ -416,7 +420,7 @@
 					<div class="benefits__list__card">
 						<div class="benefits__list__card-inner">
 							<div class="benefits__list__item-front">
-								<img src="images/dest/iconmonstr-share-6-64.png" alt="Share icon">
+								<img src="/img/dest/iconmonstr-share-6-64.png" alt="Share icon">
 								<p>Ответсвенность перед заказчиком</p>
 							</div>
 							<div class="benefits__list__item-back">
@@ -427,7 +431,7 @@
 					<div class="benefits__list__card">
 						<div class="benefits__list__card-inner">
 							<div class="benefits__list__item-front">
-								<img src="images/dest/brilliant-icon.png" alt="Price icon">
+								<img src="/img/dest/brilliant-icon.png" alt="Price icon">
 								<p>Честная ценовая политика
 								</p>
 							</div>
@@ -439,7 +443,7 @@
 					<div class="benefits__list__card">
 						<div class="benefits__list__card-inner">
 							<div class="benefits__list__item-front">
-								<img src="images/dest/world-icon.png" alt="Work icon">
+								<img src="/img/dest/world-icon.png" alt="Work icon">
 								<p>Работаем по всей России</p>
 							</div>
 							<div class="benefits__list__item-back">
@@ -450,7 +454,7 @@
 					<div class="benefits__list__card">
 						<div class="benefits__list__card-inner">
 							<div class="benefits__list__item-front">
-								<img src="images/dest/web-settings-icon.png" alt="Time icon">
+								<img src="/img/dest/web-settings-icon.png" alt="Time icon">
 								<p>Опыт крупных разработок
 								</p>
 							</div>
@@ -462,7 +466,7 @@
 					<div class="benefits__list__card">
 						<div class="benefits__list__card-inner">
 							<div class="benefits__list__item-front">
-								<img src="images/dest/rocket-icon.png" alt="High speed icon">
+								<img src="/img/dest/rocket-icon.png" alt="High speed icon">
 								<p>Высокая скорость работы
 								</p>
 							</div>
@@ -492,7 +496,7 @@
 						</nav>
 					</div>
 					<div class="col-sm-12 col-md-auto col-lg-auto">
-						<a href="#" class="footer_mail"><img src="images/dest/mail-footer-icon.png" alt="Footer mail icon">Напишите нам</a>
+						<a href="#" class="footer_mail"><img src="/img/dest/mail-footer-icon.png" alt="Footer mail icon">Напишите нам</a>
 					</div>
 				</div>
 			</div>
@@ -504,12 +508,12 @@
 					<div class="col-12 col-sm-12 col-md-8 col-lg-6">
 						<div class="row contact__info">
 							<div class="col-sm-12 col-md-6 col-lg-6 contact__info__item phone">
-								<img src="images/dest/phone-icon.png" alt="Phone icon">
+								<img src="/img/dest/phone-icon.png" alt="Phone icon">
 								<a href="tel:88002003385">8 (800) 200-3385</a>
 								<span>Бесплатно по России</span>
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-6 contact__info__item">
-								<img src="images/dest/map-point-icon.png" alt="Map icon">
+								<img src="/img/dest/map-point-icon.png" alt="Map icon">
 								г. Новокузнецк
 								<br><span>пр. Октябрьский, 40, 2-й этаж</span>
 							</div>

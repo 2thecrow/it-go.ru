@@ -1,5 +1,6 @@
 @import 'config';
 @import 'globals';
+@import 'particles-bg';
 @import 'aside';
 
 /* Главный экран с меню на главной странице */
@@ -425,7 +426,7 @@ header {
     justify-content: center;
     max-width: 1920px;
     margin: 0 auto;
-    background: url(../images/dest/big-map.png);
+    background: url(/img/dest/big-map.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -451,7 +452,7 @@ header {
     form {
         margin: 0 auto;
         color: $textgrey;
-        background: rgba(223,228,236,0.9) url(../images/dest/form-bg.png) no-repeat;
+        background: rgba(223,228,236,0.9) url(/img/dest/form-bg.png) no-repeat;
         background-size: cover;
         max-width: 380px;
         padding: 50px 45px 45px 45px;
@@ -850,13 +851,13 @@ footer {
                     margin-right: 12px;
                 }
                 .webdev-icon {
-                    background-image: url(../images/dest/usability-white-icon.png);
+                    background-image: url(/img/dest/usability-white-icon.png);
                 }
                 .support-icon {
-                    background-image: url(../images/dest/headset-white-icon.png);
+                    background-image: url(/img/dest/headset-white-icon.png);
                 }
                 .seo-icon {
-                    background-image: url(../images/dest/loupe-white-icon.png);
+                    background-image: url(/img/dest/loupe-white-icon.png);
                 }
                 .dropdown-arrow {
                     display: inline-block;
@@ -866,7 +867,7 @@ footer {
                     right: 25px;
                     top: 50%;
                     margin-top: -5px;
-                    background-image: url(../images/dest/inner-page-menu-arrow-down-white-icon.png);
+                    background-image: url(/img/dest/inner-page-menu-arrow-down-white-icon.png);
                 }
             }
             /* Меню внутренних страниц */
@@ -906,13 +907,13 @@ footer {
                     }
                     &:hover {
                         .ecommerce-icon {
-                            background-image: url(../images/dest/inner-page-ecommerce-icon-blue.png);
+                            background-image: url(/img/dest/inner-page-ecommerce-icon-blue.png);
                         }
                         .corporate-icon {
-                            background-image: url(../images/dest/inner-page-corporate-icon-blue.png);
+                            background-image: url(/img/dest/inner-page-corporate-icon-blue.png);
                         }
                         .landing-icon {
-                            background-image: url(../images/dest/inner-page-landing-icon-blue.png);
+                            background-image: url(/img/dest/inner-page-landing-icon-blue.png);
                     }
                     }
                     
@@ -925,13 +926,13 @@ footer {
                         background-position: top;
                     }
                     .ecommerce-icon {
-                        background-image: url(../images/dest/inner-page-ecommerce-icon-grey.png);
+                        background-image: url(/img/dest/inner-page-ecommerce-icon-grey.png);
                     }
                     .corporate-icon {
-                        background-image: url(../images/dest/inner-page-corporate-icon-grey.png);
+                        background-image: url(/img/dest/inner-page-corporate-icon-grey.png);
                     }
                     .landing-icon {
-                        background-image: url(../images/dest/inner-page-landing-icon-grey.png);
+                        background-image: url(/img/dest/inner-page-landing-icon-grey.png);
                     }
                     &:not(:last-child):after { 
                         content: '';
@@ -952,16 +953,16 @@ footer {
                     border: 1px solid #fff;
                     border-radius: 4px 4px 0 0;
                     .webdev-icon {
-                        background-image: url(../images/dest/usability-blue-icon.png);
+                        background-image: url(/img/dest/usability-blue-icon.png);
                     }
                     .support-icon {
-                        background-image: url(../images/dest/headset-blue-icon.png);
+                        background-image: url(/img/dest/headset-blue-icon.png);
                     }
                     .seo-icon {
-                        background-image: url(../images/dest/loupe-blue-icon.png);
+                        background-image: url(/img/dest/loupe-blue-icon.png);
                     }
                     .dropdown-arrow {
-                        background-image: url(../images/dest/inner-page-menu-arrow-down-blue-icon.png);
+                        background-image: url(/img/dest/inner-page-menu-arrow-down-blue-icon.png);
                     }
                 }
                 &:after { 
@@ -987,7 +988,7 @@ footer {
     position: relative;
     max-width: 1920px;
     margin: 0 auto;
-    background: url(../images/dest/service-hero-bg.png) no-repeat 50%;
+    background: url(/img/dest/service-hero-bg.png) no-repeat 50%;
     padding: 130px 0 160px;
     margin-bottom: 90px;
     /* заголовок */
@@ -1109,7 +1110,7 @@ footer {
 .service-callback {
     max-width: 1920px;
     margin: 0 auto;
-    background: url(../images/dest/service-callback-bg.png);
+    background: url(/img/dest/service-callback-bg.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -1215,7 +1216,7 @@ footer {
     .callback-form {
         text-align: center;
         padding: 50px 100px 50px 100px;
-        background: linear-gradient(0.25turn, $accent 70%, rgba($color: $accent, $alpha: 0.8)) ,url(../images/dest/technical-support-callback-bg.png);
+        background: linear-gradient(0.25turn, $accent 70%, rgba($color: $accent, $alpha: 0.8)) ,url(/img/dest/technical-support-callback-bg.png);
         background-repeat: no-repeat;
         background-position: right center;
         display: flex;
@@ -1547,7 +1548,7 @@ footer {
         .callback-form {
             text-align: center;
             padding: 50px 100px 50px 100px;
-            background: linear-gradient(0.25turn, $accent 70%, rgba($color: $accent, $alpha: 0.8)) ,url(../images/dest/technical-support-callback-bg.png);
+            background: linear-gradient(0.25turn, $accent 70%, rgba($color: $accent, $alpha: 0.8)) ,url(/img/dest/technical-support-callback-bg.png);
             background-repeat: no-repeat;
             background-position: right center;
             display: flex;
@@ -1643,7 +1644,7 @@ footer {
 .service-callback-seo {
     max-width: 1920px;
     margin: 0 auto;
-    background: url(../images/dest/service-callback-grey-bg.png);
+    background: url(/img/dest/service-callback-grey-bg.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -1655,7 +1656,7 @@ footer {
     .callback-form {
         text-align: center;
         padding: 50px 100px 50px 100px;
-        background: linear-gradient(0.25turn, $accent 70%, rgba($color: $accent, $alpha: 0.8)) ,url(../images/dest/technical-support-callback-bg.png);
+        background: linear-gradient(0.25turn, $accent 70%, rgba($color: $accent, $alpha: 0.8)) ,url(/img/dest/technical-support-callback-bg.png);
         background-repeat: no-repeat;
         background-position: right center;
         display: flex;
@@ -1807,7 +1808,7 @@ footer {
     position: relative;
     max-width: 1920px;
     margin: 0 auto;
-    background: url(../images/dest/service-hero-seo-bg.png) no-repeat 50%;
+    background: url(/img/dest/service-hero-seo-bg.png) no-repeat 50%;
     padding: 130px 0 160px;
     margin-bottom: 90px;
     /* заголовок */
@@ -1897,12 +1898,12 @@ footer {
                     padding: 3px 13px 3px;
                 }
                 &.advertising-item {
-                    background: url(../images/dest/service-seo-advertising-bg.jpg);
+                    background: url(/img/dest/service-seo-advertising-bg.jpg);
                     background-color: #fff;
                     background-repeat: no-repeat;
                     background-position: right bottom;
                     &:hover {
-                        background: url(../images/dest/service-seo-advertising-blue-bg.jpg);
+                        background: url(/img/dest/service-seo-advertising-blue-bg.jpg);
                         background-color: #005aa3;
                         background-repeat: no-repeat;
                         background-position: right bottom;
@@ -1910,12 +1911,12 @@ footer {
                     }
                 }
                 &.seo-item {
-                    background: url(../images/dest/service-seo-seo-bg.jpg);
+                    background: url(/img/dest/service-seo-seo-bg.jpg);
                     background-color: #fff;
                     background-repeat: no-repeat;
                     background-position: right bottom;
                     &:hover {
-                        background: url(../images/dest/service-seo-seo-blue-bg.jpg);
+                        background: url(/img/dest/service-seo-seo-blue-bg.jpg);
                         background-color: #005aa3;
                         background-repeat: no-repeat;
                         background-position: right bottom;
@@ -1923,12 +1924,12 @@ footer {
                     }
                 }
                 &.smm-item {
-                    background: url(../images/dest/service-seo-smm-bg.jpg);
+                    background: url(/img/dest/service-seo-smm-bg.jpg);
                     background-color: #fff;
                     background-repeat: no-repeat;
                     background-position: right bottom;
                     &:hover {
-                        background: url(../images/dest/service-seo-smm-blue-bg.jpg);
+                        background: url(/img/dest/service-seo-smm-blue-bg.jpg);
                         background-color: #005aa3;
                         background-repeat: no-repeat;
                         background-position: right bottom;
@@ -1954,7 +1955,7 @@ footer {
     position: relative;
     max-width: 1920px;
     margin: 0 auto;
-    background: url(../images/dest/corporate-bg.png) no-repeat 50%;
+    background: url(/img/dest/corporate-bg.png) no-repeat 50%;
     &__wrapper {
         position: relative;
     }
@@ -2058,7 +2059,7 @@ footer {
     }
 }
 .corpotate-benefit-big-bg {
-    background: url(../images/dest/corporate-big-bg.png) no-repeat center center;
+    background: url(/img/dest/corporate-big-bg.png) no-repeat center center;
     padding: 120px 0;
     margin-top: 100px;
     h3 {

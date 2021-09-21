@@ -19,7 +19,7 @@ let paths = {
 	},
 
 	styles: {
-		src: baseDir + '/' + preprocessor + '/main.*',
+		src: baseDir + '/' + preprocessor + '/*',
 		dest: baseDir + '/css',
 	},
 
@@ -67,7 +67,7 @@ function browsersync() {
 
 function scripts() {
 	return src(paths.scripts.src)
-		.pipe(concat(paths.jsOutputName))
+		/* .pipe(concat(paths.jsOutputName)) */
 		/* .pipe(uglify()) */
 		.pipe(dest(paths.scripts.dest))
 		.pipe(browserSync.stream())
@@ -76,7 +76,7 @@ function scripts() {
 function styles() {
 	return src(paths.styles.src)
 		.pipe(eval(preprocessor)())
-		.pipe(concat(paths.cssOutputName))
+		/* .pipe(concat(paths.cssOutputName)) */
 		.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
 		.pipe(cleancss({ level: { 1: { specialComments: 0 } },format: 'beautify' }))
 		.pipe(dest(paths.styles.dest))
