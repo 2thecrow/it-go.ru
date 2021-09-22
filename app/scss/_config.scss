@@ -1,12 +1,6 @@
 // USER VARIABLES SECTION
 
-$accent: #005aa3; // Accent Color
-$fontsize: 10px; // Body Font Size
-$textwhite: #ffffff; // Text Color White
-$textinner: #242a2e; // Inner text color
-$textgrey: #353b3e; // Text Color Grey
-$hoverlightblue:  #add3eb; // Hover Color Blue
-$hoverlightgrey: #f4f6f9; // Hover Color Grey
+
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 $roboto: Roboto, $system; // Roboto Font Family
 
@@ -33,13 +27,16 @@ $container-max-widths: (sm: 540px, md: 750px,  lg: 990px, xl: 1200px);
 		src: local($fname), url($furl) format('woff2');
 	}
 }
-@include font('Roboto', normal, 100, '../fonts/roboto-thin.woff2');
-@include font('Roboto', normal, 300, '../fonts/roboto-light.woff2');
-@include font('Roboto', italic, 300, '../fonts/roboto-light-italic.woff2');
-@include font('Roboto', normal, 400, '../fonts/roboto-regular.woff2');
-@include font('Roboto', normal, 700, '../fonts/roboto-bold.woff2');
-@include font('Roboto', normal, 900, '../fonts/roboto-black.woff2');
-@include font('Roboto', italic, 900, '../fonts/roboto-black-italic.woff2');
+@include font('Roboto', normal, 100, '../fonts/roboto-100.woff2');
+@include font('Roboto', italic, 100, '../fonts/roboto-100-italic.woff2');
+@include font('Roboto', normal, 300, '../fonts/roboto-300.woff2');
+@include font('Roboto', italic, 300, '../fonts/roboto-300-italic.woff2');
+@include font('Roboto', normal, 400, '../fonts/roboto-400.woff2');
+@include font('Roboto', italic, 400, '../fonts/roboto-400-italic.woff2');
+@include font('Roboto', normal, 700, '../fonts/roboto-700.woff2');
+@include font('Roboto', italic, 700, '../fonts/roboto-700-italic.woff2');
+@include font('Roboto', normal, 900, '../fonts/roboto-900.woff2');
+@include font('Roboto', italic, 900, '../fonts/roboto-900-italic.woff2');
 @include font('Roboto-Condensed', normal, 700, '../fonts/roboto-condensed-bold.woff2');
 
 // GENERAL DOCUMENT STYLES
@@ -64,10 +61,10 @@ html {
 }
 body {
 	font-family: $roboto;
-	font-size: $fontsize;
+	font-size: var(--fontsize);
 	position: relative;
 	line-height: 1.65;
 	overflow-x: hidden;
-	color: $textwhite;
+	color: var(--textwhite);
 	background-color: #ebeff5;
 }

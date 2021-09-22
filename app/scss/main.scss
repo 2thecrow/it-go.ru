@@ -28,7 +28,7 @@
     /* Обертка для слайда */
     &__content {
         background-color: #fff;
-        color: $textgrey;
+        color: var(--textgrey);
         display: flex;
         padding: 80px 0 80px 0;
         margin-top: 37px;
@@ -52,7 +52,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        color: $textgrey;
+        color: var(--textgrey);
         max-width: 460px;
         min-width: 320px;
         h3 {
@@ -116,7 +116,7 @@
     /* Кнопка подробнее */
     &__btn {
         background-color: #dce5ef;
-        color: $accent;
+        color: var(--accent);
         font-size: 14px;
         font-weight: 900;
         padding: 9px 17px 9px 17px;
@@ -128,7 +128,7 @@
         }
         &:hover {
             text-decoration: none;
-            color: $textwhite;
+            color: var(--textwhite);
             background-color: #add3eb;
         }
     }
@@ -145,7 +145,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: $accent;
+    background-color: var(--accent);
     padding: 95px 0 400px 0;
     &__text {
         width: 565px;
@@ -165,7 +165,7 @@
     /* стили для формы */
     form {
         margin: 0 auto;
-        color: $textgrey;
+        color: var(--textgrey);
         background: rgba(223,228,236,0.9) url(/img/dest/form-bg.png) no-repeat;
         background-size: cover;
         max-width: 380px;
@@ -208,8 +208,8 @@
                 margin: 0 auto 25px auto;
                 max-width: 300px;
                 min-width: 280px;
-                background-color: $accent;
-                color: $textwhite;
+                background-color: var(--accent);
+                color: var(--textwhite);
                 font-size: 14px;
                 font-weight: 900;
                 text-decoration: none;
@@ -250,7 +250,7 @@
     margin: 0 auto;
     padding: 120px 0 75px 0;
     text-align: center;
-    color: $textgrey;
+    color: var(--textgrey);
     h2 {
         font-size: 56px;
         font-weight: 900;
@@ -386,7 +386,7 @@ footer {
                         text-decoration: none; 
                         font-weight: 900;
                         font-size: 18px;
-                        color: $accent;
+                        color: var(--accent);
                         margin-right: 30px;
                         img {
                             margin-right: 10px;
@@ -400,7 +400,7 @@ footer {
             font-weight: 900;
             font-size: 14px;
             display: block;
-            color: $accent;
+            color: var(--accent);
             text-transform: uppercase;
             text-decoration: none;
             max-width: 200px;
@@ -412,7 +412,7 @@ footer {
                 margin-right: 10px;
             }
             &:hover {
-                border: 4px solid $accent;
+                border: 4px solid var(--accent);
             }
         }
     }
@@ -439,7 +439,7 @@ footer {
                 &__item {
                     font-weight: 900;
                     font-size: 22px;
-                    color: $textgrey;
+                    color: var(--textgrey);
                     padding-left: 0;
                     line-height: 24px;
                     max-width: 210px;
@@ -449,7 +449,7 @@ footer {
                     }
                     /* ссылка */
                     a {
-                        color: $textgrey;
+                        color: var(--textgrey);
                         text-decoration: none;
                     }
                     /* текст под ссылкой */
@@ -499,13 +499,13 @@ footer {
         align-items: center;
         width: 100%;
         background-color: #e2e7f0;
-        color: $textgrey;
+        color: var(--textgrey);
         font-weight: 400;
         font-size: 16px;
         line-height: 32px;
         padding: 15px 0;
         .policy {
-            color: $accent;
+            color: var(--accent);
             margin-right: 30px;
         }
         p {
@@ -554,7 +554,7 @@ footer {
                 }
                 &:hover {
                     background-color: #fff;
-                    color: $accent;
+                    color: var(--accent);
                     border: 1px solid #fff;
                     border-radius: 4px 4px 0 0;
                 }
@@ -597,7 +597,7 @@ footer {
                     list-style-type: none;
                     margin: 0px;
                     padding: 0px;
-                    background-color: $textwhite;
+                    background-color: var(--textwhite);
                     border-radius: 0 0 4px 4px;
                     box-shadow: 0px 16px 32px 0px rgba(176, 186, 193, 0.24);
                 }
@@ -612,11 +612,11 @@ footer {
                         line-height: 26px;
                         padding: 30px 0px 30px 40px;
                         text-decoration: none;
-                        color: $textgrey;
+                        color: var(--textgrey);
                         border: none;
                         &:hover {
-                            background-color: $hoverlightgrey;
-                            color: $accent;
+                            background-color: var(--hoverlightgrey);
+                            color: var(--accent);
                         }
                     }
                     &:hover {
@@ -718,7 +718,7 @@ footer {
         font-weight: 300;
         font-size: 20px;
         line-height: 32px;
-        color: $textinner;
+        color: var(--textinner);
         background-color: #fff;
         width: 100%;
         max-width: 1140px;
@@ -741,7 +741,7 @@ footer {
 .service-bonus {
     max-width: 1920px;
     margin: 0 auto;
-    color: $textinner;
+    color: var(--textinner);
     padding: 120px 0 130px 0;
     h2 {
         font-weight: 900;
@@ -888,7 +888,7 @@ footer {
         display: flex;
         align-items: flex-start;
         background-color: #fff;
-        color: $textinner;
+        color: var(--textinner);
         padding: 55px 90px 55px 55px;
         box-shadow: 0px 16px 32px 0px rgba(176, 186, 193, 0.24);
         /* иконка  */
@@ -930,7 +930,7 @@ footer {
     .callback-form {
         text-align: center;
         padding: 50px 100px 50px 100px;
-        background: linear-gradient(0.25turn, $accent 70%, rgba($color: $accent, $alpha: 0.8)) ,url(/img/dest/technical-support-callback-bg.png);
+        background: linear-gradient(0.25turn, var(--accent) 70%, rgba($color: var(--accent), $alpha: 0.8)) ,url(/img/dest/technical-support-callback-bg.png);
         background-repeat: no-repeat;
         background-position: right center;
         display: flex;
@@ -1046,7 +1046,7 @@ footer {
                 font-weight: 900;
                 font-size: 24px;
                 line-height: 32px;
-                color: $accent;
+                color: var(--accent);
             }
             h4 {
                 font-weight: 700;
@@ -1116,15 +1116,15 @@ footer {
     }
     /* Стили кнопок слайдера */
     .custom_swiper_nav {
-        color: $accent;
+        color: var(--accent);
         .arrow-box {
-            border: 2px solid $accent;
+            border: 2px solid var(--accent);
             &:hover {
-                background-color: rgba($color: $accent, $alpha: 0.2);
+                background-color: rgba($color: var(--accent), $alpha: 0.2);
             }
         }
         .swiper-pagination-fraction {
-            color: $accent;
+            color: var(--accent);
         }
     }
 }
@@ -1145,7 +1145,7 @@ footer {
     position: relative;
     max-width: 1920px;
     margin: 0 auto;
-    background-color: $accent;
+    background-color: var(--accent);
     &__wrapper {
         text-align: center;
         padding: 130px 0 100px;
@@ -1171,7 +1171,7 @@ footer {
             font-weight: 900;
             font-size: 24px;
             line-height: 60px;
-            color: $accent;
+            color: var(--accent);
         }
         li {
             display: flex;
@@ -1201,7 +1201,7 @@ footer {
             &:nth-last-child(2) {
                 span {
                     &:last-child {
-                        color: $accent;
+                        color: var(--accent);
                         text-transform: uppercase;
                     }
                 }
@@ -1223,7 +1223,7 @@ footer {
                 color:#fff;
             }
             &.not-first {
-                color: $accent;
+                color: var(--accent);
                 background-color: #f3f5f9;
                 box-shadow: none;
                 transition: all ease 0.2s;
@@ -1262,7 +1262,7 @@ footer {
         .callback-form {
             text-align: center;
             padding: 50px 100px 50px 100px;
-            background: linear-gradient(0.25turn, $accent 70%, rgba($color: $accent, $alpha: 0.8)) ,url(/img/dest/technical-support-callback-bg.png);
+            background: linear-gradient(0.25turn, var(--accent) 70%, rgba($color: var(--accent), $alpha: 0.8)) ,url(/img/dest/technical-support-callback-bg.png);
             background-repeat: no-repeat;
             background-position: right center;
             display: flex;
@@ -1364,13 +1364,13 @@ footer {
     background-attachment: fixed;
     background-size: cover;
     padding: 130px 0;
-    color: $textgrey;
+    color: var(--textgrey);
     position: relative;
     /* Форма обратной связи с синим фоном */
     .callback-form {
         text-align: center;
         padding: 50px 100px 50px 100px;
-        background: linear-gradient(0.25turn, $accent 70%, rgba($color: $accent, $alpha: 0.8)) ,url(/img/dest/technical-support-callback-bg.png);
+        background: linear-gradient(0.25turn, var(--accent) 70%, rgba($color: var(--accent), $alpha: 0.8)) ,url(/img/dest/technical-support-callback-bg.png);
         background-repeat: no-repeat;
         background-position: right center;
         display: flex;
@@ -1498,7 +1498,7 @@ footer {
                 font-weight: 900;
                 font-size: 24px;
                 line-height: 24px;
-                color: $textgrey;
+                color: var(--textgrey);
                 /* выделение текста цветом */
                 span {
                     font-weight: 900;
@@ -1538,7 +1538,7 @@ footer {
         font-weight: 300;
         font-size: 20px;
         line-height: 32px;
-        color: $textinner;
+        color: var(--textinner);
         background-color: #fff;
         width: 100%;
         max-width: 1140px;
@@ -1563,7 +1563,7 @@ footer {
     padding: 100px 0 225px 0;
     text-align: center;
     h2 {
-        color: $textinner;
+        color: var(--textinner);
         font-size: 700px;
         font-size: 32px;
         line-height: 52px;
@@ -1585,7 +1585,7 @@ footer {
             }
             a {
                 display: block;
-                color: $textinner;
+                color: var(--textinner);
                 text-decoration: none;
                 padding: 60px 50px 80px 50px;
                 h3 {
@@ -1605,9 +1605,9 @@ footer {
                     font-weight: 900;
                     font-size: 14px;
                     line-height: 24px;
-                    color: $textinner;
+                    color: var(--textinner);
                     text-transform: uppercase;
-                    border: 2px solid $textinner;
+                    border: 2px solid var(--textinner);
                     border-radius: 2px;
                     padding: 3px 13px 3px;
                 }
@@ -1653,7 +1653,7 @@ footer {
                 &:hover {
                     cursor: pointer;
                     .service-seo-btn {
-                        color: $textinner;
+                        color: var(--textinner);
                         border-color: #fff;
                         background-color: #fff;
                     }
@@ -1687,7 +1687,7 @@ footer {
         font-weight: 300;
         font-size: 20px;
         line-height: 32px;
-        color: $textinner;
+        color: var(--textinner);
         background-color: #fff;
         width: 100%;
         max-width: 1140px;
@@ -1719,7 +1719,7 @@ footer {
     h2 {
         font-weight: 900;
         font-size: 64px;
-        color: $textinner;
+        color: var(--textinner);
         margin-bottom: 51px;
     }
 }
@@ -1756,7 +1756,7 @@ footer {
             font-weight: 900;
             font-size: 24px;
             line-height: 32px;
-            color: $accent;
+            color: var(--accent);
             letter-spacing: 0.144;
             margin-bottom: 0;
         }
@@ -1766,7 +1766,7 @@ footer {
             font-weight: 300;
             font-size: 20px;
             line-height: 30px;
-            color: $textinner;
+            color: var(--textinner);
             padding: 0 35px 0 0;
             margin-bottom: 0;
         }

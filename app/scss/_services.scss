@@ -1,83 +1,98 @@
 .services {
-    padding: 129px 0 80px;
-    /* стили для карточки с услугами */
-    &__card {
+    padding: 125px 0 90px;
+}
+
+.service-card {
+    position: relative;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 16px 32px 0px rgba(176, 186, 193, 0.24);
+    &:hover {
+        box-shadow: none;
+    }
+    &__top {
         position: relative;
-        margin: 0 auto 40px;
-        transition: box-shadow 0.5s ease;
-        /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25) ; */
-        box-shadow: 0px 16px 32px 0px rgba(176, 186, 193, 0.24);
+        display: block;
+        padding: 65px 40px 30px;
+        background-color: #00559e;
         &:hover {
-            box-shadow: none;
-        }
-        /* хедер карточки с анимацией */
-        &__header {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            background-color: $accent;
-            text-decoration: none;
-            /* иконка */
-            img {
-                position: relative;
-                margin: 62px 0px 33px 42px;
-                height: 56px;
-                width: 56px;
-            }
-            /* текст */
-            p {
-                color: #fff;
-                position: relative;
-                font-size: 32px;
-                line-height: 40px;
-                font-weight: 900;
-                margin: 0 0 31px 42px;
-            }
-            &:hover {
-                text-decoration: none;
-            }
-        }
-        /* список услуг */
-        &__list {
-            background-color: $textwhite;
-            text-transform: uppercase;
-            /* стилизация списка */
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                /* элемент списка */
-                li {
-                    &:not(:last-child):after { 
-                        content: '';
-                        position: absolute;
-                        margin: 0 auto;
-                        left: 0;
-                        right: 0;
-                        height: 1px;
-                        background-color: #e6eaec;
-                        width: 80%;
-                    }
-                    /* ссылка на услугу */
-                    a {
-                        position: relative;
-                        font-weight: 700;
-                        font-size: 14px;
-                        line-height: 20px;
-                        display: block;
-                        padding: 30px 0px 30px 42px;
-                        text-decoration: none;
-                        color: $textgrey;
-                        transition: all 0.25s ease;
-                        &:hover {
-                            background-color: $hoverlightgrey;
-                            color: $accent;
-                            transition: all 0.25s ease;
-                        }
-                        
-                    }
-                }
+            transition: all .3s ease-in-out;
+            .service-card__description {
+                text-decoration: underline;
+                transition: all .3s ease-in-out;
             }
         }
     }
+    &__header {
+    }
+    &__icon {
+        position: relative;
+        margin-bottom: 35px;
+    }
+    &__description {
+        position: relative;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 40px;
+        color: #fff;
+        overflow: hidden; /* include for safety */
+        display: -webkit-box; /* setting a block element  */
+        -webkit-box-orient: vertical; /* companion class   */
+        -webkit-line-clamp: 2; /* number of lines  */
+        transition: all .3s ease-in-out;
+    }
+    &__list {}
+}
+
+.service-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--textwhite);
+    text-transform: uppercase;
+    &__item {
+
+    }
+    &__link {
+        position: relative;
+        display: block;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--textgrey);
+        letter-spacing: 0.04em;
+        padding: 0 40px;
+        text-decoration: none;
+        transition: all 0.25s ease;
+        span {
+            position: relative;
+            display: block;
+            padding: 30px 0;
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                height: 1px;
+                background-color: #e6eaec;
+                
+            }   
+        }
+        &:hover {
+            span {
+                &::before {
+                    display: none;
+                }
+            }
+            background-color: var(--hoverlightgrey);
+            color: var(--accent);
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+    }
+}
+
+.service-list__item:hover + .service-list__item .service-list__link span::before  {
+    display: none;
 }

@@ -40,7 +40,7 @@
         margin: 0 0 0 auto;
         &:hover {
             color: rgba(0, 117, 191, .8);
-            background-color: $hoverlightgrey;
+            background-color: var(--hoverlightgrey);
         }
     }
     &.open {
@@ -79,7 +79,7 @@
             width: 100%;
         }
         &:hover {
-            background-color: $hoverlightgrey;
+            background-color: var(--hoverlightgrey);
             transition: all .25s ease;
             &::after {
                 display: none;
@@ -91,7 +91,7 @@
     }
     &__link {
         display: block;
-        color: $textgrey;
+        color: var(--textgrey);
         padding: 0 25px 0 25px;
         text-decoration: none;
         transition: all .25s ease;
@@ -101,7 +101,7 @@
         letter-spacing: 0.008em;
         text-decoration: none;
         &:hover {
-            color: $textgrey;
+            color: var(--textgrey);
             transition: all .25s ease;
             text-decoration: none;
         }
@@ -110,12 +110,12 @@
             align-items: center;
             line-height: 80px;
             letter-spacing: 0;
-            color: $accent;
+            color: var(--accent);
             img {
                 margin: 0 8px 0 0;
             }
             &:hover {
-                color: $textgrey;
+                color: var(--textgrey);
       
             }
         }
@@ -125,8 +125,8 @@
         font-weight: 300;
         font-size: 16px;
         line-height: 24px;
-        color: $textgrey;
-        padding: 25px 25px 10px 25px;
+        color: var(--textgrey);
+        padding: 25px 25px 25px 25px;
         margin: 0;
     }
     &__address-icon {
@@ -165,7 +165,7 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    background-color: $accent;
+    background-color: var(--accent);
     color: #ffffff;
     font-size: 13px;
     font-weight: 900;
