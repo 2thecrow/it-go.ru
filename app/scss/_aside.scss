@@ -1,5 +1,5 @@
 .aside {
-    /* display: none; */
+    display: none;
     background-color: #fff;
     position: fixed;
     width: 64px;
@@ -9,10 +9,16 @@
     &__sidenav {}
     &__menu {}
     &__nav {}
+    .socials {
+        margin-top: 200px;
+        margin-bottom: 15px;
+    }
     .socials-inner {}
 }
 .sidenav {
     display: none;
+    max-width: 270px;
+    width: 100%;
     height: 100%;
     position: fixed;
     z-index: 1;
@@ -26,11 +32,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #0075bf !important;
+        color: #0075bf;
         background-color: #e6ebf3;
         font-size: 36px;
-        width: 75px;
-        height: 69px;
+        width: 63px;
+        height: 63px;
         margin: 0 0 0 auto;
         &:hover {
             color: rgba(0, 117, 191, .8);
@@ -50,14 +56,26 @@
     padding: 0;
     &__item {
         position: relative;
-        &:after { 
+        &:first-child {
+            &::before {
+                content: '';
+                position: absolute;
+                margin: 0 auto;
+                left: 0;
+                right: 0;          
+                height: 1px;
+                background-color: #f1f1f2;
+                width: 100%;
+            }
+        }
+        &::after { 
             content: '';
             position: absolute;
             margin: 0 auto;
             left: 0;
             right: 0;          
             height: 1px;
-            background-color: #e6eaec;
+            background-color: #f1f1f2;
             width: 100%;
         }
         &:hover {
@@ -66,17 +84,21 @@
             &::after {
                 display: none;
             }
+            &::before {
+                display: none;
+            }
         }
     }
     &__link {
         display: block;
         color: $textgrey;
-        padding: 0 27px 0 27px;
+        padding: 0 25px 0 25px;
         text-decoration: none;
         transition: all .25s ease;
         font-weight: 900;
         font-size: 20px;
         line-height: 72px;
+        letter-spacing: 0.008em;
         text-decoration: none;
         &:hover {
             color: $textgrey;
@@ -86,6 +108,8 @@
         &_phone {
             display: flex;
             align-items: center;
+            line-height: 80px;
+            letter-spacing: 0;
             color: $accent;
             img {
                 margin: 0 8px 0 0;
@@ -102,14 +126,11 @@
         font-size: 16px;
         line-height: 24px;
         color: $textgrey;
-        padding: 30px 27px 10px 27px;
+        padding: 25px 25px 10px 25px;
         margin: 0;
     }
     &__address-icon {
-        margin-left: 5px;
-        width: 11px;
-        height: 16px;
-        margin-top: 5px;
+        margin: 3px 11px 0px 2px;
     }
     &__address-text {
         span {
@@ -173,7 +194,10 @@
     padding: 0;
     margin: 0;
     &__item {
-
+        transition: all .3s ease-in-out;
+        &:hover {
+            transition: all .3s ease-in-out;
+        }
     }
     &__link {
         display: flex;
@@ -182,10 +206,25 @@
         width: 64px;
         height: 64px;
         &:hover {
-            opacity: 0.9;
+            transition: all .3s ease-in-out;
         }
     }
-    &__item_vk {}
-    &__item_twitter {}
-    &__item_facebook {}
+    &__item_vk {
+        background-color: #44678d;
+        &:hover {
+            background-color: #3d5d7f;
+        }
+    }
+    &__item_twitter {
+        background-color: #25a1cd;
+        &:hover {
+            background-color: #2191b9;
+        }
+    }
+    &__item_facebook {
+        background-color: #496ba5;
+        &:hover {
+            background-color: #426095;
+        }
+    }
 }

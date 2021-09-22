@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="/img/favicon.png">
 	<!-- Main CSS -->
-	<link rel="stylesheet" href="/css/app.min.css">
+	<link rel="stylesheet" href="/css/main.css">
 	<!-- Swiper -->
 	<link rel="stylesheet" href="/css/swiper/swiper-bundle.min.css">
 	<script src="/css/swiper/swiper-bundle.min.js"></script>
@@ -31,6 +31,9 @@
 					<a class="aside-menu__link" href="#">О компании</a>
 				</li>
 				<li class="aside-menu__item">
+					<a class="aside-menu__link" href="#">Услуги</a>
+				</li>
+				<li class="aside-menu__item">
 					<a class="aside-menu__link" href="#">Портфолио</a>
 				</li>
 				<li class="aside-menu__item">
@@ -47,9 +50,11 @@
 				</li>
 				<li class="aside-menu__item">
 					<address class="aside-menu__address">
-						<img class="aside-menu__address-icon" src="/img/dest/map-point-icon.png" alt="Phone icon">
+						<div class="aside-menu__address-icon">
+							<img class="" src="/img/dest/map-point-icon.png" alt="Phone icon">	
+						</div>
 						<div class="aside-menu__address-text">
-							<span>г. Новокузнецк, </span><br> <span> пр. Октябрьский, 40(2-й этаж)</span>
+							<span>г. Новокузнецк, </span><br> <span> пр. Октябрьский, 40 <br>(2-й этаж)</span>
 						</div>
 					</address>
 				</li>
@@ -114,10 +119,9 @@
 	</aside>
 
 	<header class="header">
+		<!-- particles.js container -->
+		<div id="particle-container" class="particles-bg"></div>
 		<div class="wrapper">
-			<!-- particles.js container -->
-			<div id="particle-container" class="particles-bg"></div>
-			
 			<div class="container">
 				<div class="row header-menu">
 					<div class="col-12 col-sm-6 col-md-6 col-lg-4">
