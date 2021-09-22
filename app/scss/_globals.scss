@@ -12,12 +12,13 @@
     text-align: center;
     position: relative;
     outline: 0;
-    transition: background-color .1s ease;
     border: none;
     border-radius: 3px;
-    box-shadow: 0 5px 0 0 #add3eb;
+    border-bottom: 5px solid #add3eb;
     transition: all .25s ease;
+    text-decoration: none;
     &:hover {
+        text-decoration: none;
         background-color: $textgrey;
         transition: all .25s ease;
     }

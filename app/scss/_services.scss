@@ -1,0 +1,83 @@
+.services {
+    padding: 129px 0 80px;
+    /* стили для карточки с услугами */
+    &__card {
+        position: relative;
+        margin: 0 auto 40px;
+        transition: box-shadow 0.5s ease;
+        /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25) ; */
+        box-shadow: 0px 16px 32px 0px rgba(176, 186, 193, 0.24);
+        &:hover {
+            box-shadow: none;
+        }
+        /* хедер карточки с анимацией */
+        &__header {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background-color: $accent;
+            text-decoration: none;
+            /* иконка */
+            img {
+                position: relative;
+                margin: 62px 0px 33px 42px;
+                height: 56px;
+                width: 56px;
+            }
+            /* текст */
+            p {
+                color: #fff;
+                position: relative;
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: 900;
+                margin: 0 0 31px 42px;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        /* список услуг */
+        &__list {
+            background-color: $textwhite;
+            text-transform: uppercase;
+            /* стилизация списка */
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                /* элемент списка */
+                li {
+                    &:not(:last-child):after { 
+                        content: '';
+                        position: absolute;
+                        margin: 0 auto;
+                        left: 0;
+                        right: 0;
+                        height: 1px;
+                        background-color: #e6eaec;
+                        width: 80%;
+                    }
+                    /* ссылка на услугу */
+                    a {
+                        position: relative;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 20px;
+                        display: block;
+                        padding: 30px 0px 30px 42px;
+                        text-decoration: none;
+                        color: $textgrey;
+                        transition: all 0.25s ease;
+                        &:hover {
+                            background-color: $hoverlightgrey;
+                            color: $accent;
+                            transition: all 0.25s ease;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
