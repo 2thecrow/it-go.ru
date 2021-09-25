@@ -1,120 +1,14 @@
 @import 'config';
 @import 'globals';
-@import 'particles-bg';
-@import 'aside';
-@import 'main-page';
-@import 'services';
-@import 'mainslide';
+@import 'components/particles-bg.scss';
+@import 'components/aside.scss';
+@import 'components/main-page.scss';
+@import 'components/services.scss';
+@import 'components/mainslide.scss';
+@import 'components/big-map.scss';
 
 
-.big_map {
-    display: flex;
-    justify-content: center;
-    max-width: 1920px;
-    margin: 0 auto;
-    background: url(/img/dest/big-map.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: var(--accent);
-    padding: 95px 0 400px 0;
-    &__text {
-        width: 565px;
-        /* margin-right: 50px; */
-    }
-    h2 {
-        font-weight: 900;
-        font-size: 56px;
-        line-height: 64px;
-        margin-bottom: 30px;
-    }
-    p {
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 26px;
-    }
-    /* стили для формы */
-    form {
-        margin: 0 auto;
-        color: var(--textgrey);
-        background: rgba(223,228,236,0.9) url(/img/dest/form-bg.png) no-repeat;
-        background-size: cover;
-        max-width: 380px;
-        padding: 50px 45px 45px 45px;
-        text-align: center;
-        h3 {
-            font-weight: 900;
-            font-size: 40px;
-            line-height: 40px;
-            color: #0075bf;
-            margin-bottom: 30px;
-        }
-        p {
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 20px;
-            margin-bottom: 20px;
-        }
-        .form-wrap {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            input[type="text"] {
-                margin: 0 auto 25px auto;
-                max-width: 300px;
-                width: 280px;
-                height: 55px;
-                padding: 22px;
-                font-weight: 900;
-                font-size: 14px;
-                color: #2a3033;
-                border: none;
-            }
-            input[type="checkbox"] {
-                font-style: italic;
-                width: 20px;
-                height: 20px;
-            }
-            button {
-                margin: 0 auto 25px auto;
-                max-width: 300px;
-                min-width: 280px;
-                background-color: var(--accent);
-                color: var(--textwhite);
-                font-size: 14px;
-                font-weight: 900;
-                text-decoration: none;
-                padding: 22px 45px 17px;
-                box-shadow: 0 5px 0 0 #004b96;
-                &:hover {
-                   opacity: 0.9;
-                }
-            }
-            .chechbox__wrap {
-                display: flex;
-                align-items: center;
-                max-width: 280px;
-                margin: 0 auto 25px auto;
-                font-weight: 300;
-                text-align: left;
-                p {
-                    font-size: 14px;
-                    line-height: 16px;
-                    overflow-wrap: normal;
-                    margin: 10px 0 0 15px;
-                    a {
-                        font-style: italic;
-                        color: #0075bf;
-                        font-weight: 900;
-                    }
-                }
-            }
-            
-        }
-    }
-    
-}
+
 
 /* Секция выгоды на главной */
 .benefits {
