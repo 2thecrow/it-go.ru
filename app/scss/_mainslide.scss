@@ -13,26 +13,6 @@
         z-index: 80;
         margin: 0;
     }
-    /* Обертка для слайда */
-    &__content {
-        background-color: #fff;
-        color: var(--textgrey);
-        display: flex;
-        padding: 80px 0 80px 0;
-        margin-top: 37px;
-        margin-bottom: 48px;
-    }
-    /* Список скриншотов */
-    &__mockups {
-        display: flex;
-        flex-direction: row;
-        margin-left: -600px;
-        /* картинка */
-        img {
-            height: 100%;
-            margin-right: 32px;
-        }
-    }
     /* Описание сайта в портфолио */
     &__site {
         position: relative;
@@ -41,67 +21,36 @@
         justify-content: space-between;
         align-items: flex-start;
         color: var(--textgrey);
-        max-width: 460px;
-        min-width: 320px;
-        h3 {
-            font-weight: 900;
-            font-size: 32px;
-            line-height: 40px;
-            margin: -6px 0 30px 0;
-        }
-        h4 {
-            font-weight: 900;
-            font-size: 24px;
-            line-height: 28px;
-        }
-        p {
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 24px;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 3;
-            margin: 0 0 27px 0;
-        }
-        /* Теги */
-        .tags {
-            display: flex;
-            cursor: pointer;
-            flex-wrap: wrap;
-            flex-direction: row;
-            list-style-type: none;
-            color:  #0077c2;
-            font-size: 12px;
-            line-height: 28px;
-            font-weight: 400;
-            margin: 0;
-            padding: 0;
-            text-transform: uppercase;
-            &__item {
-                &:not(:last-child) {
-                    margin-right: 10px;
-                }
-                
-            }
-            &__link {
-                display: block;
-                font-size: 10px;
-                line-height: 21px;
-                padding: 0 8px;
-                text-decoration: none;
-                border: 1px dotted #0077c2;
-                margin-bottom: 22px;
-                transition: all 0.25s ease;
-                &:hover {
-                    border: 1px dotted #dce5ef;
-                    background-color: #dce5ef;
-                    transition: all 0.25s ease;
-                }
-            }
-        }
+        
+        
     }
-    /* Кнопка подробнее */
+}
+
+
+/* Настройка контейнера */
+.portfolio-slider {
+    .swiper-slide-next {
+        opacity: 0;
+    }
+    &__slide {
+        max-width: 1665px;
+        width: 100%;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        margin: 0 auto;
+        padding: 140px 0px 100px 0;
+    }
+    &__container {
+        max-width: 1170px;
+        width: 100%;
+        background-color: #fff;
+        color: var(--textgrey);
+        display: flex;
+        padding: 80px 0 80px 0;
+        margin: 40px auto 75px;
+    }
+    &__mockups {}
+    &__content {}
     &__btn {
         background-color: #dce5ef;
         color: var(--accent);
@@ -110,26 +59,88 @@
         padding: 9px 17px 9px 17px;
         box-shadow: none;
         text-decoration: none;
-        &:after {
-            background-color: #add3eb;
-            height: 0;
-        }
+        transition: all 0.25s ease;
         &:hover {
             text-decoration: none;
             color: var(--textwhite);
-            background-color: #add3eb;
+            background-color: var(--accent);
+            transition: all 0.25s ease;
+        }
+        &.button {
+            border-bottom: none;
+        }
+    }
+}
+.portfolio-mockups {
+    display: flex;
+    flex-direction: row;
+    margin-left: -595px;
+    &__item {
+        margin-right: 30px;
+        img {
+
         }
     }
 }
 
-
-/* Настройка контейнера */
-.portfolio-slider {
-    .swiper-slide {
-        padding: 140px 0px 100px 0;
-        overflow: hidden;
+.about-site {
+    max-width: 460px;
+    min-width: 320px;
+    &__title {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 40px;
+        margin: -6px 0 30px 0;
+    }
+    &__tags {
+        margin-bottom: 10px;
+    }
+    &__content {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 0 30px 0;
     }
 }
+
+
+.tags {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    color:  #0077c2;
+    font-size: 12px;
+    line-height: 28px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    &__item {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+    &__link {
+        display: block;
+        font-size: 10px;
+        line-height: 21px;
+        padding: 0 8px;
+        border: 1px dotted #0077c2;
+        border-radius: 2px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        transition: all 0.25s ease;
+        &:hover {
+            color: #dce5ef;
+            text-decoration: none;
+            border: 1px dotted #0077c2;
+            background-color: #0077c2;
+            transition: all 0.25s ease;
+        }
+    }
+}
+
 /* Свои стили для навигации слайдера */
 .custom_swiper_nav {
     position: absolute;
@@ -137,22 +148,19 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    bottom: 0;
+    bottom: 95px;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 1;
     text-transform: uppercase;
     /* Стили для блока с выводом кол-ва слайдов */
     .swiper-pagination-fraction {
+        max-width: 235px;
+        width: 100%;
         display: flex;
+        justify-content: center;
         color: #fff;
         line-height: 18px;
-        width: 50px;
-        margin: 0 70px;
         /* нынешняя позиция слайдера */
         .swiper-pagination-current {
             font-weight: 900;
