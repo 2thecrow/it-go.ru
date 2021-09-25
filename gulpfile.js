@@ -35,9 +35,6 @@ let paths = {
 		exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excluded files from deploy
 	},
 
-	cssOutputName: 'app.min.css',
-	jsOutputName: 'app.min.js',
-
 }
 
 // LOGIC
@@ -67,8 +64,6 @@ function browsersync() {
 
 function scripts() {
 	return src(paths.scripts.src)
-		/* .pipe(concat(paths.jsOutputName)) */
-		/* .pipe(uglify()) */
 		.pipe(dest(paths.scripts.dest))
 		.pipe(browserSync.stream())
 }
@@ -76,8 +71,6 @@ function scripts() {
 function styles() {
 	return src(paths.styles.src)
 		.pipe(eval(preprocessor)())
-		/* .pipe(concat(paths.cssOutputName)) */
-		/* .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true })) */
 		.pipe(cleancss({ level: { 1: { specialComments: 0 } },format: 'beautify' }))
 		.pipe(dest(paths.styles.dest))
 		.pipe(browserSync.stream())
@@ -94,26 +87,11 @@ function cleanimg() {
 	return del('' + paths.images.dest + '/**/*', { force: true })
 }
 
-function deploy() {
-	return src(baseDir + '/')
-		.pipe(rsync({
-			root: baseDir + '/',
-			hostname: paths.deploy.hostname,
-			destination: paths.deploy.destination,
-			include: paths.deploy.include,
-			exclude: paths.deploy.exclude,
-			recursive: true,
-			archive: true,
-			silent: false,
-			compress: true
-		}))
-}
-
 function startwatch() {
 	watch(baseDir + '/' + preprocessor + '/**/*', { usePolling: true }, styles);
 	watch(baseDir + '/img/src/**/*.{' + imageswatch + '}', { usePolling: true }, images);
 	watch(baseDir + '/**/*.{' + fileswatch + '}', { usePolling: true }).on('change', browserSync.reload);
-	watch([baseDir + '/js/**/*.js', '!' + paths.scripts.dest + '/*.min.js'], { usePolling: true }, scripts);
+	watch([baseDir + '/js/**/*.js'], { usePolling: true }, scripts);
 }
 
 exports.browsersync = browsersync;
@@ -122,5 +100,4 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.images = images;
 exports.cleanimg = cleanimg;
-exports.deploy = deploy;
 exports.default = parallel(images, styles, scripts, browsersync, startwatch);

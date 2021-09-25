@@ -1,14 +1,62 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', () => {
 
-    /* particlesJS.load('particles-js', 'particles.json', function() {
-        console.log('particles.js loaded - callback');
-    }); */
+    var MainSlider = new Swiper('.portfolio-slider', {
+        autoHeight: true,
+        loop: true,
+        pagination: {
+            el: '.custom-swiper-pagination',
+            type: 'fraction',
+            renderFraction: function (currentClass, totalClass) {
+                return '<span class="' + currentClass + '"></span>' +
+                    ' &boxh; ' +
+                    '<span class="' + totalClass + '"></span>';
+            },
+        },
 
-    /* const particlesItem = document.querySelectorAll('.particles-bg');
-    if (particlesItem > 0) {
-        particlesItem.forEach(() => {
-            let particlesItemID = particlesItem.attr('id');
-            particlesJS(particlesItemID, {
+        navigation: {
+            nextEl: '.custom-swiper-button-next',
+            prevEl: '.custom-swiper-button-prev',
+        },
+    })
+
+
+    const menu = document.querySelector('.sidenav'),
+        burger = document.querySelector('.open-btn'),
+        overlay = document.querySelector('.overlay'),
+        closeMenu = document.querySelector('.sidenav__closebtn');
+
+    const lockScroll = () => {
+        document.body.classList.add('lock');
+    }
+
+    const unlockScroll = () => {
+        document.body.classList.remove('lock');
+    }
+
+    burger.addEventListener('click', () => {
+        menu.classList.add('open');
+        overlay.classList.add('open');
+        lockScroll();
+    });
+
+    closeMenu.addEventListener('click', () => {
+        menu.classList.remove('open');
+        overlay.classList.remove('open');
+        unlockScroll();
+    });
+
+    overlay.addEventListener('click', () => {
+        menu.classList.remove('open');
+        overlay.classList.remove('open');
+        unlockScroll();
+    });
+
+    const particlesItems = document.querySelectorAll(".particles-bg");
+    if (particlesItems.length > 0) {
+        particlesItems.forEach(function (particlesItem) {
+            particlesJS(particlesItem.id,
+      
+                {
                 "particles": {
                     "number": {
                         "value": 80,
@@ -116,61 +164,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         }
                     }
                 },
-                "retina_detect": true
-            });
+                "retina_detect": true,
+                });
         })
-    } */
-
-
-    var MainSlider = new Swiper('.slidermainpage', {
-        loop: true,
-        pagination: {
-            el: '.custom-swiper-pagination',
-            type: 'fraction',
-            renderFraction: function (currentClass, totalClass) {
-                return '<span class="' + currentClass + '"></span>' +
-                    ' &boxh; ' +
-                    '<span class="' + totalClass + '"></span>';
-            },
-        },
-
-        navigation: {
-            nextEl: '.custom-swiper-button-next',
-            prevEl: '.custom-swiper-button-prev',
-        },
-    })
-
-
-    const menu = document.querySelector('.sidenav'),
-        burger = document.querySelector('.open-btn'),
-        overlay = document.querySelector('.overlay'),
-        closeMenu = document.querySelector('.sidenav__closebtn');
-
-    const lockScroll = () => {
-        document.body.classList.add('lock');
-    }
-
-    const unlockScroll = () => {
-        document.body.classList.remove('lock');
-    }
-
-    burger.addEventListener('click', () => {
-        menu.classList.add('open');
-        overlay.classList.add('open');
-        lockScroll();
-    });
-
-    closeMenu.addEventListener('click', () => {
-        menu.classList.remove('open');
-        overlay.classList.remove('open');
-        unlockScroll();
-    });
-
-    overlay.addEventListener('click', () => {
-        menu.classList.remove('open');
-        overlay.classList.remove('open');
-        unlockScroll();
-    });
-
+    };
 
 });

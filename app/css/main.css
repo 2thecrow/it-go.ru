@@ -3785,85 +3785,6 @@ body {
   width: 85%;
   background: var(--accent)
 }
-.slidermainpage {
-  width: 100%;
-  height: 100%
-}
-.slidermainpage .swiper-slide {
-  padding: 140px 0 100px 0;
-  overflow: hidden
-}
-.custom_swiper_nav {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  text-transform: uppercase
-}
-.custom_swiper_nav .swiper-pagination-fraction {
-  display: flex;
-  color: #fff;
-  line-height: 18px;
-  width: 50px;
-  margin: 0 70px
-}
-.custom_swiper_nav .swiper-pagination-fraction .swiper-pagination-current {
-  font-weight: 900;
-  font-size: 24px;
-  margin: 0 5px 0 0
-}
-.custom_swiper_nav .swiper-pagination-fraction .swiper-pagination-total {
-  font-weight: 300;
-  font-size: 14px;
-  margin: 0 0 0 5px
-}
-.custom_swiper_nav .custom-swiper-button-prev {
-  font-weight: 300;
-  font-size: 12px;
-  text-align: right;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center
-}
-.custom_swiper_nav .custom-swiper-button-prev .arrow-box {
-  margin-left: 15px
-}
-.custom_swiper_nav .custom-swiper-button-prev .arrow-box:hover {
-  background-color: rgba(255,255,255,.2)
-}
-.custom_swiper_nav .custom-swiper-button-next {
-  font-weight: 300;
-  font-size: 12px;
-  text-align: left;
-  display: flex;
-  flex-direction: row;
-  align-items: center
-}
-.custom_swiper_nav .custom-swiper-button-next .arrow-box {
-  margin-right: 15px
-}
-.custom_swiper_nav .custom-swiper-button-next .arrow-box:hover {
-  background-color: rgba(255,255,255,.2)
-}
-.custom_swiper_nav .arrow-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 49px;
-  height: 49px;
-  border: 2px solid #fff;
-  font-size: 20px;
-  line-height: 12px
-}
 .overlay {
   position: fixed;
   left: 0;
@@ -4403,18 +4324,17 @@ body {
 .portfolio {
   padding-bottom: 130px
 }
-.portfolio h2 {
+.portfolio__title {
   position: absolute;
-  width: 320px;
   font-size: 56px;
   font-weight: 900;
   letter-spacing: .025em;
   text-align: center;
-  margin: 0 auto;
   top: 63px;
   left: 0;
   right: 0;
-  z-index: 80
+  z-index: 80;
+  margin: 0
 }
 .portfolio__content {
   background-color: #fff;
@@ -4513,6 +4433,81 @@ body {
   text-decoration: none;
   color: var(--textwhite);
   background-color: #add3eb
+}
+.portfolio-slider .swiper-slide {
+  padding: 140px 0 100px 0;
+  overflow: hidden
+}
+.custom_swiper_nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  text-transform: uppercase
+}
+.custom_swiper_nav .swiper-pagination-fraction {
+  display: flex;
+  color: #fff;
+  line-height: 18px;
+  width: 50px;
+  margin: 0 70px
+}
+.custom_swiper_nav .swiper-pagination-fraction .swiper-pagination-current {
+  font-weight: 900;
+  font-size: 24px;
+  margin: 0 5px 0 0
+}
+.custom_swiper_nav .swiper-pagination-fraction .swiper-pagination-total {
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0 0 0 5px
+}
+.custom_swiper_nav .custom-swiper-button-prev {
+  font-weight: 300;
+  font-size: 12px;
+  text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center
+}
+.custom_swiper_nav .custom-swiper-button-prev .arrow-box {
+  margin-left: 15px
+}
+.custom_swiper_nav .custom-swiper-button-prev .arrow-box:hover {
+  background-color: rgba(255,255,255,.2)
+}
+.custom_swiper_nav .custom-swiper-button-next {
+  font-weight: 300;
+  font-size: 12px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+.custom_swiper_nav .custom-swiper-button-next .arrow-box {
+  margin-right: 15px
+}
+.custom_swiper_nav .custom-swiper-button-next .arrow-box:hover {
+  background-color: rgba(255,255,255,.2)
+}
+.custom_swiper_nav .arrow-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 49px;
+  height: 49px;
+  border: 2px solid #fff;
+  font-size: 20px;
+  line-height: 12px
 }
 .big_map {
   display: flex;
