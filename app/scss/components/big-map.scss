@@ -1,108 +1,123 @@
-.big_map {
-    display: flex;
-    justify-content: center;
-    max-width: 1920px;
-    margin: 0 auto;
-    background: url(/img/dest/big-map.png);
-    background-position: center center;
+.big-map {
+    background: url(/img/dest/big-map/big-map.png);
+    background-position: top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     background-color: var(--accent);
-    padding: 95px 0 400px 0;
-    &__text {
-        width: 565px;
-        /* margin-right: 50px; */
+    padding: 95px 0 450px 0;
+    &__content {
+        max-width: 565px;
+        width: 100%;
     }
-    h2 {
+    &__form {}
+}
+.map-content {
+    margin-top: -10px;
+    &__title {
         font-weight: 900;
         font-size: 56px;
         line-height: 64px;
         margin-bottom: 30px;
     }
-    p {
+    &__description {
         font-weight: 300;
         font-size: 16px;
         line-height: 26px;
     }
-    /* стили для формы */
-    form {
-        margin: 0 auto;
-        color: var(--textgrey);
-        background: rgba(223,228,236,0.9) url(/img/dest/form-bg.png) no-repeat;
-        background-size: cover;
-        max-width: 380px;
-        padding: 50px 45px 45px 45px;
+}
+.map-form {
+    max-width: 370px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--textgrey);
+    background: rgba(223,228,236,0.9) url(/img/dest/forms/form-bg.png) no-repeat;
+    background-size: cover;
+    padding: 45px 45px 20px 45px;
+    border-radius: 3px;
+    margin: 0 auto;
+    box-shadow: 0 24px 48px 0 rgba(0,77,131,0.8);
+    &__title {
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 40px;
+        color: #0075bf;
+        margin-bottom: 25px;
         text-align: center;
-        h3 {
-            font-weight: 900;
-            font-size: 40px;
-            line-height: 40px;
-            color: #0075bf;
-            margin-bottom: 30px;
-        }
-        p {
+    }
+    &__description {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    &__form {}
+}
+
+
+.big-map-form {
+    &__field {
+        margin-bottom: 25px;
+    }
+    &__submit {
+        margin-bottom: 20px;
+    }
+    &__input {
+        width: 100%;
+        font-weight: 900;
+        font-size: 13px;
+        color: #2a3033;
+        padding: 15px 20px;
+        border-radius: 2px;
+        border: 1px solid #d0d6e0;
+        text-transform: uppercase;
+    }
+    &__send {
+        width: 100%;
+        font-weight: 900;
+        font-size: 14px;
+        color: var(--textwhite);
+        background-color: var(--accent);
+        padding: 17px 20px;
+        border: none;
+        box-shadow: inset 0 -5px 0 0 #004b96;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    &__check {
+        label {
+            padding-left: 24px;
+            display: inline-block;
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-image: url(/img/dest/forms/form-checkbox.png);
+            cursor: pointer;;
+            margin-bottom: 25px;
             font-weight: 300;
             font-size: 14px;
-            line-height: 20px;
-            margin-bottom: 20px;
-        }
-        .form-wrap {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            input[type="text"] {
-                margin: 0 auto 25px auto;
-                max-width: 300px;
-                width: 280px;
-                height: 55px;
-                padding: 22px;
+            line-height: 16px;
+            overflow-wrap: normal;
+            a {
                 font-weight: 900;
-                font-size: 14px;
-                color: #2a3033;
-                border: none;
-            }
-            input[type="checkbox"] {
                 font-style: italic;
-                width: 20px;
-                height: 20px;
-            }
-            button {
-                margin: 0 auto 25px auto;
-                max-width: 300px;
-                min-width: 280px;
-                background-color: var(--accent);
-                color: var(--textwhite);
-                font-size: 14px;
-                font-weight: 900;
+                color: #0075bf;
                 text-decoration: none;
-                padding: 22px 45px 17px;
-                box-shadow: 0 5px 0 0 #004b96;
+                transition: all .3s ease-in-out;
                 &:hover {
-                   opacity: 0.9;
-                }
-            }
-            .chechbox__wrap {
-                display: flex;
-                align-items: center;
-                max-width: 280px;
-                margin: 0 auto 25px auto;
-                font-weight: 300;
-                text-align: left;
-                p {
-                    font-size: 14px;
-                    line-height: 16px;
-                    overflow-wrap: normal;
-                    margin: 10px 0 0 15px;
-                    a {
-                        font-style: italic;
-                        color: #0075bf;
-                        font-weight: 900;
-                    }
+                    text-decoration: underline;
+                    transition: all .3s ease-in-out;
                 }
             }
             
         }
+        .big-map-form__checkbox-input:checked ~ label{
+            background-image: url(/img/dest/forms/form-checkbox_checked.png);
+        }
     }
-    
+    &__checkbox-input {
+        display: none;
+        
+    }
 }
+

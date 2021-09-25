@@ -4512,202 +4512,196 @@ body {
   font-size: 20px;
   line-height: 12px
 }
-.big_map {
-  display: flex;
-  justify-content: center;
-  max-width: 1920px;
-  margin: 0 auto;
-  background: url(/img/dest/big-map.png);
-  background-position: center center;
+.big-map {
+  background: url(/img/dest/big-map/big-map.png);
+  background-position: top;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   background-color: var(--accent);
-  padding: 95px 0 400px 0
+  padding: 95px 0 450px 0
 }
-.big_map__text {
-  width: 565px
+.big-map__content {
+  max-width: 565px;
+  width: 100%
 }
-.big_map h2 {
+.map-content {
+  margin-top: -10px
+}
+.map-content__title {
   font-weight: 900;
   font-size: 56px;
   line-height: 64px;
   margin-bottom: 30px
 }
-.big_map p {
+.map-content__description {
   font-weight: 300;
   font-size: 16px;
   line-height: 26px
 }
-.big_map form {
-  margin: 0 auto;
+.map-form {
+  max-width: 370px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   color: var(--textgrey);
-  background: rgba(223,228,236,.9) url(/img/dest/form-bg.png) no-repeat;
+  background: rgba(223,228,236,.9) url(/img/dest/forms/form-bg.png) no-repeat;
   background-size: cover;
-  max-width: 380px;
-  padding: 50px 45px 45px 45px;
-  text-align: center
+  padding: 45px 45px 20px 45px;
+  border-radius: 3px;
+  margin: 0 auto;
+  box-shadow: 0 24px 48px 0 rgba(0,77,131,.8)
 }
-.big_map form h3 {
+.map-form__title {
   font-weight: 900;
   font-size: 40px;
   line-height: 40px;
   color: #0075bf;
-  margin-bottom: 30px
+  margin-bottom: 25px;
+  text-align: center
 }
-.big_map form p {
+.map-form__description {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
+  margin-bottom: 20px;
+  text-align: center
+}
+.big-map-form__field {
+  margin-bottom: 25px
+}
+.big-map-form__submit {
   margin-bottom: 20px
 }
-.big_map form .form-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center
-}
-.big_map form .form-wrap input[type=text] {
-  margin: 0 auto 25px auto;
-  max-width: 300px;
-  width: 280px;
-  height: 55px;
-  padding: 22px;
+.big-map-form__input {
+  width: 100%;
   font-weight: 900;
-  font-size: 14px;
+  font-size: 13px;
   color: #2a3033;
-  border: none
+  padding: 15px 20px;
+  border-radius: 2px;
+  border: 1px solid #d0d6e0;
+  text-transform: uppercase
 }
-.big_map form .form-wrap input[type=checkbox] {
-  font-style: italic;
-  width: 20px;
-  height: 20px
-}
-.big_map form .form-wrap button {
-  margin: 0 auto 25px auto;
-  max-width: 300px;
-  min-width: 280px;
-  background-color: var(--accent);
-  color: var(--textwhite);
-  font-size: 14px;
+.big-map-form__send {
+  width: 100%;
   font-weight: 900;
+  font-size: 14px;
+  color: var(--textwhite);
+  background-color: var(--accent);
+  padding: 17px 20px;
+  border: none;
+  box-shadow: inset 0 -5px 0 0 #004b96;
   text-decoration: none;
-  padding: 22px 45px 17px;
-  box-shadow: 0 5px 0 0 #004b96
+  text-transform: uppercase
 }
-.big_map form .form-wrap button:hover {
-  opacity: .9
-}
-.big_map form .form-wrap .chechbox__wrap {
-  display: flex;
-  align-items: center;
-  max-width: 280px;
-  margin: 0 auto 25px auto;
+.big-map-form__check label {
+  padding-left: 24px;
+  display: inline-block;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-image: url(/img/dest/forms/form-checkbox.png);
+  cursor: pointer;
+  margin-bottom: 25px;
   font-weight: 300;
-  text-align: left
-}
-.big_map form .form-wrap .chechbox__wrap p {
   font-size: 14px;
   line-height: 16px;
-  overflow-wrap: normal;
-  margin: 10px 0 0 15px
+  overflow-wrap: normal
 }
-.big_map form .form-wrap .chechbox__wrap p a {
+.big-map-form__check label a {
+  font-weight: 900;
   font-style: italic;
   color: #0075bf;
-  font-weight: 900
+  text-decoration: none;
+  transition: all .3s ease-in-out
+}
+.big-map-form__check label a:hover {
+  text-decoration: underline;
+  transition: all .3s ease-in-out
+}
+.big-map-form__check .big-map-form__checkbox-input:checked ~ label {
+  background-image: url(/img/dest/forms/form-checkbox_checked.png)
+}
+.big-map-form__checkbox-input {
+  display: none
 }
 .benefits {
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 120px 0 75px 0;
-  text-align: center;
+  padding: 130px 0 75px 0;
   color: var(--textgrey)
 }
-.benefits h2 {
+.benefits__title {
   font-size: 56px;
   font-weight: 900;
   line-height: 40px;
-  margin-bottom: 15px
+  margin-bottom: 15px;
+  text-align: center
 }
-.benefits p {
+.benefits__description {
   font-weight: 300;
   font-size: 18px;
   line-height: 40px;
-  margin-bottom: 50px
-}
-.benefits__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%
-}
-.benefits__list__card {
-  background-color: transparent;
-  perspective: 1000px;
-  max-width: 370px;
-  min-width: 300px;
-  height: 130px;
   margin-bottom: 50px;
-  flex: 0 1 350px
+  text-align: center
 }
-.benefits__list__card:hover .benefits__list__card-inner {
-  transform: rotateY(180deg)
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 30px);
+  background-color: #fff;
+  padding: 30px 35px;
+  border-radius: 2px;
+  box-shadow: 0 16px 32px 0 rgba(176,186,193,.24);
+  margin-bottom: 30px
 }
-.benefits__list__card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.benefit-card__front {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  transition: all .3s ease-in-out
+}
+.benefit-card__front_description {
   text-align: center;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2)
-}
-.benefits__list__item-front {
   font-weight: 300;
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 30px;
-  padding: 35px 35px 30px 35px
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: .024em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2
 }
-.benefits__list__item-front img {
-  height: 56px;
-  width: 56px
-}
-.benefits__list__item-front p {
-  max-width: 160px;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: left;
-  text-transform: uppercase;
-  margin: 0 0 0 30px
-}
-.benefits__list__item-back {
+.benefit-card__back {
+  display: none;
+  opacity: 0;
   font-weight: 300;
-  background-color: #fff;
-  flex: 0 1 350px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 30px;
-  padding: 35px 35px 30px 35px;
-  transform: rotateY(180deg)
-}
-.benefits__list__item-back p {
-  max-width: 160px;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 20px;
-  text-align: left;
-  text-transform: uppercase;
-  margin: 0 0 0 30px
+  text-align: center;
+  transition: all 0s ease-in-out
 }
-.benefits__list .benefits__list__item-back,
-.benefits__list .benefits__list__item-front {
-  position: absolute;
-  width: 100%;
+.benefit-card__icon {
+  margin-right: 25px
+}
+.benefit-card:hover {
+  padding: 0 35px
+}
+.benefit-card:hover .benefit-card__front {
+  display: none;
+  opacity: 0;
+  transition: all .3s ease-in-out
+}
+.benefit-card:hover .benefit-card__back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
-  backface-visibility: hidden
+  opacity: 1;
+  transition: all .3s ease-in-out
+}
+.benefit-card:hover .benefit-card__back_description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3
 }
 footer {
   position: relative;
