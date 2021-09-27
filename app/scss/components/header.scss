@@ -1,0 +1,125 @@
+.header {
+    position: relative;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0px auto;
+    padding-bottom: 125px;
+    &__menu {}
+    &__content {}
+    &__info {}
+    &__cards {}
+    /* стилизация для внутренних страниц */
+}
+
+.header-inner {
+    background-color: #fff;
+    color: var(--textinner);
+    padding: 0;
+    .header-menu {
+        padding: 8px 0;
+        &__logo {
+            color: var(--textinner);
+            span {
+                color: var(--textinner);
+            }
+        }
+    }
+    .header-contacts {
+        &__phone {
+            .header-contacts__phone-link {
+                color: var(--textinner);
+            }
+        }
+        &__btn {
+            color: var(--accent);
+            border: 4px solid var(--accent);
+            padding: 5px 20px 5px 50px;
+            background-image: url(/img/dest/global/mail-icon_blue.png);
+            &:hover {
+                background-image: url(/img/dest/global/mail-icon.png);
+                color: var(--textwhite);
+                background-color: var(--accent);
+            }
+        }
+    }
+}
+
+.header-menu {
+    padding: 25px 0 0 0;
+    /* лого */
+    &__logo {
+        display: flex;
+        align-items: center;
+        font-family: 'Roboto-Condensed';
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--textwhite);
+        text-transform: uppercase;
+        text-decoration: none;
+        &_icon {
+
+        }
+        /* текст лого */
+        &_name {
+            letter-spacing: 0.025em;
+            margin-left: 25px;
+        }
+        &:hover {
+            color: var(--textwhite);
+            text-decoration: none;
+        }
+    }
+}
+
+.header-contacts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__phone {
+        display: flex;
+        flex-direction: column;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    &__phone-link {
+        color: var(--textwhite);
+        font-size: 24px;
+        font-weight: 900;
+        letter-spacing: 0.025em;
+        transition: all .25s ease-in-out;
+        &:hover {
+            color: var(--textwhite);
+            text-decoration: underline;
+            transition: all .25s ease-in-out;
+        }
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+        font-size: 14px;
+        letter-spacing: 0.045em;
+        color: var(--textwhite);
+        background-image: url(/img/dest/global/mail-icon.png);
+        background-position: left 20px center;
+        background-repeat: no-repeat;
+        margin-left: 70px;
+        padding: 9px 20px 9px 50px;
+        border: 4px solid var(--textwhite);
+        border-radius: 3px;
+        transition: all .25s ease-in-out;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+            color: var(--textwhite);
+            text-decoration: none;
+            background-color:rgba($color: #fff, $alpha: 0.2);
+            transition: all .25s ease-in-out;
+        }
+    }
+    &__btn-icon {
+        display: flex;
+        margin-right: 10px;
+    }
+}
