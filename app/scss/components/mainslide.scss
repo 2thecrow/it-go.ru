@@ -185,6 +185,9 @@
         /* стрелочка */
         .arrow-box {
             margin-left: 15px;
+            span {
+                margin-top: -3px;
+            }
             &:hover {
                 background-color: rgba($color: #fff, $alpha: 0.2);
             }
@@ -202,6 +205,9 @@
         /* стрелочка */
         .arrow-box {
             margin-right: 15px;
+            span {
+                margin-top: -3px;
+            }
             &:hover {
                 background-color: rgba($color: #fff, $alpha: 0.2);
             }

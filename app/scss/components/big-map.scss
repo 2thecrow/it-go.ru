@@ -84,6 +84,11 @@
         box-shadow: inset 0 -5px 0 0 #004b96;
         text-decoration: none;
         text-transform: uppercase;
+        transition: all .2s ease-in-out;
+        &:hover {
+            background-color: var(--accent_hover);
+            transition: all .2s ease-in-out;
+        }
     }
     &__check {
         label {
