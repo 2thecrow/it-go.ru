@@ -18,16 +18,15 @@
         /* отдельная кнопка */
         .dropdown {
             .inner-page-nav {
-                position: relative;
-                display: flex;
+                
+                
                 height: 86px;
                 
                 align-items: center;
                 color: #fff;
                 text-decoration: none;
-                border: 1px dashed #b8d1e5;
-                border-radius: 3px;
-                padding: 20px 30px 20px 20px;
+                
+                
                 margin: 0 auto;
                 /* текст кнопки */
                 p {
@@ -47,13 +46,13 @@
                     margin-right: 12px;
                 }
                 .webdev-icon {
-                    background-image: url(/img/dest/usability-white-icon.png);
+                    
                 }
                 .support-icon {
-                    background-image: url(/img/dest/headset-white-icon.png);
+                    
                 }
                 .seo-icon {
-                    background-image: url(/img/dest/loupe-white-icon.png);
+                    
                 }
                 .dropdown-arrow {
                     display: inline-block;
@@ -178,4 +177,60 @@
             }
         } 
     }
+}
+
+.page-nav {
+    &__list {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        gap: 30px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__item {
+        
+    }
+    &__link {
+        display: flex;
+        color: var(--textwhite);
+        padding: 20px 30px 20px 20px;
+        border: 1px dashed #b8d1e5;
+        border-radius: 4px;
+    }
+}
+
+.page-nav-dropdown {
+    &__header {
+        display: flex;
+    }
+    &__icon {
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        &_webdev {
+            background-image: url(/img/dest/page-nav/usability-white-icon.png);
+        }
+        &_support {
+            background-image: url(/img/dest/page-nav/headset-white-icon.png);
+        }
+        &_seo-public {
+            background-image: url(/img/dest/page-nav/loupe-white-icon.png);
+        }
+    }
+    &__title {}
+    &__body {}
+    &__list {
+        list-style: none;
+    }
+    &__item {}
+    &__link {}
+}
+
+
+.dropdown-link {
+    &__icon {}
+    &__title {}
 }
