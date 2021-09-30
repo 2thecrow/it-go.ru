@@ -1,0 +1,84 @@
+.callback {
+    &__content {
+        background: url(/img/dest/forms/service-callback-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__title {}
+    &__description {}
+    &__form {}
+    &__check-box {}
+}
+.callback-form {
+    &__field {}
+    &__input-text {}
+    &__submit {}
+}
+
+.callback-submit {
+    &__btn {}
+}
+
+.callback-checkbox {
+    &__input {}
+    &__more {}
+}
+
+
+
+/* Секция "Обратный звонок" на странице обслуживания */
+.service-callback {
+    max-width: 1920px;
+    margin: 0 auto;
+    
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 130px 0;
+    h2 {
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 48px;
+    }
+    p {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 48px;
+    }
+    /* Список ссылок обратной связи */
+    ul {
+        padding-left: 0;
+        margin-bottom: 0;
+        /* элемент */
+        li {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            /* иконка */
+            img {
+                width: 64px;
+                height: 64px;
+                margin-bottom: 20px;
+            }
+            /* ссылка */
+            a {
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 24px;
+                color: #fff;
+                /* выделение текста цветом */
+                span {
+                    font-weight: 900;
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: #fef458;
+                }
+            }
+            /* доп.текст для ссылки */
+            span {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+}

@@ -5104,6 +5104,205 @@ body {
   border: 2px solid var(--textinner);
   text-transform: uppercase
 }
+.callback__content {
+  background: url(/img/dest/forms/service-callback-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover
+}
+.service-callback {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 130px 0
+}
+.service-callback h2 {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 48px
+}
+.service-callback p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 48px
+}
+.service-callback ul {
+  padding-left: 0;
+  margin-bottom: 0
+}
+.service-callback ul li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px
+}
+.service-callback ul li img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px
+}
+.service-callback ul li a {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff
+}
+.service-callback ul li a span {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  color: #fef458
+}
+.service-callback ul li span {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px
+}
+.service-callback-seo {
+  max-width: 1920px;
+  margin: 0 auto;
+  background: url(/img/dest/service-callback-grey-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 130px 0;
+  color: var(--textgrey);
+  position: relative
+}
+.service-callback-seo .callback-form {
+  text-align: center;
+  padding: 50px 100px 50px 100px;
+  background: linear-gradient(.25turn,var(--accent) 70%,rgba(var(--accent),.8)),url(/img/dest/technical-support-callback-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  display: flex;
+  justify-content: center
+}
+.service-callback-seo .callback-form h2 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 52px;
+  margin: 0 auto
+}
+.service-callback-seo .callback-form p {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 auto;
+  margin-bottom: 30px
+}
+.service-callback-seo .callback-form form {
+  justify-content: center
+}
+.service-callback-seo .callback-form form input[type=text] {
+  background-color: #e6ecef;
+  border: 1px solid #e6ecef;
+  border-radius: 3px;
+  font-weight: 300;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #6b828d;
+  padding: 17px 23px;
+  margin-bottom: 15px
+}
+.service-callback-seo .callback-form form input[type=checkbox] {
+  width: 17px;
+  height: 17px;
+  margin-right: 5px
+}
+.service-callback-seo .callback-form form .policy_wrap {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  margin: 0 auto;
+  height: 70%
+}
+.service-callback-seo .callback-form form .policy_wrap p {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 16px;
+  color: #a8d2ed;
+  width: 150px;
+  margin-bottom: 0;
+  margin-left: 0
+}
+.service-callback-seo .callback-form form .policy_wrap p a {
+  font-weight: 900;
+  font-style: italic;
+  color: #a8d2ed
+}
+.service-callback-seo .callback-form form .policy_wrap p a:hover {
+  color: #fff
+}
+.service-callback-seo .callback-form form .btn {
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  font-weight: 900;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 55px 16px;
+  margin-bottom: 15px
+}
+.service-callback-seo .callback-form form .btn:hover {
+  background-color: rgba(255,255,255,.2)
+}
+.service-callback-seo .service-callback-seo-form {
+  position: absolute;
+  top: -28%;
+  left: auto;
+  right: auto;
+  margin: 0 auto;
+  width: 100%
+}
+.service-callback-seo h2 {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 48px;
+  margin-top: 130px
+}
+.service-callback-seo p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 48px
+}
+.service-callback-seo ul {
+  padding-left: 0;
+  margin-bottom: 0
+}
+.service-callback-seo ul li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px
+}
+.service-callback-seo ul li img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px
+}
+.service-callback-seo ul li a {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--textgrey)
+}
+.service-callback-seo ul li a span {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  color: #005497
+}
+.service-callback-seo ul li span {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px
+}
 .service-bonus {
   max-width: 1920px;
   margin: 0 auto;
@@ -5172,57 +5371,6 @@ body {
 }
 .service-bonus__next li:not(:last-child) {
   margin-right: 15px
-}
-.service-callback {
-  max-width: 1920px;
-  margin: 0 auto;
-  background: url(/img/dest/service-callback-bg.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  padding: 130px 0
-}
-.service-callback h2 {
-  font-weight: 900;
-  font-size: 64px;
-  line-height: 48px
-}
-.service-callback p {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 48px
-}
-.service-callback ul {
-  padding-left: 0;
-  margin-bottom: 0
-}
-.service-callback ul li {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px
-}
-.service-callback ul li img {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 20px
-}
-.service-callback ul li a {
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 24px;
-  color: #fff
-}
-.service-callback ul li a span {
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 24px;
-  color: #fef458
-}
-.service-callback ul li span {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 24px
 }
 .technical-support {
   max-width: 1920px;
@@ -5659,152 +5807,6 @@ body {
 }
 .service-footer .callback-form form .btn:hover {
   background-color: rgba(255,255,255,.2)
-}
-.service-callback-seo {
-  max-width: 1920px;
-  margin: 0 auto;
-  background: url(/img/dest/service-callback-grey-bg.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  padding: 130px 0;
-  color: var(--textgrey);
-  position: relative
-}
-.service-callback-seo .callback-form {
-  text-align: center;
-  padding: 50px 100px 50px 100px;
-  background: linear-gradient(.25turn,var(--accent) 70%,rgba(var(--accent),.8)),url(/img/dest/technical-support-callback-bg.png);
-  background-repeat: no-repeat;
-  background-position: right center;
-  display: flex;
-  justify-content: center
-}
-.service-callback-seo .callback-form h2 {
-  color: #fff;
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 52px;
-  margin: 0 auto
-}
-.service-callback-seo .callback-form p {
-  color: #fff;
-  text-align: center;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0 auto;
-  margin-bottom: 30px
-}
-.service-callback-seo .callback-form form {
-  justify-content: center
-}
-.service-callback-seo .callback-form form input[type=text] {
-  background-color: #e6ecef;
-  border: 1px solid #e6ecef;
-  border-radius: 3px;
-  font-weight: 300;
-  font-size: 13px;
-  text-transform: uppercase;
-  color: #6b828d;
-  padding: 17px 23px;
-  margin-bottom: 15px
-}
-.service-callback-seo .callback-form form input[type=checkbox] {
-  width: 17px;
-  height: 17px;
-  margin-right: 5px
-}
-.service-callback-seo .callback-form form .policy_wrap {
-  display: flex;
-  align-items: center;
-  width: 170px;
-  margin: 0 auto;
-  height: 70%
-}
-.service-callback-seo .callback-form form .policy_wrap p {
-  font-weight: 300;
-  font-style: italic;
-  font-size: 13px;
-  line-height: 16px;
-  color: #a8d2ed;
-  width: 150px;
-  margin-bottom: 0;
-  margin-left: 0
-}
-.service-callback-seo .callback-form form .policy_wrap p a {
-  font-weight: 900;
-  font-style: italic;
-  color: #a8d2ed
-}
-.service-callback-seo .callback-form form .policy_wrap p a:hover {
-  color: #fff
-}
-.service-callback-seo .callback-form form .btn {
-  display: inline-block;
-  border: 1px solid #fff;
-  border-radius: 3px;
-  font-weight: 900;
-  font-size: 14px;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 16px 55px 16px;
-  margin-bottom: 15px
-}
-.service-callback-seo .callback-form form .btn:hover {
-  background-color: rgba(255,255,255,.2)
-}
-.service-callback-seo .service-callback-seo-form {
-  position: absolute;
-  top: -28%;
-  left: auto;
-  right: auto;
-  margin: 0 auto;
-  width: 100%
-}
-.service-callback-seo h2 {
-  font-weight: 900;
-  font-size: 64px;
-  line-height: 48px;
-  margin-top: 130px
-}
-.service-callback-seo p {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 48px
-}
-.service-callback-seo ul {
-  padding-left: 0;
-  margin-bottom: 0
-}
-.service-callback-seo ul li {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px
-}
-.service-callback-seo ul li img {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 20px
-}
-.service-callback-seo ul li a {
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 24px;
-  color: var(--textgrey)
-}
-.service-callback-seo ul li a span {
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 24px;
-  color: #005497
-}
-.service-callback-seo ul li span {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 24px
 }
 .corporate-hero {
   position: relative;
