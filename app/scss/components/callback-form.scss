@@ -1,84 +1,132 @@
 .callback {
     &__content {
-        background: url(/img/dest/forms/service-callback-bg.png);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(/img/dest/forms/technical-support-callback-bg.jpg);
+        background-position: right center;
         background-repeat: no-repeat;
         background-size: cover;
+        color: var(--textwhite);
+        padding: 35px 20px 45px;
     }
-    &__title {}
-    &__description {}
+    &__title {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 52px;
+        margin-bottom: 10px;
+    }
+    &__description {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 25px;
+        a {
+            color: var(--textwhite);
+        }
+    }
     &__form {}
     &__check-box {}
 }
+
 .callback-form {
-    &__field {}
-    &__input-text {}
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    &__field {
+        flex: 0 0 270px;
+        margin-right: 30px;
+    }
+    &__input-text {
+        width: 100%;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 30px;
+        background-color: #e6ecef;
+        padding: 0 20px;
+        border-radius: 3px;
+        border: 1px solid #e6ecef;
+        text-transform: uppercase;
+        &::placeholder {
+            color: #6b828d;
+        }
+    }
     &__submit {}
 }
 
 .callback-submit {
-    &__btn {}
+    &__btn {
+        cursor: pointer;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 26px;
+        color: var(--textwhite);
+        padding: 13px 57px;
+        background-color: rgba($color: #fff, $alpha: 0);
+        margin-right: 35px;
+        border-radius: 3px;
+        border: 2px solid var(--textwhite);
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+        &:hover {
+            color: var(--textwhite);
+            background-color: rgba($color: #fff, $alpha: 0.2);
+            transition: all .3s ease-in-out;
+        }
+          
+    }
 }
 
 .callback-checkbox {
-    &__input {}
-    &__more {}
-}
-
-
-
-/* Секция "Обратный звонок" на странице обслуживания */
-.service-callback {
-    max-width: 1920px;
-    margin: 0 auto;
-    
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 130px 0;
-    h2 {
-        font-weight: 900;
-        font-size: 64px;
-        line-height: 48px;
-    }
-    p {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #a8d2ed;
+    white-space: nowrap;
+    label {
+        padding-left: 24px;
+        display: inline-block;
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-image: url(/img/dest/forms/checkbox-icon.png);
+        cursor: pointer;;
         font-weight: 300;
-        font-size: 24px;
-        line-height: 48px;
+        font-size: 14px;
+        line-height: 16px;
+        overflow-wrap: normal;
+        a {
+            font-weight: 900;
+            font-style: italic;
+            color: #0075bf;
+            text-decoration: none;
+            transition: all .3s ease-in-out;
+            &:hover {
+                text-decoration: underline;
+                transition: all .3s ease-in-out;
+            }
+        }
+        
     }
-    /* Список ссылок обратной связи */
-    ul {
-        padding-left: 0;
-        margin-bottom: 0;
-        /* элемент */
-        li {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 15px;
-            /* иконка */
-            img {
-                width: 64px;
-                height: 64px;
-                margin-bottom: 20px;
-            }
-            /* ссылка */
-            a {
-                font-weight: 900;
-                font-size: 24px;
-                line-height: 24px;
-                color: #fff;
-                /* выделение текста цветом */
-                span {
-                    font-weight: 900;
-                    font-size: 24px;
-                    line-height: 24px;
-                    color: #fef458;
-                }
-            }
-            /* доп.текст для ссылки */
-            span {
-                font-weight: 300;
-                font-size: 14px;
-                line-height: 24px;
-            }
+    .callback-checkbox__input:checked ~ label{
+        background-image: url(/img/dest/forms/checkbox_checked-icon.png);
+    }
+    &__input {
+        display: none;
+    }
+    &__more {
+        font-style: italic;
+        font-weight: 900;
+        color: #a8d2ed;
+        &:hover {
+            color:var(--textwhite);
         }
     }
 }
