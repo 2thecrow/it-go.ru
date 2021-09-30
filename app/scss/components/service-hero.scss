@@ -1,0 +1,30 @@
+.service-hero {
+    padding: 80px 0;
+    &__wrapper {
+        max-width: 1665px;
+        width: 100%;
+        padding: 125px 0 160px;
+        margin: 0 auto;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 72px;
+    }
+}
+
+.service-description {
+    position: relative;
+    margin-top: -170px;
+    &__text {
+        display: flex;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+        color: var(--textinner);
+        background-color: #fff;
+        padding: 40px 50px;
+        box-shadow: 0px 16px 32px 0px rgba(176, 186, 193, 0.24);
+    }
+}
+

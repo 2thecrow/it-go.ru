@@ -1,0 +1,79 @@
+.seo-services {
+    padding: 115px 0;
+    &__title {
+        color: var(--textinner);
+        font-size: 700px;
+        font-size: 32px;
+        line-height: 52px;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+    &__card {}
+}
+
+
+.seo-card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--textinner);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 60px 50px 80px 50px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    &_public {
+        background-image: url(/img/dest/seo-services/service-seo-advertising-bg.jpg);
+        &:hover {
+            background-image: url(/img/dest/seo-services/service-seo-advertising-blue-bg.jpg);
+        }
+    }
+    &_seo {
+        background-image: url(/img/dest/seo-services/service-seo-seo-bg.jpg);
+        &:hover {
+            background-image: url(/img/dest/seo-services/service-seo-seo-blue-bg.jpg);
+        }
+    }
+    &_smm {
+        background-image: url(/img/dest/seo-services/service-seo-smm-bg.jpg);
+        &:hover {
+            background-image: url(/img/dest/seo-services/service-seo-smm-blue-bg.jpg);
+            
+        }
+    }
+    &:hover {
+        background-color: #005aa3;
+        color: #fff;
+        text-decoration: none;
+        .seo-card__btn {
+            color: var(--textinner);
+            border-color: #fff;
+            background-color: #fff;
+        }
+    }
+    &__title {
+        font-size: 700px;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    &__description {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 35px;
+    }
+    &__btn {
+        display: inline-flex;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--textinner);
+        padding: 2px 16px;
+        border-radius: 2px;
+        border: 2px solid var(--textinner);
+        text-transform: uppercase;
+    }
+}

@@ -10,47 +10,10 @@
 @import 'components/mainslide.scss';
 @import 'components/big-map.scss';
 @import 'components/benefits.scss';
+@import 'components/service-hero.scss';
+@import 'components/seo-services.scss';
 
-/* Заставка страницы обслуживания */
-.service-hero {
-    position: relative;
-    max-width: 1920px;
-    margin: 0 auto;
-    background: url(/img/dest/service-hero-bg.png) no-repeat 50%;
-    padding: 130px 0 160px;
-    margin-bottom: 90px;
-    /* заголовок */
-    h1 {
-        font-weight: 700;
-        font-size: 64px;
-        line-height: 72px;
-    }
-    /* блок после заголовка */
-    &__action-text {
-        position: absolute;
-        display: flex;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 32px;
-        color: var(--textinner);
-        background-color: #fff;
-        width: 100%;
-        max-width: 1140px;
-        align-items: center;
-        bottom: -80px;
-        padding: 55px 0 55px 55px;
-        box-shadow: 0px 16px 32px 0px rgba(176, 186, 193, 0.24);
-        /* иконка */
-        img {
-            margin-right: 21px;
-        }
-        /* текст */
-        p {
-            margin-bottom: 0;
-        }
-    }
 
-}
 /* Секция Бонусов "С нами вы получаете" */
 .service-bonus {
     max-width: 1920px;
@@ -831,152 +794,9 @@
     }
 }
 
-/* Заставка страницы seo и рекламы */
-.service-hero-seo {
-    position: relative;
-    max-width: 1920px;
-    margin: 0 auto;
-    background: url(/img/dest/service-hero-seo-bg.png) no-repeat 50%;
-    padding: 130px 0 160px;
-    margin-bottom: 90px;
-    /* заголовок */
-    h1 {
-        font-weight: 700;
-        font-size: 64px;
-        line-height: 72px;
-    }
-    /* блок после заголовка */
-    &__action-text {
-        position: absolute;
-        display: flex;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 32px;
-        color: var(--textinner);
-        background-color: #fff;
-        width: 100%;
-        max-width: 1140px;
-        align-items: center;
-        bottom: -80px;
-        padding: 55px 0 55px 55px;
-        box-shadow: 0px 16px 32px 0px rgba(176, 186, 193, 0.24);
-        /* иконка */
-        img {
-            margin-right: 21px;
-        }
-        /* текст */
-        p {
-            margin-bottom: 0;
-        }
-    }
-}
+
 /* Блок "Что мы делаем" на странице seo и рекламы */
-.service-seo-about {
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 100px 0 225px 0;
-    text-align: center;
-    h2 {
-        color: var(--textinner);
-        font-size: 700px;
-        font-size: 32px;
-        line-height: 52px;
-        margin-bottom: 50px;
-    }
-    &__list {
-        list-style-type: none;
-        padding-left: 0;
-        margin-bottom: 0;
-        text-align: left;
-        display: flex;
-        li {
-            max-width: 370px;
-            padding: 0;
-            z-index: 2;
-            margin-bottom: 25px;
-            &:not(:last-child) {
-                margin-right: 15px;
-            }
-            a {
-                display: block;
-                color: var(--textinner);
-                text-decoration: none;
-                padding: 60px 50px 80px 50px;
-                h3 {
-                    font-size: 700px;
-                    font-size: 24px;
-                    line-height: 32px;
-                    margin-bottom: 28px;
-                }
-                p {
-                    font-weight: 300;
-                    font-size: 14px;
-                    line-height: 24px;
-                    margin-bottom: 37px;
-                }
-                .service-seo-btn {
-                    display: inline-flex;
-                    font-weight: 900;
-                    font-size: 14px;
-                    line-height: 24px;
-                    color: var(--textinner);
-                    text-transform: uppercase;
-                    border: 2px solid var(--textinner);
-                    border-radius: 2px;
-                    padding: 3px 13px 3px;
-                }
-                &.advertising-item {
-                    background: url(/img/dest/service-seo-advertising-bg.jpg);
-                    background-color: #fff;
-                    background-repeat: no-repeat;
-                    background-position: right bottom;
-                    &:hover {
-                        background: url(/img/dest/service-seo-advertising-blue-bg.jpg);
-                        background-color: #005aa3;
-                        background-repeat: no-repeat;
-                        background-position: right bottom;
-                        color: #fff;
-                    }
-                }
-                &.seo-item {
-                    background: url(/img/dest/service-seo-seo-bg.jpg);
-                    background-color: #fff;
-                    background-repeat: no-repeat;
-                    background-position: right bottom;
-                    &:hover {
-                        background: url(/img/dest/service-seo-seo-blue-bg.jpg);
-                        background-color: #005aa3;
-                        background-repeat: no-repeat;
-                        background-position: right bottom;
-                        color: #fff;
-                    }
-                }
-                &.smm-item {
-                    background: url(/img/dest/service-seo-smm-bg.jpg);
-                    background-color: #fff;
-                    background-repeat: no-repeat;
-                    background-position: right bottom;
-                    &:hover {
-                        background: url(/img/dest/service-seo-smm-blue-bg.jpg);
-                        background-color: #005aa3;
-                        background-repeat: no-repeat;
-                        background-position: right bottom;
-                        color: #fff;
-                    }
-                }
-                &:hover {
-                    cursor: pointer;
-                    .service-seo-btn {
-                        color: var(--textinner);
-                        border-color: #fff;
-                        background-color: #fff;
-                    }
-                }
-            }
-        }
-        
-    }
-}
+
 
 /* Заставка страницы seo и рекламы */
 .corporate-hero {

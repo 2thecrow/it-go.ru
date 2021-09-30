@@ -1,185 +1,5 @@
-.inner-page-nav {
-    position: relative;
-    max-width: 1920px;
-    margin: 0 auto;
-    margin-bottom: 80px;
-    /* список с кнопками меню */
-    .inner-nav {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        list-style-type: none;
-        font-weight: 900;
-        font-size: 22px;
-        line-height: 26px;
-        padding: 50px 0 35px;
-        margin: 0;
-        /* отдельная кнопка */
-        .dropdown {
-            .inner-page-nav {
-                
-                
-                height: 86px;
-                
-                align-items: center;
-                color: #fff;
-                text-decoration: none;
-                
-                
-                margin: 0 auto;
-                /* текст кнопки */
-                p {
-                    margin-bottom: 0;
-                    width: 170px;
-                }
-                &:hover {
-                    background-color: #fff;
-                    color: var(--accent);
-                    border: 1px solid #fff;
-                    border-radius: 4px 4px 0 0;
-                }
-                .menu-icon {
-                    display: inline-block;
-                    width: 40px;
-                    height: 40px;
-                    margin-right: 12px;
-                }
-                .webdev-icon {
-                    
-                }
-                .support-icon {
-                    
-                }
-                .seo-icon {
-                    
-                }
-                .dropdown-arrow {
-                    display: inline-block;
-                    width: 14px;
-                    height: 9px;
-                    position: absolute;
-                    right: 25px;
-                    top: 50%;
-                    margin-top: -5px;
-                    background-image: url(/img/dest/inner-page-menu-arrow-down-white-icon.png);
-                }
-            }
-            /* Меню внутренних страниц */
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                /* width: 100%; */
-                width: calc(100% - 10px);
-                padding: 0 10px;
-                left: 5px;
-                z-index: 1;
-                &__list {
-                    list-style-type: none;
-                    margin: 0px;
-                    padding: 0px;
-                    background-color: var(--textwhite);
-                    border-radius: 0 0 4px 4px;
-                    box-shadow: 0px 16px 32px 0px rgba(176, 186, 193, 0.24);
-                }
-                &__item {
-                    border-radius: 4px;
-                    a {
-                        display: flex;
-                        align-items: center;
-                        position: relative;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 26px;
-                        padding: 30px 0px 30px 40px;
-                        text-decoration: none;
-                        color: var(--textgrey);
-                        border: none;
-                        &:hover {
-                            background-color: var(--hoverlightgrey);
-                            color: var(--accent);
-                        }
-                    }
-                    &:hover {
-                        .ecommerce-icon {
-                            background-image: url(/img/dest/inner-page-ecommerce-icon-blue.png);
-                        }
-                        .corporate-icon {
-                            background-image: url(/img/dest/inner-page-corporate-icon-blue.png);
-                        }
-                        .landing-icon {
-                            background-image: url(/img/dest/inner-page-landing-icon-blue.png);
-                    }
-                    }
-                    
-                    .inner-menu-icon {
-                        width: 32px;
-                        height: 32px;
-                        display: inline-block;
-                        margin-right: 20px;
-                        background-repeat: no-repeat;
-                        background-position: top;
-                    }
-                    .ecommerce-icon {
-                        background-image: url(/img/dest/inner-page-ecommerce-icon-grey.png);
-                    }
-                    .corporate-icon {
-                        background-image: url(/img/dest/inner-page-corporate-icon-grey.png);
-                    }
-                    .landing-icon {
-                        background-image: url(/img/dest/inner-page-landing-icon-grey.png);
-                    }
-                    &:not(:last-child):after { 
-                        content: '';
-                        position: absolute;
-                        margin: 0 auto;
-                        left: 0;
-                        right: 0;
-                        height: 1px;
-                        background-color: #e6eaec;
-                        width: 80%;
-                    }
-                }
-            }
-            &:hover {
-                .inner-page-nav {
-                    background-color: #fff;
-                    color: #0077c2;
-                    border: 1px solid #fff;
-                    border-radius: 4px 4px 0 0;
-                    .webdev-icon {
-                        background-image: url(/img/dest/usability-blue-icon.png);
-                    }
-                    .support-icon {
-                        background-image: url(/img/dest/headset-blue-icon.png);
-                    }
-                    .seo-icon {
-                        background-image: url(/img/dest/loupe-blue-icon.png);
-                    }
-                    .dropdown-arrow {
-                        background-image: url(/img/dest/inner-page-menu-arrow-down-blue-icon.png);
-                    }
-                }
-                &:after { 
-                    content: "";
-                    position: absolute;
-                    margin: 0px auto;
-                    left: 0px;
-                    right: 0px;
-                    height: 1px;
-                    background-color: rgb(230, 234, 236);
-                    width: 80%;
-                    z-index: 1;
-                }
-                .dropdown-content {
-                    display: block;
-                }
-            }
-        } 
-    }
-}
-
 .page-nav {
+    padding: 50px 0;
     &__list {
         position: relative;
         display: grid;
@@ -194,43 +14,158 @@
         
     }
     &__link {
-        display: flex;
-        color: var(--textwhite);
-        padding: 20px 30px 20px 20px;
-        border: 1px dashed #b8d1e5;
-        border-radius: 4px;
+       
+        
     }
 }
 
 .page-nav-dropdown {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    color: var(--textwhite);
+    padding: 20px 20px 20px 35px;
+    border: 1px dashed #b8d1e5;
+    border-radius: 4px;
+    transition: all .25s ease-in-out;
     &__header {
         display: flex;
     }
     &__icon {
+        flex: 0 0 40px;
         width: 40px;
         height: 40px;
         background-repeat: no-repeat;
+        margin-top: 5px;
+        margin-right: 15px;
+        transition: all .25s ease-in-out;
         &_webdev {
             background-image: url(/img/dest/page-nav/usability-white-icon.png);
+            transition: all .25s ease-in-out;
         }
         &_support {
             background-image: url(/img/dest/page-nav/headset-white-icon.png);
+            transition: all .25s ease-in-out;
         }
         &_seo-public {
             background-image: url(/img/dest/page-nav/loupe-white-icon.png);
+            transition: all .25s ease-in-out;
         }
     }
-    &__title {}
+    &__title {
+        max-width: 195px;
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 26px;
+    }
     &__body {}
     &__list {
+        opacity: 0;
+        position: absolute;
+        top: 100%;
+        left: -1px;
+        display: none;
+        /* display: flex; */
+        flex-direction: column;
         list-style: none;
+        width: calc(100% + 2px);
+        background-color: #fff;
+        padding: 0 25px;
+        margin: 0;
+        z-index: 1;
+        box-shadow: 0px 16px 32px 0px rgba(176, 186, 193, 0.24);
+        transition: opacity .25s ease-in-out;
     }
-    &__item {}
-    &__link {}
+    &__item {
+        border-top: 1px solid #eaedef;
+        &:hover {
+            .dropdown-link__icon_ecommerce {
+                background-image: url(/img/dest/page-nav/inner-page-ecommerce-icon-blue.png);
+            }
+            .dropdown-link__icon_corporate {
+                background-image: url(/img/dest/page-nav/inner-page-corporate-icon-blue.png);
+            }
+            .dropdown-link__icon_landing {
+                background-image: url(/img/dest/page-nav/inner-page-landing-icon-blue.png);
+            }
+        }
+    }
+    &__link {
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 9px;
+        background-image: url(/img/dest/page-nav/inner-page-menu-arrow-down-white-icon.png);
+        transition: all .25s ease-in-out;
+    }
+    &:hover {
+        border: 1px solid transparent;
+        border-radius: 4px 4px 0 0;
+        background-color: #fff;
+        color: #0077c2;
+        transition: all .25s ease-in-out;
+        .page-nav-dropdown__icon_webdev {
+            background-image: url(/img/dest/page-nav/usability-blue-icon.png);
+            transition: all .25s ease-in-out;
+        }
+        .page-nav-dropdown__icon_support {
+            background-image: url(/img/dest/page-nav/headset-blue-icon.png);
+            transition: all .25s ease-in-out;
+        }
+        .page-nav-dropdown__icon_seo-public {
+            background-image: url(/img/dest/page-nav/loupe-blue-icon.png);
+            transition: all .25s ease-in-out;
+        }
+        &::after {
+            background-image: url(/img/dest/page-nav/inner-page-menu-arrow-down-blue-icon.png);
+            transition: all .25s ease-in-out;
+        }
+        .page-nav-dropdown__list {
+            display: flex;
+            opacity: 1;
+            transition: opacity .25s ease-in-out;
+        }
+    }
 }
 
 
 .dropdown-link {
-    &__icon {}
-    &__title {}
+    display: flex;
+    align-items: center;
+    padding: 25px 10px;
+    text-decoration: none;
+    &__icon {
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat;
+        margin-right: 20px;
+        &_ecommerce {
+            background-image: url(/img/dest/page-nav/inner-page-ecommerce-icon-grey.png);
+        }
+        &_corporate {
+            background-image: url(/img/dest/page-nav/inner-page-corporate-icon-grey.png);
+        }
+        &_landing {
+            background-image: url(/img/dest/page-nav/inner-page-landing-icon-grey.png);
+        }
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        
+        color: var(--textgrey);
+    }
+    &:hover {
+        text-decoration: none;
+        .dropdown-link__title {
+            color: var(--accent);
+            
+        }
+    }
 }
