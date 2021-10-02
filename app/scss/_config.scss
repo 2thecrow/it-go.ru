@@ -11,7 +11,7 @@ $container-max-widths: (sm: 540px, md: 750px,  lg: 990px, xl: 1200px);
 
 // IMPORT SECTION
 @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
-@import 'node_modules/bootstrap/scss/bootstrap-grid.scss';  // Optional Bootstrap Grid 4.5.2
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss';  // Optional Bootstrap Grid 4.6.2
 //@import 'node_modules/swiper/swiper-bundle.min'; // Swiper Slider Styles
 /* @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; */  // Bootstrap Breakpoints mixin
 // @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
@@ -23,7 +23,7 @@ $container-max-widths: (sm: 540px, md: 750px,  lg: 990px, xl: 1200px);
 		font-family: $fname;
 		font-style: $fstyle;
 		font-weight: $fweight;
-		// font-display: swap; // Uncomment to initially display system fonts
+		font-display: swap;
 		src: local($fname), url($furl) format('woff2');
 	}
 }

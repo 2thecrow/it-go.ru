@@ -1,0 +1,37 @@
+.technical-support {
+    padding: 130px 0;
+    &__badge {}
+    .service-bonus {
+        padding: 75px 0 85px;
+    }
+    .bonus-card__title {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .bonus-card {
+        margin-bottom: 40px;
+    }
+}
+
+.technical-badge {
+    max-width: 1170px;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    color: var(--textinner);
+    padding: 55px 55px 45px 55px;
+    margin: 0 auto 30px;
+    box-shadow: 0px 16px 32px 0px rgba(176, 186, 193, 0.24);
+    &__icon {
+        margin-right: 25px;
+    }
+    &__description {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+        span {
+            font-weight: 900;
+        }
+    }
+}

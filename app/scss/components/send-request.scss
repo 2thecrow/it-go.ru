@@ -13,7 +13,33 @@
             }
         }
         &_blue {
+            padding: 120px 0 90px;
             background-image: url(/img/dest/forms/service-callback-blue-bg.jpg);
+            .request-item__link-icon_phone {
+                
+                background-image: url(/img/dest/send-request/callback-phone-icon.png);
+            }
+            .request-item__link-icon_skype {
+                background-image: url(/img/dest/send-request/callback-skype-icon.png);
+            }
+            .request-item__link-icon_vk {
+                background-image: url(/img/dest/send-request/callback-vk-icon.png);
+            }
+            .request-item__link-icon_whatsapp {
+                background-image: url(/img/dest/send-request/callback-whatsapp-icon.png);
+            }
+            .request-item__link-icon_telegram {
+                background-image: url(/img/dest/send-request/callback-telegram-icon.png);
+            }
+            .request-item__link {
+                color: var(--white-text);
+                span {
+                    color: #fef458;
+                }
+            }
+            .request-item__description {
+                color: var(--white-text);
+            }
         }
     }
     .callback {
