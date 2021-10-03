@@ -1,0 +1,28 @@
+/* Секция обслуживание внизу */
+.service-footer {
+    padding: 125px 0 105px;
+    .callback {
+        margin-bottom: 40px;
+        &__description {
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto 25px;
+        }
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #353b3e;
+        margin-bottom: 10px;
+    }
+    &__about {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        color: #575c5f;
+        p {
+            margin-bottom: 10px;
+        }
+    }
+}

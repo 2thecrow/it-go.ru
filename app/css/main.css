@@ -5564,7 +5564,7 @@ body {
   background-color: var(--accent)
 }
 .price-plans__wrapper {
-  padding: 125px 0 100px
+  padding: 125px 0 95px
 }
 .price-plans__title {
   position: relative;
@@ -5573,21 +5573,6 @@ body {
   line-height: 60px;
   margin-bottom: 45px;
   text-align: center
-}
-.price-plans__list li:nth-last-child(2) span:last-child {
-  color: var(--accent);
-  text-transform: uppercase
-}
-.price-plans__list a.not-first {
-  color: var(--accent);
-  background-color: #f3f5f9;
-  box-shadow: none;
-  transition: all ease .2s
-}
-.price-plans__list a.not-first:hover {
-  color: #fff;
-  background-color: #005aa3;
-  box-shadow: 0 16px 24px 0 rgba(0,90,163,.32),inset 0 -5px 5px 0 rgba(0,90,163,.32)
 }
 .plans-card {
   background-color: #ebeff5;
@@ -5610,6 +5595,7 @@ body {
   margin: 0
 }
 .plans-card__item {
+  max-height: 49px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -5620,15 +5606,26 @@ body {
 .plans-card__item:nth-child(odd) {
   background-color: #fff
 }
+.plans-card__item:last-child {
+  margin-bottom: 10px
+}
+.plans-card__item:last-child .plan-item__title {
+  font-weight: 900
+}
+.plans-card__item:last-child .plan-item__total {
+  color: var(--accent)
+}
 .plans-card__btn {
+  width: calc(100% - 30px);
   display: inline-flex;
+  justify-content: center;
   font-weight: 900;
   font-size: 14px;
   line-height: 30px;
   color: #005aa3;
   background-color: #f3f5f9;
   padding: 10px 45px 10px;
-  margin-bottom: 25px;
+  margin: 0 15px 25px;
   border-radius: 2px;
   text-decoration: none;
   text-transform: uppercase;
@@ -5636,6 +5633,7 @@ body {
 }
 .plans-card__btn:hover {
   background-color: #005aa3;
+  box-shadow: 0 16px 24px 0 rgba(0,90,163,.32),inset 0 -5px 5px 0 rgba(0,90,163,.32);
   color: #fff;
   text-decoration: none;
   transition: all .3s ease-in-out
@@ -5658,111 +5656,31 @@ body {
   text-align: right
 }
 .service-footer {
-  position: relative;
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 130px 0 115px
+  padding: 125px 0 105px
 }
-.service-footer .callback-form {
-  margin-bottom: 50px
+.service-footer .callback {
+  margin-bottom: 40px
 }
-.service-footer h3 {
+.service-footer .callback__description {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto 25px
+}
+.service-footer__title {
   font-weight: 900;
   font-size: 24px;
-  line-height: 20px;
+  line-height: 32px;
   color: #353b3e;
-  margin-bottom: 20px
+  margin-bottom: 10px
 }
-.service-footer p {
+.service-footer__about {
   font-weight: 300;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 24px;
   color: #575c5f
 }
-.service-footer .callback-form {
-  text-align: center;
-  padding: 50px 100px 50px 100px;
-  background: linear-gradient(.25turn,var(--accent) 70%,rgba(var(--accent),.8)),url(/img/dest/technical-support-callback-bg.png);
-  background-repeat: no-repeat;
-  background-position: right center;
-  display: flex;
-  justify-content: center
-}
-.service-footer .callback-form h2 {
-  color: #fff;
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 52px;
-  margin: 0 auto
-}
-.service-footer .callback-form p {
-  color: #fff;
-  text-align: center;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  max-width: 700px;
-  margin: 0 auto;
-  margin-bottom: 30px
-}
-.service-footer .callback-form form {
-  justify-content: center
-}
-.service-footer .callback-form form input[type=text] {
-  background-color: #e6ecef;
-  border: 1px solid #e6ecef;
-  border-radius: 3px;
-  font-weight: 300;
-  font-size: 13px;
-  text-transform: uppercase;
-  color: #6b828d;
-  padding: 17px 23px;
-  margin-bottom: 15px
-}
-.service-footer .callback-form form input[type=checkbox] {
-  width: 17px;
-  height: 17px;
-  margin-right: 5px
-}
-.service-footer .callback-form form .policy_wrap {
-  display: flex;
-  align-items: center;
-  width: 170px;
-  margin: 0 auto;
-  height: 70%
-}
-.service-footer .callback-form form .policy_wrap p {
-  font-weight: 300;
-  font-style: italic;
-  font-size: 13px;
-  line-height: 16px;
-  color: #a8d2ed;
-  width: 150px;
-  margin-bottom: 0;
-  margin-left: 0
-}
-.service-footer .callback-form form .policy_wrap p a {
-  font-weight: 900;
-  font-style: italic;
-  color: #a8d2ed
-}
-.service-footer .callback-form form .policy_wrap p a:hover {
-  color: #fff
-}
-.service-footer .callback-form form .btn {
-  display: inline-block;
-  border: 1px solid #fff;
-  border-radius: 3px;
-  font-weight: 900;
-  font-size: 14px;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 16px 55px 16px;
-  margin-bottom: 15px
-}
-.service-footer .callback-form form .btn:hover {
-  background-color: rgba(255,255,255,.2)
+.service-footer__about p {
+  margin-bottom: 10px
 }
 .corporate-hero {
   position: relative;
