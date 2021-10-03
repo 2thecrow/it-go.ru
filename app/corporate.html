@@ -1,447 +1,629 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
-
-    <meta charset="utf-8">
-    <title>it-go.ru</title>
-    <meta name="description" content="https://www.it-go.ru/">
-    <meta name="viewport" content="width=device-width">
-    <link rel="icon" href="images/favicon.png">
-    <meta property="og:image" content="images/dest/favlogo.png">
-    <link rel="stylesheet" href="css/app.min.css">
-
+	<meta charset="utf-8">
+	<title>Страница обслуживания и поддержки</title>
+	<meta name="description" content="https://www.it-go.ru/">
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="/img/favicon.png">
+	<!-- bootstrap -->
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!-- Swiper -->
+	<link rel="stylesheet" href="/css/swiper/swiper-bundle.min.css">
+	<script src="/css/swiper/swiper-bundle.min.js"></script>
+	<!-- Particles.JS -->
+	<script src="/css/ParticlesJS/particles.js"></script>
+	<!-- Main JS -->
+	<script src="/js/app.js"></script>
 </head>
 
 <body>
 
-    <header class="inner-page">
-        <aside>
-            <!-- Бокового меню -->
-            <div id="mySidenav" class="sidenav">
-                <ul class="aside_mnu">
-                    <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Портфолио</a></li>
-                    <li><a href="#">Наш блог</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="tel:+88002003385" class="phone"><img src="images/dest/phone-icon.png" alt="Phone icon"> 8 (800) 200-3385</a></li>
-                    <li>
-                        <address>
-                            <img src="images/dest/map-point-icon.png" alt="Phone icon">
-                            <div>
-                                <span>г. Новокузнецк, </span><br> <span> пр. Октябрьский, 40(2-й этаж)</span>
-                            </div>
-                        </address>
-                    </li>
-                </ul>
-                <ul id="soc_btn-iner">
-                    <li class="vk">
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-                                <path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486C22.864 8.997 25.22 6 23.136 6h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539A8.07 8.07 0 0011.148 5c-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305C4.976 6.426 4.902 6 4.042 6H.787C.295 6 0 6.16 0 6.516c0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="twitter">
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-                                <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="facebook">
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-                                <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav_wrapper">
-                <!-- Кнопка меню -->
-                <div class="mnu_btn" onclick="openNav()">
-                    <div class="mnu_btn-icon"> &#9776;</div>
-                    <span>меню</span>
-                </div>
-                <!-- Меню соц. сетей -->
-                <ul class="soc_btn">
-                    <li class="vk">
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-                                <path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486C22.864 8.997 25.22 6 23.136 6h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539A8.07 8.07 0 0011.148 5c-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305C4.976 6.426 4.902 6 4.042 6H.787C.295 6 0 6.16 0 6.516c0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="twitter">
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-                                <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="facebook">
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-                                <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+	<div class="overlay"></div>
 
-            <script>
-                function openNav() {
-                    document.getElementById("mySidenav").style.width = "270px";
-                };
+	<aside class="aside">
+		<!-- Бокового меню -->
+		<div class="aside__sidenav sidenav">
+			<div class="sidenav__closebtn">&times;</div>
+			<ul class="aside__menu aside-menu">
+				<li class="aside-menu__item">
+					<a class="aside-menu__link" href="#">О компании</a>
+				</li>
+				<li class="aside-menu__item">
+					<a class="aside-menu__link" href="#">Услуги</a>
+				</li>
+				<li class="aside-menu__item">
+					<a class="aside-menu__link" href="#">Портфолио</a>
+				</li>
+				<li class="aside-menu__item">
+					<a class="aside-menu__link" href="#">Наш блог</a>
+				</li>
+				<li class="aside-menu__item">
+					<a class="aside-menu__link" href="#">Контакты</a>
+				</li>
+				<li class="aside-menu__item">
+					<a class="aside-menu__link aside-menu__link_phone phone" href="tel:+88002003385">
+						<img src="/img/dest/global/phone-icon.png" alt="Phone icon"> 
+						8 (800) 200-3385
+					</a>
+				</li>
+				<li class="aside-menu__item">
+					<address class="aside-menu__address">
+						<div class="aside-menu__address-icon">
+							<img class="" src="/img/dest/global/map-point-icon.png" alt="Phone icon">	
+						</div>
+						<div class="aside-menu__address-text">
+							<span>г. Новокузнецк, </span><br> <span> пр. Октябрьский, 40 <br>(2-й этаж)</span>
+						</div>
+					</address>
+				</li>
+			</ul>
+			<ul class="socials-inner socials">
+				<li class="socials__item socials__item_vk">
+					<a class="socials__link" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+							<path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486C22.864 8.997 25.22 6 23.136 6h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539A8.07 8.07 0 0011.148 5c-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305C4.976 6.426 4.902 6 4.042 6H.787C.295 6 0 6.16 0 6.516c0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" />
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item socials__item_twitter">
+					<a class="socials__link" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+							<path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z" />
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item socials__item_facebook">
+					<a class="socials__link" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+							<path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z" />
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="aside__nav aside-nav">
+			<!-- Кнопка меню -->
+			<div class="aside-nav__open open-btn">
+				<div class="open-btn__icon"> 
+					<img src="/img/dest/aside-menu-icon.png" alt="Открыть меню">
+				</div>
+				<span class="open-btn__text">меню</span>
+			</div>
+			<!-- Меню соц. сетей -->
+			<ul class="aside-nav__socials socials">
+				<li class="socials__item socials__item_vk">
+					<a class="socials__link" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+							<path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486C22.864 8.997 25.22 6 23.136 6h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539A8.07 8.07 0 0011.148 5c-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305C4.976 6.426 4.902 6 4.042 6H.787C.295 6 0 6.16 0 6.516c0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" />
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item socials__item_twitter">
+					<a class="socials__link" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+							<path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z" />
+						</svg>
+					</a>
+				</li>
+				<li class="socials__item socials__item_facebook">
+					<a class="socials__link" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+							<path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z" />
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</aside>
 
-                function closeNav() {
-                    document.getElementById("mySidenav").style.width = "0";
-                };
-            </script>
-        </aside>
-        <div class="container">
-            <div class="row header-menu inner-page">
-                <div class="col-12 col-sm-6 col-md-6 col-lg-5">
-                    <a href="#" class="header-menu__logo inner-page">
-                        <img src="images/dest/it-go-logo-inner.png" alt="Logo">
-                        <span>студия веб-разработки <br> и маркетинга </span>
-                    </a>
-                </div>
-                <div class="col-12 col-sm-6 col-md-auto col-lg-auto">
-                    <div class="header-menu__contacts">
-                        <div class="header-contacts-phone inner-page">
-                            Бесплатно по России <br>
-                            <a href="tel:88002003385">8 (800) 200-3385</a>
-                        </div>
-                        <a href="#" class="header-contacts-button inner-page"><img src="images/dest/mail-footer-icon.png" alt="contact mail"> Напишите нам</a>
-                    </div>
-                </div>
+	<header class="header header-inner">
+		<div class="wrapper">
+			<div class="header__menu header-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+							<a href="#" class="header-menu__logo">
+								<div class="header-menu__logo_icon">
+									<img src="/img/dest/it-go-logo-inner.png" alt="Logo">
+								</div>
+								<span class="header-menu__logo_name">студия веб-разработки <br> и маркетинга </span>
+							</a>
+						</div>
+						<div class="col-12 col-sm-6 col-md-auto col-lg-8">
+							<div class="header-menu__contacts header-contacts">
+								<div class="header-contacts__phone">
+									<span>Бесплатно по России</span>
+									<a class="header-contacts__phone-link" href="tel:88002003385">8 (800) 200-3385</a>
+								</div>
+								<a href="#" class="header-contacts__btn">
+									Напишите нам
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
-            </div>
-        </div>
-    </header>
+	<nav class="page-nav wrapper">
+		<!-- particles.js container -->
+		<div id="inner-nav-particles" class="particles-bg">
+		</div>
+		<div class="container">
+			<ul class="page-nav__list">
+				<li class="page-nav__item">
+					<div class="page-nav__link page-nav-dropdown">
+						<div class="page-nav-dropdown__header">
+							<div class="page-nav-dropdown__icon page-nav-dropdown__icon_webdev"></div>
+							<div class="page-nav-dropdown__title">
+								Разработка сайтов
+							</div> 
+						</div>
+						<ul class="page-nav-dropdown__list">
+							<li class="page-nav-dropdown__item">
+								<a href="" class="page-nav-dropdown__link dropdown-link">
+									<div class="dropdown-link__icon dropdown-link__icon_ecommerce"></div>
+									<div class="dropdown-link__title">Интернет-магазин</div>
+								</a>
+							</li>
+							<li class="page-nav-dropdown__item">
+								<a href="" class="page-nav-dropdown__link dropdown-link">
+									<div class="dropdown-link__icon dropdown-link__icon_corporate"></div>
+									<div class="dropdown-link__title">Корпоративный  сайт</div>
+								</a>
+							</li>
+							<li class="page-nav-dropdown__item">
+								<a href="" class="page-nav-dropdown__link dropdown-link">
+									<div class="dropdown-link__icon dropdown-link__icon_landing"></div>
+									<div class="dropdown-link__title">Landing page</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="page-nav__item">
+					<div class="page-nav__link page-nav-dropdown">
+						<div class="page-nav-dropdown__header">
+							<div class="page-nav-dropdown__icon page-nav-dropdown__icon_support"></div>
+							<div class="page-nav-dropdown__title">
+								Обслуживание и&nbsp;поддержка
+							</div>
+						</div>
+						<ul class="page-nav-dropdown__list">
+							<li class="page-nav-dropdown__item">
+								<a href="" class="page-nav-dropdown__link dropdown-link">
+									<div class="dropdown-link__icon"></div>
+									<div class="dropdown-link__title">Техническая поддержка</div>
+								</a>
+							</li>
+							<li class="page-nav-dropdown__item">
+								<a href="" class="page-nav-dropdown__link dropdown-link">
+									<div class="dropdown-link__icon"></div>
+									<div class="dropdown-link__title">Информационная поддержка</div>
+								</a>
+							</li>
+							<li class="page-nav-dropdown__item">
+								<a href="" class="page-nav-dropdown__link dropdown-link">
+									<div class="dropdown-link__icon"></div>
+									<div class="dropdown-link__title">Техническое обслуживание</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="page-nav__item">
+					<div class="page-nav__link page-nav-dropdown">
+						<div class="page-nav-dropdown__header">
+							<div class="page-nav-dropdown__icon page-nav-dropdown__icon_seo-public"></div>
+							<div class="page-nav-dropdown__title">
+								Реклама и&nbsp;продвижение
+							</div>
+						</div>
+						<ul class="page-nav-dropdown__list">
+							<li class="page-nav-dropdown__item">
+								<a href="" class="page-nav-dropdown__link dropdown-link">
+									<div class="dropdown-link__icon"></div>
+									<div class="dropdown-link__title">SEO</div>
+								</a>
+							</li>
+							<li class="page-nav-dropdown__item">
+								<a href="" class="page-nav-dropdown__link dropdown-link">
+									<div class="dropdown-link__icon"></div>
+									<div class="dropdown-link__title">Контекстная реклама</div>
+								</a>
+							</li>
+							<li class="page-nav-dropdown__item">
+								<a href="" class="page-nav-dropdown__link dropdown-link">
+									<div class="dropdown-link__icon"></div>
+									<div class="dropdown-link__title">SMM</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-    <nav class="inner-page-nav">
-        <!-- particles.js container -->
-        <div id="header-particles">
-        </div>
-        <div class="container">
-            <ul class="row inner-nav wrapper">
-                <li class="col-md-6 col-lg-4 dropdown">
-                    <a class="inner-page-nav" href="#">
-                        <!-- <img src="images/dest/usability-icon.png" alt="Web dev"> -->
-                        <span class="menu-icon webdev-icon"></span>
-                        <p>Разработка сайтов</p>
-                        <span class="dropdown-arrow"></span>
-                    </a>
-                    <div class="dropdown-content">
-                        <ul class="dropdown-content__list">
-                            <li class="dropdown-content__item">
-                                <a href="#">
-                                    <span class="inner-menu-icon ecommerce-icon"></span>
-                                    Интернет-магазин
-                                </a>
-                            </li>
-                            <li class="dropdown-content__item">
-                                <a href="#">
-                                    <span class="inner-menu-icon corporate-icon"></span>
-                                    Корпоративный сайт
-                                </a>
-                            </li>
-                            <li class="dropdown-content__item">
-                                <a href="#">
-                                    <span class="inner-menu-icon landing-icon"></span>
-                                    Landing page
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="col-md-6 col-lg-4 dropdown">
-                    <a class="inner-page-nav" href="">
-                        <!-- <img src="images/dest/headset-icon.png" alt="Support"> -->
-                        <span class="menu-icon support-icon"></span>
-                        <p>Обслуживание и поддержка</p>
-                        <span class="dropdown-arrow"></span>
-                    </a>
-                    <div class="dropdown-content">
-                        <ul class="dropdown-content__list">
-                            <li class="dropdown-content__item">
-                                <a href="#">Техническая поддержка</a>
-                            </li>
-                            <li class="dropdown-content__item">
-                                <a href="#">Информационная поддержка</a>
-                            </li>
-                            <li class="dropdown-content__item">
-                                <a href="#">Техническое обслуживание</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="col-md-6 col-lg-4 dropdown">
-                    <a class="inner-page-nav" href="">
-                        <!-- <img src="images/dest/loupe-icon.png" alt="ADs and SEO"> -->
-                        <span class="menu-icon seo-icon"></span>
-                        <p>Реклама и продвижение</p>
-                        <span class="dropdown-arrow"></span>
-                    </a>
-                    <div class="dropdown-content">
-                        <ul class="dropdown-content__list">
-                            <li class="dropdown-content__item">
-                                <a href="#">SEO</a>
-                            </li>
-                            <li class="dropdown-content__item">
-                                <a href="#">Контекстная реклама</a>
-                            </li>
-                            <li class="dropdown-content__item">
-                                <a href="#">SMM</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <script>
-            //функция открытия для SEO
-            function mySeoDropdown() {
-                /* Open sub-menu */
-                document.getElementById("SeoDropdown").classList.toggle("wst-show");
-                /* focusing activ menu + button */
-                document.getElementById("wst-active-seo").classList.toggle("wst-active-menu");
-            };
-        </script>
-    </nav>
+    <div class="service-hero wrapper">
+		<div class="service-hero__wrapper" style="background-image: url(/img/dest/service-hero/corporate-bg.jpg);">
+			<div class="container">
+				<h1 class="service-hero__title">
+					Наши сайты — это не просто <br> визитки, это инструменты <br> повышения продаж
+				</h1>
+			</div>
+		</div>
+	</div>
 
-    <section class="corporate-hero">
-        <div class="container corporate-hero__wrapper">
-            <h1>Наши сайты — это не просто <br> визитки, это инструменты <br> повышения продаж
-            </h1>
-            <div class="corporate-hero__action-text">
-                <p>Стимулирование коммьюнити, следовательно, спонтанно создает ролевой формат события, отвоевывая
-                    рыночный сегмент. Ребрендинг без оглядки на авторитеты переворачивает обществвенный продуктовый ассортимент.</p>
-            </div>
-        </div>
-    </section>
+	<div class="service-description">
+		<div class="container">
+			<div class="service-description__text">
+				Стимулирование коммьюнити, следовательно, спонтанно создает ролевой формат события, отвоевывая
+                рыночный сегмент. Ребрендинг без оглядки на авторитеты переворачивает обществвенный продуктовый ассортимент.
+			</div>
+		</div>
+	</div>
 
-    <section class="corporate-benefit">
-        <div class="corpotate-benefit__wrapper">
+    <!-- under -->
+
+    <div class="corporate-benefit wrapper">
+        <div class="corporate-benefit__wrapper">
             <div class="container">
-                <h2>С нами вы получаете</h2>
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="corpotate-benefit-item__image-left">
-                            <img src="images/dest/corporate_macbook-pro-clay.png" alt="Corpotate mac notebook">
+                <h2 class="corporate-benefit__title">С нами вы получаете</h2>
+            </div>
+            <div class="corporate-benefit__advantage corporate-advantage corporate-advantage_first">
+                <div class="corporate-advantage__image">
+                    <img src="/img/dest/corporate/macbook-pro-clay.png" alt="notebook image">
+                </div>
+                <div class="corporate-advantage__content">
+                    <div class="corporate-advantage__header">
+                        <div class="corporate-advantage__icon">
+                            <img src="/img/dest/global/plus-icon.png" alt="Plus icon">
+                        </div>
+                        <div class="corporate-advantage__title">
+                            Правильно распределенный <br> продающий контент
                         </div>
                     </div>
-                    <div class="col-xl-6">
-                        <div class="corpotate-benefit-item">
-                            <div class="corpotate-benefit-item__icon">
-                                <img src="images/dest/plus-icon.png" alt="Plus icon">
-                                <p>Правильно распределенный <br> продающий контент</p>
+                    <div class="corporate-advantage__description">
+                        Рекламный блок создает conversion rate, признавая определенные рыночные тенденции. Концепция новой стратегии концентрирует анализ зарубежного опыта.
+                    </div>
+                </div>
+            </div>
+            <div class="corporate-benefit__container">
+                <div class="corporate-benefit__advantage corporate-advantage corporate-advantage_second">
+                    <div class="corporate-advantage__image">
+                        <img src="/img/dest/corporate/macbook-pro-clay_next.png" alt="notebook next image">
+                    </div>
+                    <div class="corporate-advantage__content">
+                        <div class="corporate-advantage__header">
+                            <div class="corporate-advantage__icon">
+                                <img src="/img/dest/global/plus-icon.png" alt="Plus icon">
                             </div>
-                            <div class="corpotate-benefit-item__text">
-                                <p>Рекламный блок создает conversion rate, признавая определенные рыночные тенденции. Концепция новой стратегии концентрирует анализ зарубежного опыта.</p>
+                            <div class="corporate-advantage__title">
+                                Собственная платформа <br> сайта
+                            </div>
+                        </div>
+                        <div class="corporate-advantage__description">
+                            Рейтинг, суммируя приведенные примеры, экономит
+                            из ряда вон выходящий комплексный анализ ситуации,
+                            используя опыт предыдущих кампаний. Рекламный
+                            блок создает conversion rate, признавая определенные рыночные тенденции.
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits">
+                    <div class="container">
+                        <h2 class="benefits__title">Преимущества своей платформы</h2>
+                        <div class="row row-cols-md-2 row-cols-lg-3">
+                            <div class="col">
+                                <div class="benefit-card">
+                                    <div class="benefit-card__front">
+                                        <div class="benefit-card__icon">
+                                            <img src="/img/dest/benefits/corporate-benefits-icon_1.png" alt="">
+                                        </div>
+                                        <div class="benefit-card__front_description">
+                                            Широкие возможности <br>
+                                            для роста проекта
+                                        </div>
+                                    </div>
+                                    <div class="benefit-card__back">
+                                        <div class="benefit-card__back_description">
+                                            Пояснение к пункту, что значит распределение отвествености, и как это поможет заказчику 
+                                            определиться с выбором исполнителя Пояснение к пункту, что значит распределение отвествености, и как это поможет заказчику 
+                                            определиться с выбором исполнителя
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="benefit-card">
+                                    <div class="benefit-card__front">
+                                        <div class="benefit-card__icon">
+                                            <img src="/img/dest/benefits/corporate-benefits-icon_2.png" alt="">
+                                        </div>
+                                        <div class="benefit-card__front_description">
+                                            Распределение <br> ответственности
+                                        </div>
+                                    </div>
+                                    <div class="benefit-card__back">
+                                        <div class="benefit-card__back_description">
+                                            Пояснение к пункту, что значит распределение отвествености, и как это поможет заказчику 
+                                            определиться с выбором исполнителя Пояснение к пункту, что значит распределение отвествености, и как это поможет заказчику 
+                                            определиться с выбором исполнителя
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="benefit-card">
+                                    <div class="benefit-card__front">
+                                        <div class="benefit-card__icon">
+                                            <img src="/img/dest/benefits/corporate-benefits-icon_3.png" alt="">
+                                        </div>
+                                        <div class="benefit-card__front_description">
+                                            Честная ценовая <br> политика 
+                                        </div>
+                                    </div>
+                                    <div class="benefit-card__back">
+                                        <div class="benefit-card__back_description">
+                                            Пояснение к пункту, что значит распределение отвествености, и как это поможет заказчику 
+                                            определиться с выбором исполнителя Пояснение к пункту, что значит распределение отвествености, и как это поможет заказчику 
+                                            определиться с выбором исполнителя
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="benefit-card">
+                                    <div class="benefit-card__front">
+                                        <div class="benefit-card__icon">
+                                            <img src="/img/dest/benefits/corporate-benefits-icon_4.png" alt="">
+                                        </div>
+                                        <div class="benefit-card__front_description">
+                                            Работаем по всей <br> России
+                                        </div>
+                                    </div>
+                                    <div class="benefit-card__back">
+                                        <div class="benefit-card__back_description">
+                                            Пояснение к пункту, что значит распределение отвествености, и как это поможет заказчику 
+                                            определиться с выбором исполнителя Пояснение к пункту, что значит распределение отвествености, и как это поможет заказчику 
+                                            определиться с выбором исполнителя
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="benefit-card">
+                                    <div class="benefit-card__front">
+                                        <div class="benefit-card__icon">
+                                            <img src="/img/dest/benefits/corporate-benefits-icon_5.png" alt="">
+                                        </div>
+                                        <div class="benefit-card__front_description">
+                                            Опыт крупных <br> разработок 
+                                        </div>
+                                    </div>
+                                    <div class="benefit-card__back">
+                                        <div class="benefit-card__back_description">
+                                            Пояснение к пункту, что значит распределение отвествености, и как это поможет заказчику 
+                                            определиться с выбором исполнителя Пояснение к пункту, что значит распределение отвествености, и как это поможет заказчику 
+                                            определиться с выбором исполнителя
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="benefit-card">
+                                    <div class="benefit-card__front">
+                                        <div class="benefit-card__icon">
+                                            <img src="/img/dest/benefits/corporate-benefits-icon_6.png" alt="">
+                                        </div>
+                                        <div class="benefit-card__front_description">
+                                            Высокая скорость <br> работы 
+                                        </div>
+                                    </div>
+                                    <div class="benefit-card__back">
+                                        <div class="benefit-card__back_description">
+                                            Пояснение к пункту, что значит распределение отвествености, и как это поможет заказчику 
+                                            определиться с выбором исполнителя Пояснение к пункту, что значит распределение отвествености, и как это поможет заказчику 
+                                            определиться с выбором исполнителя
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="corpotate-benefit-big-bg">
+            <div class="callback">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <div class="corpotate-benefit-item">
-                                <div class="corpotate-benefit-item__icon">
-                                    <img src="images/dest/plus-icon.png" alt="Plus icon">
-                                    <p>Собственная платформа <br> сайта</p>
-                                </div>
-                                <div class="corpotate-benefit-item__text">
-                                    <p>Рейтинг, суммируя приведенные примеры, экономит
-                                        из ряда вон выходящий комплексный анализ ситуации,
-                                        используя опыт предыдущих кампаний. Рекламный
-                                        блок создает conversion rate, признавая определенные рыночные тенденции. </p>
-                                </div>
-                            </div>
+                    <div class="callback__content">
+                        <h2 class="callback__title">Узнайте сколько будет стоить ваш сайт</h2>
+                        <div class="callback__description">
+                            Оставьте свой номер телефона, мы свяжемся с вами и ответим на все вопросы
                         </div>
-                        <div class="col-xl-6">
-                            <div class="corpotate-benefit-item__image-right">
-                                <img src="images/dest/corporate_macbook-pro-clay.png" alt="Corpotate mac notebook">
+                        <div class="callback__form callback-form">
+                            <div class="callback-form__field">
+                                <input type="text" class="callback-form__input-text" placeholder="Ваше имя">
+                            </div>
+                            <div class="callback-form__field">
+                                <input type="text" class="callback-form__input-text" placeholder="Ваш телефон">
+                            </div>
+                            <div class="callback-form__submit callback-submit">
+                                <input type="button" value="Узнать" class="callback-submit__btn">
+                            </div>
+                            <div class="callback-form__check-box callback-checkbox">
+                                <input type="checkbox" id="callback-check" class="callback-checkbox__input">
+                                <label for="callback-check">
+                                    Согласен на обработку <br>
+                                    <a href="" class="callback-checkbox__more">персональных данных</a>
+                                </label>
                             </div>
                         </div>
                     </div>
-                    <section class="benefits">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <h3>Преимущества своей платформы </h3>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="benefits__list">
-                                    <div class="benefits__list__card">
-                                        <div class="benefits__list__card-inner">
-                                            <div class="benefits__list__item-front">
-                                                <img src="images/dest/solution-icon.png" alt="Solution icon">
-                                                <p>Комплексный подход</p>
-                                            </div>
-                                            <div class="benefits__list__item-back">
-                                                <p>Любой текст</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="benefits__list__card">
-                                        <div class="benefits__list__card-inner">
-                                            <div class="benefits__list__item-front">
-                                                <img src="images/dest/iconmonstr-share-6-64.png" alt="Share icon">
-                                                <p>Ответсвенность перед заказчиком</p>
-                                            </div>
-                                            <div class="benefits__list__item-back">
-                                                <p>Любой текст</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="benefits__list__card">
-                                        <div class="benefits__list__card-inner">
-                                            <div class="benefits__list__item-front">
-                                                <img src="images/dest/brilliant-icon.png" alt="Price icon">
-                                                <p>Честная ценовая политика
-                                                </p>
-                                            </div>
-                                            <div class="benefits__list__item-back">
-                                                <p>Любой текст</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="benefits__list__card">
-                                        <div class="benefits__list__card-inner">
-                                            <div class="benefits__list__item-front">
-                                                <img src="images/dest/world-icon.png" alt="Work icon">
-                                                <p>Работаем по всей России</p>
-                                            </div>
-                                            <div class="benefits__list__item-back">
-                                                <p>Любой текст</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="benefits__list__card">
-                                        <div class="benefits__list__card-inner">
-                                            <div class="benefits__list__item-front">
-                                                <img src="images/dest/web-settings-icon.png" alt="Time icon">
-                                                <p>Опыт крупных разработок
-                                                </p>
-                                            </div>
-                                            <div class="benefits__list__item-back">
-                                                <p>Любой текст</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="benefits__list__card">
-                                        <div class="benefits__list__card-inner">
-                                            <div class="benefits__list__item-front">
-                                                <img src="images/dest/rocket-icon.png" alt="High speed icon">
-                                                <p>Высокая скорость работы
-                                                </p>
-                                            </div>
-                                            <div class="benefits__list__item-back">
-                                                <p>Любой текст</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                </div>
+            </div>
+            <div class="corporate-benefit__advantage corporate-advantage corporate-advantage_third">
+                <div class="corporate-advantage__image">
+                    <img src="/img/dest/corporate/corporate-server.png" alt="corporate servers">
+                </div>
+                <div class="corporate-advantage__content">
+                    <div class="corporate-advantage__header">
+                        <div class="corporate-advantage__icon">
+                            <img src="/img/dest/global/plus-icon.png" alt="Plus icon">
+                        </div>
+                        <div class="corporate-advantage__title">
+                            Надежный <br> хостинг
+                        </div>
+                    </div>
+                    <div class="corporate-advantage__description">
+                        Стоит отметить, что инвестиционный продукт сфокусирован. Стимулирование коммьюнити, следовательно, спонтанно создает ролевой формат события, отвоевывая рыночный сегмент. 
+                    </div>
+                </div>
+            </div>
+            <div class="our-offer">
+                <div class="container">
+                    <div class="our-offer__title">Мы предлагаем вам </div>
+                    <div class="row row-cols-md-2">
+                        <div class="col">
+                            <div class="our-offer__card offer-card offer-card_server">
+                                <div class="offer-card__title">
+                                    Размещение на собственных <br>
+                                    серверах в РФ
                                 </div>
                             </div>
                         </div>
-                    </section>
+                        <div class="col">
+                            <div class="our-offer__card offer-card offer-card_data">
+                                <div class="offer-card__title">
+                                    Гарантированная сохранность <br>
+                                    данных
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="our-offer__card offer-card offer-card_ip">
+                                <div class="offer-card__title">
+                                    Предоставление белого <br>
+                                    IP адреса
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="our-offer__card offer-card offer-card_support">
+                                <div class="offer-card__title">
+                                    Отзывчивая <br>
+                                    техподдержка
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <footer>
-        <section class="footer_nav">
-            <div class="container">
-                <div class="row footer_wraper">
-                    <div class="col-sm-12 col-md-9 col-lg-9">
-                        <nav>
-                            <ul>
-                                <li><a href="#" class="link-a">О компании</a></li>
-                                <li><a href="#" class="link-a">Услуги</a></li>
-                                <li><a href="#" class="link-a">Портфолио</a></li>
-                                <li><a href="#" class="link-a">Наш блог</a></li>
-                                <li><a href="#" class="link-a">Контакты</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-sm-12 col-md-auto col-lg-auto">
-                        <a href="#" class="footer_mail"><img src="images/dest/mail-footer-icon.png" alt="Footer mail icon">Напишите нам</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+	<footer class="footer wrapper">
+		<div class="footer__bg-line">
+			<div class="container">
+				<div class="row">
+					<div class="footer__nav footer-nav">
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="" class="footer-nav__link link-a">О компании</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="" class="footer-nav__link link-a">Услуги</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="" class="footer-nav__link link-a">Портфолио</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="" class="footer-nav__link link-a">Наш блог</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="" class="footer-nav__link link-a">Контакты</a>
+							</li>
+						</ul>
+						<div class="footer-nav__mail">
+							<a href="#" class="footer-nav__mail-btn">
+								<img src="/img/dest/global/mail-footer-icon.png" alt="Footer mail icon">
+								<span class="link-a">Напишите нам</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <section class="contacts">
-            <div class="container">
-                <div class="row footer_wraper">
-                    <div class="col-12 col-sm-12 col-md-8 col-lg-6">
-                        <div class="row contact__info">
-                            <div class="col-sm-12 col-md-6 col-lg-6 contact__info__item phone">
-                                <img src="images/dest/phone-icon.png" alt="Phone icon">
-                                <a href="tel:88002003385">8 (800) 200-3385</a>
-                                <span>Бесплатно по России</span>
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-6 contact__info__item">
-                                <img src="images/dest/map-point-icon.png" alt="Map icon">
-                                г. Новокузнецк
-                                <br><span>пр. Октябрьский, 40, 2-й этаж</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-auto col-lg-auto">
-                        <ul class="contact__social">
-                            <li class="vk">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-                                        <path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486C22.864 8.997 25.22 6 23.136 6h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539A8.07 8.07 0 0011.148 5c-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305C4.976 6.426 4.902 6 4.042 6H.787C.295 6 0 6.16 0 6.516c0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="twitter">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-                                        <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="facebook">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
-                                        <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z" />
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<div class="footer__contacts footer-contacts">
+			<div class="container">
+				<div class="footer-contacts__wrapper">
+					<div class="footer-contacts__info contact-info">
+						<div class="contact-info__item contact-item contact-item_phone">
+							<div class="contact-item__content">
+								<div class="contact-item__icon">
+									<img src="/img/dest/global/phone-icon.png" alt="Phone icon">
+								</div>
+								<a href="tel:88002003385" class="contact-item__link">8 (800) 200-3385</a>
+							</div>
+							<div class="contact-item__description">Бесплатно по России</div>
+						</div>
+						<div class="contact-info__item contact-item contact-item_address">
+							<div class="contact-item__content">
+								<div class="contact-item__icon">
+									<img src="/img/dest/global/map-point-icon.png" alt="Map icon">
+								</div>
+								г. Новокузнецк
+							</div>
+							<div class="contact-item__description">пр. Октябрьский, 40, 2-й этаж</div>
+						</div>
+					</div>
+					<ul class="footer-contacts__socials socials">
+						<li class="socials__item socials__item_vk">
+							<a class="socials__link" href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+									<path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486C22.864 8.997 25.22 6 23.136 6h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539A8.07 8.07 0 0011.148 5c-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305C4.976 6.426 4.902 6 4.042 6H.787C.295 6 0 6.16 0 6.516c0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" />
+								</svg>
+							</a>
+						</li>
+						<li class="socials__item socials__item_twitter">
+							<a class="socials__link" href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+									<path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z" />
+								</svg>
+							</a>
+						</li>
+						<li class="socials__item socials__item_facebook">
+							<a class="socials__link" href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff">
+									<path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-        <section class="copyright">
-            <div class="container">
-                <div class="row footer_wraper">
-                    <div class="col-lg-6">
-                        <p>© 2019 Айти Сити / студия разработки и маркетинга</p>
-                    </div>
-                    <div class="col-lg-auto">
-                        <a href="#" class="policy">Политика конфиденциальности</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<div class="footer__copyright footer-copyright">
+			<div class="container">
+				<div class="footer-copyright__wrapper">
+					<div class="footer-copyright__item footer-copyright__item_studio">
+						© 2019 Айти Сити / студия разработки и маркетинга
+					</div>
+					<div class="footer-copyright__item footer-copyright__item_policy">
+						<a href="#" class="policy">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    </footer>
+	</footer>
 
 </body>
 
-<script src="js/app.min.js"></script>
 </html>

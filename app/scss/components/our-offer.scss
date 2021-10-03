@@ -1,0 +1,42 @@
+.our-offer {
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 35px;
+        color: var(--textgrey);
+        margin-bottom: 30px;
+    }
+    &__card {}
+}
+
+.offer-card {
+    display: flex;
+    align-items: center;
+    min-height: 230px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px;
+    margin-bottom: 30px;
+    &__title {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--textwhite);
+        overflow: hidden; /* include for safety */
+        display: -webkit-box; /* setting a block element  */
+        -webkit-box-orient: vertical; /* companion class   */
+        -webkit-line-clamp: 3; /* number of lines  */
+    }
+    &_server {
+        background-image: url(/img/dest/our-offer/offer-servers.jpg);
+    }
+    &_data {
+        background-image: url(/img/dest/our-offer/offer-security.jpg);
+    }
+    &_ip {
+        background-image: url(/img/dest/our-offer/offer-ip.jpg);
+    }
+    &_support {
+        background-image: url(/img/dest/our-offer/offer-support.jpg);
+    }
+}

@@ -5682,113 +5682,151 @@ body {
 .service-footer__about p {
   margin-bottom: 10px
 }
-.corporate-hero {
-  position: relative;
-  max-width: 1920px;
-  margin: 0 auto;
-  background: url(/img/dest/corporate-bg.png) no-repeat 50%
-}
-.corporate-hero__wrapper {
-  position: relative
-}
-.corporate-hero h1 {
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 72px;
-  padding-top: 135px
-}
-.corporate-hero__action-text {
-  position: relative;
-  display: flex;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 32px;
-  color: var(--textinner);
-  background-color: #fff;
-  width: 100%;
-  max-width: 1140px;
-  align-items: center;
-  bottom: -70px;
-  padding: 55px;
-  margin-bottom: 90px;
-  box-shadow: 0 16px 32px 0 rgba(176,186,193,.24)
-}
-.corporate-hero__action-text img {
-  margin-right: 21px
-}
-.corporate-hero__action-text p {
-  margin-bottom: 0
-}
 .corporate-benefit {
   position: relative;
   max-width: 1920px;
-  padding: 120px 0;
+  padding: 120px 0 100px;
   margin: 0 auto
 }
-.corporate-benefit .corpotate-benefit__wrapper {
-  max-width: 1664px;
+.corporate-benefit__wrapper {
+  max-width: 1665px;
+  width: 100%;
   margin: 0 auto
 }
-.corporate-benefit h2 {
+.corporate-benefit__title {
   font-weight: 900;
   font-size: 64px;
+  line-height: 72px;
   color: var(--textinner);
-  margin-bottom: 51px
+  margin-bottom: 50px
 }
-.corpotate-benefit-item {
+.corporate-benefit__container {
+  background: url(/img/dest/corporate/corporate-container-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0
+}
+.corporate-benefit .benefits {
+  padding: 10px 0 100px
+}
+.corporate-benefit .benefits__title {
+  font-size: 32px;
+  line-height: 50px;
+  margin-bottom: 25px
+}
+.corporate-benefit .benefits .benefit-card__icon {
+  width: 60px;
+  height: 40px;
+  margin-right: 15px
+}
+.corporate-benefit .benefits .benefit-card__front_description {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px
+}
+.corporate-benefit .callback {
+  margin-top: -120px
+}
+.corporate-benefit .callback__description {
+  margin-bottom: 15px
+}
+.corporate-advantage {
+  display: flex
+}
+.corporate-advantage_first {
+  margin-bottom: 20px
+}
+.corporate-advantage_first .corporate-advantage__content {
+  padding: 105px 15px 0
+}
+.corporate-advantage_second {
+  flex-direction: row-reverse
+}
+.corporate-advantage_second .corporate-advantage__image {
+  justify-content: flex-start
+}
+.corporate-advantage_second .corporate-advantage__content {
+  max-width: 600px;
+  width: 100%;
+  padding: 90px 15px 0
+}
+.corporate-advantage_third {
+  padding: 150px 0 0 0
+}
+.corporate-advantage_third .corporate-advantage__content {
+  padding: 40px 15px 0
+}
+.corporate-advantage__image {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0 0 50%;
+  padding: 0 15px
+}
+.corporate-advantage__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100%
+  flex: 0 0 50%;
+  padding: 0 15px
 }
-.corpotate-benefit-item__image-left {
-  height: 400px
-}
-.corpotate-benefit-item__image-left img {
-  margin-left: -165px
-}
-.corpotate-benefit-item__image-right {
-  height: 400px
-}
-.corpotate-benefit-item__image-right img {
-  margin-right: -165px
-}
-.corpotate-benefit-item__icon {
+.corporate-advantage__header {
   display: flex;
   align-items: center;
-  margin-bottom: 40px
+  margin-bottom: 35px
 }
-.corpotate-benefit-item__icon img {
-  width: 56px;
-  height: 56px;
+.corporate-advantage__icon {
   margin-right: 25px
 }
-.corpotate-benefit-item__icon p {
+.corporate-advantage__title {
   font-weight: 900;
   font-size: 24px;
   line-height: 32px;
   color: var(--accent);
-  letter-spacing: .144;
-  margin-bottom: 0
+  letter-spacing: .008em
 }
-.corpotate-benefit-item__text p {
+.corporate-advantage__description {
+  max-width: 570px;
   font-weight: 300;
   font-size: 20px;
   line-height: 30px;
-  color: var(--textinner);
-  padding: 0 35px 0 0;
-  margin-bottom: 0
+  color: var(--textinner)
 }
-.corpotate-benefit-big-bg {
-  background: url(/img/dest/corporate-big-bg.png) no-repeat center center;
-  padding: 120px 0;
-  margin-top: 100px
-}
-.corpotate-benefit-big-bg h3 {
+.our-offer__title {
   font-weight: 700;
   font-size: 32px;
-  line-height: 50px;
+  line-height: 35px;
+  color: var(--textgrey);
   margin-bottom: 30px
+}
+.offer-card {
+  display: flex;
+  align-items: center;
+  min-height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px;
+  margin-bottom: 30px
+}
+.offer-card__title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--textwhite);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3
+}
+.offer-card_server {
+  background-image: url(/img/dest/our-offer/offer-servers.jpg)
+}
+.offer-card_data {
+  background-image: url(/img/dest/our-offer/offer-security.jpg)
+}
+.offer-card_ip {
+  background-image: url(/img/dest/our-offer/offer-ip.jpg)
+}
+.offer-card_support {
+  background-image: url(/img/dest/our-offer/offer-support.jpg)
 }
 @media (max-width:1600px) {
   .happy-clients .swiper-slide-active .service-slider-wrap {
