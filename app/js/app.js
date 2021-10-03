@@ -17,7 +17,29 @@ document.addEventListener('DOMContentLoaded', () => {
             nextEl: '.custom-swiper-button-next',
             prevEl: '.custom-swiper-button-prev',
         },
-    })
+    });
+
+    var servicePortfolio = new Swiper('.sliderservice', {
+        autoHeight: true,
+        loop: true,
+        spaceBetween: 60,
+        slidesPerView: 1.22,
+        pagination: {
+            el: '.custom-swiper-pagination',
+            type: 'fraction',
+            renderFraction: function (currentClass, totalClass) {
+                return '<span class="' + currentClass + '"></span>' +
+                    ' &boxh; ' +
+                    '<span class="' + totalClass + '"></span>';
+            },
+        },
+
+        navigation: {
+            nextEl: '.custom-swiper-button-next',
+            prevEl: '.custom-swiper-button-prev',
+        },
+    });
+    
 
 
     const menu = document.querySelector('.sidenav'),

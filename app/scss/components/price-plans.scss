@@ -1,0 +1,118 @@
+/* Секция с ценами */
+.price-plans {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: var(--accent);
+    &__wrapper {
+        padding: 125px 0 100px;
+    }
+    &__title {
+        position: relative;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 60px;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+    &__card {}
+    
+    &__list {
+        li {
+            &:nth-last-child(2) {
+                span {
+                    &:last-child {
+                        color: var(--accent);
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        a {
+            
+            
+            &.not-first {
+                color: var(--accent);
+                background-color: #f3f5f9;
+                box-shadow: none;
+                transition: all ease 0.2s;
+                &:hover {
+                    color: #fff;
+                    background-color: #005aa3;
+                    box-shadow: 0px 16px 24px 0px rgba(0, 90, 163, 0.32),inset 0px -5px 5px 0px rgba(0, 90, 163, 0.32);
+                }
+            }
+        }
+    }
+}
+
+.plans-card {
+    background-color: #ebeff5;
+    padding: 15px 15px 0;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    box-shadow: 0px 16px 48px 0px rgba(0, 90, 163, 0.64);
+    &__title {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 400;
+        padding: 17px;
+        border-radius: 2px;
+        &:nth-child(odd) {
+            background-color: #fff;
+        }
+    }
+    &__btn {
+        display: inline-flex;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 30px;
+        color: #005aa3;
+        background-color: #f3f5f9;
+        padding: 10px 45px 10px;
+        margin-bottom: 25px;
+        border-radius: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all .3s ease-in-out;
+        &:hover {
+            background-color: #005aa3;
+            color:#fff;
+            text-decoration: none;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+
+.plan-item {
+    color: var(--textgrey);
+    &__title {
+        font-weight: 400;
+        max-width: 120px;
+        font-size: 10px;
+        line-height: 15px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    &__total {
+        font-weight: 900;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: right;
+    }
+}
