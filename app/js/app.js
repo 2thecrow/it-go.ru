@@ -39,6 +39,57 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: '.custom-swiper-button-prev',
         },
     });
+
+    var servicePortfolio = new Swiper('.done-project-slider', {
+        autoHeight: true,
+        loop: true,
+        spaceBetween: 50,
+        slidesPerView: 1.23,
+        pagination: {
+            el: '.custom-swiper-pagination_done',
+            type: 'fraction',
+            renderFraction: function (currentClass, totalClass) {
+                return '<span class="' + currentClass + '"></span>' +
+                    ' &boxh; ' +
+                    '<span class="' + totalClass + '"></span>';
+            },
+        },
+
+        navigation: {
+            nextEl: '.custom-swiper-button-next_done',
+            prevEl: '.custom-swiper-button-prev_done',
+        },
+    });
+    
+
+    var offerSlider = new Swiper('.offer-slider', {
+        autoHeight: true,
+        loop: true,
+        spaceBetween: 30,
+        slidesPerGroup: 2,
+        breakpoints: {
+            320: {
+              slidesPerView: 1
+            },
+            1200: {
+              slidesPerView: 2
+            }
+        },
+        pagination: {
+            el: '.custom-swiper-pagination',
+            type: 'fraction',
+            renderFraction: function (currentClass, totalClass) {
+                return '<span class="' + currentClass + '"></span>' +
+                    ' &boxh; ' +
+                    '<span class="' + totalClass + '"></span>';
+            },
+        },
+
+        navigation: {
+            nextEl: '.custom-swiper-button-next',
+            prevEl: '.custom-swiper-button-prev',
+        },
+    });
     
 
 

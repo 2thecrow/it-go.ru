@@ -1,0 +1,213 @@
+.done-projects {
+    padding: 120px 0 130px;
+    background-color: #fff;
+    color: var(--textgrey);
+    &__title {
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 64px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &__description {
+        max-width: 1000px;
+        width: 100%;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        margin: 0 auto 40px;
+        text-align: center;
+    }
+    &__slider {
+        .custom_swiper_nav {
+            position: relative;
+            bottom: auto;
+            color: var(--accent);
+            .swiper-pagination-fraction {
+                max-width: 235px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                color: var(--accent);
+                line-height: 18px;
+                /* нынешняя позиция слайдера */
+                .swiper-pagination-current {
+                    font-weight: 900;
+                    font-size: 24px;
+                    margin: 0 5px 0 0;
+                }
+                /* общее кол-во слайдов  */
+                .swiper-pagination-total {
+                    font-weight: 300;
+                    font-size: 14px;
+                    margin: 0 0 0 5px;
+                }
+            }
+            .custom-swiper-button-prev_done {
+                .arrow-box {
+                    &:hover {
+                        color: #fff;
+                        background-color: var(--accent);
+                    }
+                }
+            }
+            .custom-swiper-button-next_done {
+                .arrow-box {
+                    &:hover {
+                        color: #fff;
+                        background-color: var(--accent);
+                    }
+                }
+            }
+        }
+        .arrow-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 49px;
+            height: 49px;
+            border: 2px solid var(--accent);
+            font-size: 20px;
+            line-height: 12px;
+        }
+        .swiper-pagination-fraction_done {
+            color: var(--accent);
+        }
+    }
+}
+
+
+.done-project-slider {
+    margin-bottom: 40px;
+    .swiper-slide-next {
+        filter: opacity(40%) blur(1px);
+        .done-site {
+            margin: 0;
+        }
+        .done-site__more-info {
+            display: none;
+        }
+    }
+    .swiper-slide-prev {
+        opacity: 0;
+    }
+    &__item {}
+}
+
+.done-site {
+    max-width: 1420px;
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    &__image {
+        position: relative;
+    }
+    &__more-info {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+        padding: 20px 45px 20px 20px;
+        background-color: rgba(0, 97, 175, 0.8);
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+        &:hover {
+            color: #fff;
+            background-color: rgba(0, 97, 175, 1);
+            text-decoration: none;
+            transition: all .3s ease-in-out;
+        }
+    }
+    &__content {
+        max-width: 565px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px 20px 20px 30px;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--accent);
+        margin-bottom: 15px;
+        overflow: hidden; /* include for safety */
+        display: -webkit-box; /* setting a block element  */
+        -webkit-box-orient: vertical; /* companion class   */
+        -webkit-line-clamp: 2; /* number of lines  */
+    }
+    &__description {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 35px;
+        overflow: hidden; /* include for safety */
+        display: -webkit-box; /* setting a block element  */
+        -webkit-box-orient: vertical; /* companion class   */
+        -webkit-line-clamp: 4; /* number of lines  */
+    }
+    &__blockquote {
+        position: relative;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 25px 20px 25px 50px;
+        margin-bottom: 30px;
+        border-radius: 2px;
+        background-color: #ebeff5;
+       
+        &::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            width: 19px;
+            height: 16px;
+            background-image: url(/img/dest/global/quote-left.png);
+            background-repeat: no-repeat;
+        } 
+    }
+    &__blockquote-text {
+        overflow: hidden; /* include for safety */
+        display: -webkit-box; /* setting a block element  */
+        -webkit-box-orient: vertical; /* companion class   */
+        -webkit-line-clamp: 4; /* number of lines  */
+    }
+    &__client {}
+    
+}
+
+
+.client-info {
+    display: flex;
+    align-items: center;
+    &__image {
+        display: inline-flex;
+        flex: 0 0 48px;
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        margin-right: 15px;
+    }
+    &__content {}
+    &__name {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 0;
+    }
+    &__company {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 13px;
+        line-height: 13px;
+    }
+}

@@ -1,0 +1,75 @@
+.special-offers {
+    background-image: url(/img/dest/our-offer/offer-slider-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 64px;
+        color: var(--textwhite);
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__slider {
+        .custom_swiper_nav {
+            position: relative;
+            bottom: auto;
+        }
+    }
+}
+
+.offer-slider {
+    margin-bottom: 45px;
+    &__card {}
+}
+
+.offer-slide-card {
+    max-width: 570px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 35px 0px rgba(90, 120, 144, 0.35); 
+    &__image {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__content {
+        padding: 15px 35px 30px;
+        background-color: #fff;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 28px;
+        color: var(--accent);
+        margin-bottom: 15px;
+    }
+    &__description {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--textgrey);
+        margin-bottom: 20px;
+    }
+    &__more {
+        cursor: pointer;
+        display: inline-flex;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--accent);
+        padding: 5px 15px;
+        border-radius: 2px;
+        border: 2px solid var(--accent);
+        transition: all .3s ease-in-out;
+        text-decoration: none;
+        &:hover {
+            background-color: var(--accent);
+            color: var(--textwhite);
+            transition: all .3s ease-in-out;
+            text-decoration: none;
+        }
+    }
+}

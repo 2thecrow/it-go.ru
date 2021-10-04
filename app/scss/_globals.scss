@@ -118,3 +118,89 @@
         }
     }
 }
+
+.custom_swiper_nav {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    bottom: 95px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    text-transform: uppercase;
+    /* Стили для блока с выводом кол-ва слайдов */
+    .swiper-pagination-fraction {
+        max-width: 235px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        line-height: 18px;
+        /* нынешняя позиция слайдера */
+        .swiper-pagination-current {
+            font-weight: 900;
+            font-size: 24px;
+            margin: 0 5px 0 0;
+        }
+        /* общее кол-во слайдов  */
+        .swiper-pagination-total {
+            font-weight: 300;
+            font-size: 14px;
+            margin: 0 0 0 5px;
+        }
+    }
+    /* кнопка назад(Предыдущий слайд)  */
+    .custom-swiper-button-prev,
+    .custom-swiper-button-prev_done {
+        font-weight: 300;
+        font-size: 12px;
+        text-align: right;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        /* стрелочка */
+        .arrow-box {
+            margin-left: 15px;
+            span {
+                margin-top: -3px;
+            }
+            &:hover {
+                background-color: rgba($color: #fff, $alpha: 0.2);
+            }
+        }
+        
+    }
+    /* кнопка вперед(Следующий  слайд)  */
+    .custom-swiper-button-next,
+    .custom-swiper-button-next_done {
+        font-weight: 300;
+        font-size: 12px;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* стрелочка */
+        .arrow-box {
+            margin-right: 15px;
+            span {
+                margin-top: -3px;
+            }
+            &:hover {
+                background-color: rgba($color: #fff, $alpha: 0.2);
+            }
+        }
+    }
+    /* общие стили стрелочки */
+    .arrow-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 49px;
+        height: 49px;
+        border: 2px solid #fff;
+        font-size: 20px;
+        line-height: 12px;
+    }
+}

@@ -3864,6 +3864,88 @@ body {
 .socials__item_facebook:hover {
   background-color: #426095
 }
+.custom_swiper_nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  bottom: 95px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  text-transform: uppercase
+}
+.custom_swiper_nav .swiper-pagination-fraction {
+  max-width: 235px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  line-height: 18px
+}
+.custom_swiper_nav .swiper-pagination-fraction .swiper-pagination-current {
+  font-weight: 900;
+  font-size: 24px;
+  margin: 0 5px 0 0
+}
+.custom_swiper_nav .swiper-pagination-fraction .swiper-pagination-total {
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0 0 0 5px
+}
+.custom_swiper_nav .custom-swiper-button-prev,
+.custom_swiper_nav .custom-swiper-button-prev_done {
+  font-weight: 300;
+  font-size: 12px;
+  text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center
+}
+.custom_swiper_nav .custom-swiper-button-prev .arrow-box,
+.custom_swiper_nav .custom-swiper-button-prev_done .arrow-box {
+  margin-left: 15px
+}
+.custom_swiper_nav .custom-swiper-button-prev .arrow-box span,
+.custom_swiper_nav .custom-swiper-button-prev_done .arrow-box span {
+  margin-top: -3px
+}
+.custom_swiper_nav .custom-swiper-button-prev .arrow-box:hover,
+.custom_swiper_nav .custom-swiper-button-prev_done .arrow-box:hover {
+  background-color: rgba(255,255,255,.2)
+}
+.custom_swiper_nav .custom-swiper-button-next,
+.custom_swiper_nav .custom-swiper-button-next_done {
+  font-weight: 300;
+  font-size: 12px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+.custom_swiper_nav .custom-swiper-button-next .arrow-box,
+.custom_swiper_nav .custom-swiper-button-next_done .arrow-box {
+  margin-right: 15px
+}
+.custom_swiper_nav .custom-swiper-button-next .arrow-box span,
+.custom_swiper_nav .custom-swiper-button-next_done .arrow-box span {
+  margin-top: -3px
+}
+.custom_swiper_nav .custom-swiper-button-next .arrow-box:hover,
+.custom_swiper_nav .custom-swiper-button-next_done .arrow-box:hover {
+  background-color: rgba(255,255,255,.2)
+}
+.custom_swiper_nav .arrow-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 49px;
+  height: 49px;
+  border: 2px solid #fff;
+  font-size: 20px;
+  line-height: 12px
+}
 .particles-bg {
   position: absolute;
   top: 0;
@@ -5827,6 +5909,265 @@ body {
 }
 .offer-card_support {
   background-image: url(/img/dest/our-offer/offer-support.jpg)
+}
+.done-projects {
+  padding: 120px 0 130px;
+  background-color: #fff;
+  color: var(--textgrey)
+}
+.done-projects__title {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 64px;
+  margin-bottom: 40px;
+  text-align: center
+}
+.done-projects__description {
+  max-width: 1000px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 auto 40px;
+  text-align: center
+}
+.done-projects__slider .custom_swiper_nav {
+  position: relative;
+  bottom: auto;
+  color: var(--accent)
+}
+.done-projects__slider .custom_swiper_nav .swiper-pagination-fraction {
+  max-width: 235px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--accent);
+  line-height: 18px
+}
+.done-projects__slider .custom_swiper_nav .swiper-pagination-fraction .swiper-pagination-current {
+  font-weight: 900;
+  font-size: 24px;
+  margin: 0 5px 0 0
+}
+.done-projects__slider .custom_swiper_nav .swiper-pagination-fraction .swiper-pagination-total {
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0 0 0 5px
+}
+.done-projects__slider .custom_swiper_nav .custom-swiper-button-prev_done .arrow-box:hover {
+  color: #fff;
+  background-color: var(--accent)
+}
+.done-projects__slider .custom_swiper_nav .custom-swiper-button-next_done .arrow-box:hover {
+  color: #fff;
+  background-color: var(--accent)
+}
+.done-projects__slider .arrow-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 49px;
+  height: 49px;
+  border: 2px solid var(--accent);
+  font-size: 20px;
+  line-height: 12px
+}
+.done-projects__slider .swiper-pagination-fraction_done {
+  color: var(--accent)
+}
+.done-project-slider {
+  margin-bottom: 40px
+}
+.done-project-slider .swiper-slide-next {
+  filter: opacity(40%) blur(1px)
+}
+.done-project-slider .swiper-slide-next .done-site {
+  margin: 0
+}
+.done-project-slider .swiper-slide-next .done-site__more-info {
+  display: none
+}
+.done-project-slider .swiper-slide-prev {
+  opacity: 0
+}
+.done-site {
+  max-width: 1420px;
+  width: 100%;
+  display: flex;
+  margin-left: auto
+}
+.done-site__image {
+  position: relative
+}
+.done-site__more-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+  background-color: rgba(0,97,175,.8);
+  text-decoration: none;
+  transition: all .3s ease-in-out
+}
+.done-site__more-info:hover {
+  color: #fff;
+  background-color: #0061af;
+  text-decoration: none;
+  transition: all .3s ease-in-out
+}
+.done-site__content {
+  max-width: 565px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 20px 20px 30px
+}
+.done-site__title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--accent);
+  margin-bottom: 15px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2
+}
+.done-site__description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 35px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4
+}
+.done-site__blockquote {
+  position: relative;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 25px 20px 25px 50px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+  background-color: #ebeff5
+}
+.done-site__blockquote::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  width: 19px;
+  height: 16px;
+  background-image: url(/img/dest/global/quote-left.png);
+  background-repeat: no-repeat
+}
+.done-site__blockquote-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4
+}
+.client-info {
+  display: flex;
+  align-items: center
+}
+.client-info__image {
+  display: inline-flex;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  margin-right: 15px
+}
+.client-info__name {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 0
+}
+.client-info__company {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 13px
+}
+.special-offers {
+  background-image: url(/img/dest/our-offer/offer-slider-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0
+}
+.special-offers__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: var(--textwhite);
+  text-align: center;
+  margin-bottom: 40px
+}
+.special-offers__slider .custom_swiper_nav {
+  position: relative;
+  bottom: auto
+}
+.offer-slider {
+  margin-bottom: 45px
+}
+.offer-slide-card {
+  max-width: 570px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 35px 0 rgba(90,120,144,.35)
+}
+.offer-slide-card__image img {
+  width: 100%;
+  height: auto
+}
+.offer-slide-card__content {
+  padding: 15px 35px 30px;
+  background-color: #fff
+}
+.offer-slide-card__title {
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 28px;
+  color: var(--accent);
+  margin-bottom: 15px
+}
+.offer-slide-card__description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--textgrey);
+  margin-bottom: 20px
+}
+.offer-slide-card__more {
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--accent);
+  padding: 5px 15px;
+  border-radius: 2px;
+  border: 2px solid var(--accent);
+  transition: all .3s ease-in-out;
+  text-decoration: none
+}
+.offer-slide-card__more:hover {
+  background-color: var(--accent);
+  color: var(--textwhite);
+  transition: all .3s ease-in-out;
+  text-decoration: none
 }
 @media (max-width:1600px) {
   .happy-clients .swiper-slide-active .service-slider-wrap {
